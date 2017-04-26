@@ -1,0 +1,44 @@
+{
+  "name": "mythica",
+  "version": "1.0.0",
+  "description": "Mythica Creative | Conscious Design",
+  "main": "./server/server.js",
+  "repository": "https://github.com/jhwheeler/mythica-creative.git",
+  "author": "Alacritas",
+  "license": "MIT",
+  "scripts": {
+    "start": "node server/server.js",
+    "test": "mocha",
+    "build": "NODE_ENV=production ./node_modules/webpack/bin/webpack.js -p",
+    "build-watch": "./node_modules/webpack/bin/webpack.js --watch",
+    "build:production": "NODE_ENV=production webpack -p"
+  },
+  "dependencies": {
+    "babel-preset-stage-2": "^6.24.1",
+    "express": "^4.15.2",
+    "path": "^0.12.7",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "react-router": "^4.1.1",
+    "react-router-dom": "^4.1.1",
+    "webpack": "^2.4.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "chai": "^3.5.0",
+    "chai-http": "^3.0.0",
+    "css-loader": "^0.28.0",
+    "file-loader": "^0.11.1",
+    "image-webpack-loader": "^3.3.0",
+    "mocha": "^3.3.0",
+    "nodemon": "^1.11.0",
+    "style-loader": "^0.16.1",
+    "url-loader": "^0.5.8"
+  },
+  "engines": {
+    "node": "7.5.0"
+  }
+}
