@@ -1,0 +1,31 @@
+nav {
+  background-color: #20192B;
+  padding: 10px;
+  width: 100%;
+}
+
+.logo {
+  margin-right: auto;
+}
+
+.links {
+  float:right
+}
+
+.nav-link {
+  float: left;
+  color: #fff;
+  margin: 0px 15px;
+  font-family: 'Raleway', 'Helvetica', sans-serif;
+  font-size: 22px;
+  line-height: 50px;
+  height: 50px;
+}
+
+.nav-link:hover {
+  color: #2cc0d3;
+}
+
+nav a {
+  text-decoration: none;
+}
