@@ -1,7 +1,93 @@
-.home-hero {
-  color: #fff;
-}
+/* First Screen Hero Image */
 
 .home-hero-wrapper {
   height: 500px;
+}
+
+.hero-content {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-hero-logo {
+  height: 157px;
+  width: 169px;
+}
+
+.home-hero-header {
+  height: 72px;
+  width: 277px;
+}
+
+.home-hero-header-2 {
+  height: 55px;
+  width: 282px;
+}
+
+.home-hero-subheader {
+  height: 40px;
+  width: 280px;
+  margin: 0 auto;
+  padding: 10px 0px;
+  font-weight: 100;
+  font-size: 22px;
+  letter-spacing: 2px;
+  background-color: #fff;
+  color: #2b0056;
+  text-align: center;
+}
+
+.tagline {
+  margin: 0px 100px;
+  text-align: center;
+  line-height: 40px;
+  color: #424447;
+}
+
+.tagline h2 {
+  font-weight: 100;
+}
+
+
+/* Services Section */
+
+.services-header {
+  text-align: center;
+  font-weight: 100;
+  margin: 100px 0px 70px;
+}
+.services-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/* Global Reach Hero Image */
+
+.global-reach-hero-wrapper {
+ height: 420px;
+}
+
+.global-reach-hero-wrapper .hero {
+ background-attachment: fixed;
+}
+.global-reach-hero-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.global-reach-hero-content h1, h2 {
+  font-weight: 100;
+  text-align: center;
+}
+
+.global-reach-hero-content h1 {
+  margin: 30px 0px;
+}
+
+.global-reach-hero-content h2 {
+  margin: 10px 30px;
 }
