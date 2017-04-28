@@ -2,6 +2,8 @@ nav {
   background-color: #20192B;
   padding: 10px;
   width: 100%;
+  position: fixed;
+  top: 0;
 }
 
 .logo {
