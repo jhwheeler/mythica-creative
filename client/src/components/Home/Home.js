@@ -4,6 +4,7 @@ import Header from '../Header/Header';
 import Hero from '../Hero/Hero';
 import Service from '../Service/Service';
 import Project from '../Project/Project';
+import Testimonial from '../Testimonial/Testimonial';
 
 import css from './Home.css';
 
@@ -29,27 +30,33 @@ import ProjectFreedom from '../../../public/images/Project-FreedomResearchFounda
 import ProjectFlow from '../../../public/images/Project-FlowAlchemy.jpg';
 import ProjectFemanna from '../../../public/images/Project-Femanna.jpg';
 
+// Testimonial Imports
+import LisaMeisels from '../../../public/images/LisaMeisels.png';
+import RickWright from '../../../public/images/RickWright.png';
+import JackWheeler from '../../../public/images/JackWheeler.png';
+import ChristineMattschei from '../../../public/images/ChristineMattschei.png';
+
 const Home = props => {
   const services = [
     {
       icon: webDesignIcon,
-      header: `WEB`,
-      description: `Using the latest technologies and trends, we provide sophisticated, responsive web design solutions that help you reach clients worldwide.`
+      header: 'WEB',
+      description: 'Using the latest technologies and trends, we provide sophisticated, responsive web design solutions that help you reach clients worldwide.'
     },
     {
       icon: brandDesignIcon,
-      header: `BRAND`,
-      description: `With over 10 years in the brand industry, we know exactly how to shape your corporate identity into an entrepreneurial legend.`
+      header: 'BRAND',
+      description: 'With over 10 years in the brand industry, we know exactly how to shape your corporate identity into an entrepreneurial legend.'
     },
     {
       icon: printDesignIcon,
-      header: `PRINT`,
-      description: `Our attention to detail and stylistic precision give you the print materials to create the ideal impression of your services.`
+      header: 'PRINT',
+      description: 'Our attention to detail and stylistic precision give you the print materials to create the ideal impression of your services.'
     },
     {
       icon: copyIcon,
-      header: `COPY`,
-      description: `Our writers are here to understand your business in depth and clearly express it in a way your customers will understand.`
+      header: 'COPY',
+      description: 'Our writers are here to understand your business in depth and clearly express it in a way your customers will understand.'
     }
   ]
 
@@ -72,6 +79,29 @@ const Home = props => {
     {
       preview: ProjectFemanna
     },
+  ]
+
+  const testimonials = [
+    {
+      headshot: LisaMeisels,
+      name: 'Lisa Meisels, Femanna',
+      quote: 'Beautiful work! I\'m so impressed with what they\'ve done. I will definitely work with them again!'
+    },
+    {
+      headshot: RickWright,
+      name: 'Rick Wright, Wright Consultancy',
+      quote: 'Excellent quality of work. A world-class collaboration and result!'
+    },
+    {
+      headshot: JackWheeler,
+      name: 'Dr. Jack Wheeler, Wheeler Expeditions',
+      quote: 'Professional, innovative result that is both aesthetically beautiful and effective.'
+    },
+    {
+      headshot: ChristineMattschei,
+      name: 'Christine Mattschei, Flow Alchemy',
+      quote: 'You really saw my vision and expanded on it, creating beautiful, elegant branding a lovely new website.'
+    }
   ]
 
   return (
@@ -105,14 +135,14 @@ const Home = props => {
       <div className="global-reach-hero-wrapper">
         <Hero backgroundImage={globalReach}>
           <div className="global-reach-hero-content hero-content">
-            <h1>Our Global Reach</h1>
+            <h1>Global Reach</h1>
             <h2>We are proud to serve clients all around the world.</h2>
             <h2>From Europe to America to Asia, we help people of all backgrounds shape their future.</h2>
           </div>
         </Hero>
       </div>
       <div className="projects">
-        <h1 className="projects-header">OUR PROJECTS</h1>
+        <h1 className="projects-header">PROJECTS</h1>
         <div className="projects-wrapper">
         {projects.map((project) =>
           <Project
@@ -121,7 +151,18 @@ const Home = props => {
         )}
         </div>
       </div>
-
+      <div className="testimonials">
+        <h1 className="testimonials-header">WHAT OUR CLIENTS ARE SAYING...</h1>
+        <div className="testimonials-wrapper">
+        {testimonials.map((testimonial) =>
+          <Testimonial
+            headshot={testimonial.headshot}
+            name={testimonial.name}
+            quote={testimonial.quote}
+          />
+        )}
+        </div>
+      </div>
     </div>
   );
 }

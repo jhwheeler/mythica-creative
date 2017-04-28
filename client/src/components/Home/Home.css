@@ -1,7 +1,7 @@
 /* First Screen Hero Image */
 
 .home-hero-wrapper {
-  height: 500px;
+  height: 650px;
 }
 
 .hero-content {
@@ -51,14 +51,22 @@
 }
 
 
-/* Services & Projects Sections */
+/* Services, Projects, & Testimonials Sections */
 
 .services-header, .projects-header {
   text-align: center;
   font-weight: 100;
   margin: 100px 0px 70px;
 }
-.services-wrapper {
+
+.testimonials-header {
+  text-align: center;
+  font-weight: 100;
+  color: #fff;
+  padding: 100px 0px 60px;
+}
+
+.services-wrapper  {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -69,6 +77,18 @@
   flex-wrap: wrap;
   flex-grow: 1;
   justify-content: center;
+}
+
+.testimonials {
+  background-color: #3C3050;
+}
+
+.testimonials-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-around;
+  padding: 0px 80px;
 }
 
 /* Global Reach Hero Image */
@@ -98,3 +118,4 @@
 .global-reach-hero-content h2 {
   margin: 10px 30px;
 }
+
