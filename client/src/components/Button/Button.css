@@ -2,9 +2,9 @@ input[type=button] {
   width: 110px;
   height: 40px;
   background-color: #fff;
-  color: #000;
+  color: #3a2a4f;
   font-size: 13px;
-  border: 1px solid black;
+  border: 1px solid #3a2a4f;
   cursor: pointer;
   text-align: center;
   margin: 10px;
