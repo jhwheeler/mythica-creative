@@ -2,12 +2,14 @@ import React from 'react';
 
 import Button from '../Button/Button';
 
+import css from './Service.css';
+
 const Service = (props) => {
   return (
-    <div>
+    <div className="service">
       <img src={props.icon} />
-      {props.header}
-      {props.description}
+      <h3>{props.header}</h3>
+      <p>{props.description}</p>
       <Button label="EXPLORE" />
     </div>
   );
