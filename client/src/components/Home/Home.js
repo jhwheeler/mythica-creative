@@ -123,11 +123,12 @@ const Home = props => {
       <div className="services">
         <h1 className="services-header">SERVICES</h1>
         <div className="services-wrapper">
-        {services.map((service) =>
+        {services.map((service, index) =>
           <Service
             icon={service.icon}
             header={service.header}
             description={service.description}
+            key={index}
           />
         )}
         </div>
@@ -144,9 +145,10 @@ const Home = props => {
       <div className="projects">
         <h1 className="projects-header">PROJECTS</h1>
         <div className="projects-wrapper">
-        {projects.map((project) =>
+        {projects.map((project, index) =>
           <Project
             preview={project.preview}
+            key={index}
           />
         )}
         </div>
@@ -154,11 +156,12 @@ const Home = props => {
       <div className="testimonials">
         <h1 className="testimonials-header">WHAT OUR CLIENTS ARE SAYING...</h1>
         <div className="testimonials-wrapper">
-        {testimonials.map((testimonial) =>
+        {testimonials.map((testimonial, index) =>
           <Testimonial
             headshot={testimonial.headshot}
             name={testimonial.name}
             quote={testimonial.quote}
+            key={index}
           />
         )}
         </div>
