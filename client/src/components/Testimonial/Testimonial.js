@@ -6,7 +6,7 @@ const Testimonial = (props) => {
   return (
     <div className="testimonial">
       <img src={props.headshot} />
-      <h3>{props.name}</h3>
+      <h2>{props.name}</h2>
       <p>{props.quote}</p>
     </div>
   );

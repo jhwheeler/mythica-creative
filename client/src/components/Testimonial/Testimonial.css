@@ -19,7 +19,6 @@
   width: 200px;
 }
 
-.testimonial h3 {
-  font-size: 25px;
-  font-weight: 100;
+.testimonial h2 {
+  margin: 20px;
 }
