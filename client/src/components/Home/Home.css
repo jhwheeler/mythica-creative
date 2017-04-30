@@ -100,6 +100,7 @@
 .global-reach-hero-wrapper .hero {
  background-attachment: fixed;
 }
+
 .global-reach-hero-content {
   display: flex;
   justify-content: center;
