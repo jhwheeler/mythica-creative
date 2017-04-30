@@ -5,22 +5,23 @@ import Hero from '../Hero/Hero';
 import Service from '../Service/Service';
 import Project from '../Project/Project';
 import Testimonial from '../Testimonial/Testimonial';
+import Technology from '../Technology/Technology';
 
 import css from './Home.css';
 
-// Top Hero Image Imports
-import welcomeHero from '../../../public/images/welcome-hero.jpg';
-import logoHero from '../../../public/images/logo_hero.png';
-import mythica from '../../../public/images/mythica.png';
-import creative from '../../../public/images/creative.png';
+// Hero Image Imports
+import welcomeHero from '../../../public/images/hero/welcome-hero.jpg';
+import logoHero from '../../../public/images/hero/logo_hero.png';
+import mythica from '../../../public/images/hero/mythica.png';
+import creative from '../../../public/images/hero/creative.png';
+import globalReach from '../../../public/images/hero/global_reach_hero.jpg';
 
 // Services Imports
-import webDesignIcon from '../../../public/images/web_design_icon.png';
-import brandDesignIcon from '../../../public/images/brand_design_icon.png';
-import printDesignIcon from '../../../public/images/print_design_icon.png';
-import copyIcon from '../../../public/images/copy_icon.png';
+import webDesignIcon from '../../../public/images/services/web_design_icon.png';
+import brandDesignIcon from '../../../public/images/services/brand_design_icon.png';
+import printDesignIcon from '../../../public/images/services/print_design_icon.png';
+import copyIcon from '../../../public/images/services/copy_icon.png';
 
-import globalReach from '../../../public/images/global_reach_hero.jpg';
 
 // Projects Imports
 import ProjectWheeler from '../../../public/images/Project-WheelerExpeditions.jpg';
@@ -30,11 +31,20 @@ import ProjectFreedom from '../../../public/images/Project-FreedomResearchFounda
 import ProjectFlow from '../../../public/images/Project-FlowAlchemy.jpg';
 import ProjectFemanna from '../../../public/images/Project-Femanna.jpg';
 
-// Testimonial Imports
-import LisaMeisels from '../../../public/images/LisaMeisels.png';
-import RickWright from '../../../public/images/RickWright.png';
-import JackWheeler from '../../../public/images/JackWheeler.png';
-import ChristineMattschei from '../../../public/images/ChristineMattschei.png';
+// Testimonials Imports
+import LisaMeisels from '../../../public/images/testimonials/LisaMeisels.png';
+import RickWright from '../../../public/images/testimonials/RickWright.png';
+import JackWheeler from '../../../public/images/testimonials/JackWheeler.png';
+import ChristineMattschei from '../../../public/images/testimonials/ChristineMattschei.png';
+
+// Technologies Imports
+import NodeLogo from '../../../public/images/technologies/NodeLogo.png';
+import ExpressLogo from '../../../public/images/technologies/ExpressLogo.png';
+import ReactLogo from '../../../public/images/technologies/ReactLogo.png';
+import ReduxLogo from '../../../public/images/technologies/ReduxLogo.png';
+import MongoDBLogo from '../../../public/images/technologies/MongoDBLogo.png';
+import IllustratorLogo from '../../../public/images/technologies/IllustratorLogo.png';
+import PhotoshopLogo from '../../../public/images/technologies/PhotoshopLogo.png';
 
 const Home = props => {
   const services = [
@@ -104,6 +114,44 @@ const Home = props => {
     }
   ]
 
+  const technologies = [
+    {
+      name: 'NodeJS',
+      logo: NodeLogo,
+      url: 'https://nodejs.org/'
+    },
+    {
+      name: 'Express',
+      logo: ExpressLogo,
+      url: 'https://expressjs.com/'
+    },
+    {
+      name: 'ReactJS',
+      logo: ReactLogo,
+      url: 'https://facebook.github.io/react/'
+    },
+    {
+      name: 'Redux',
+      logo: ReduxLogo,
+      url: 'http://redux.js.org/'
+    },
+    {
+      name: 'MongoDB',
+      logo: MongoDBLogo,
+      url: 'https://www.mongodb.com/'
+    },
+    {
+      name: 'Adobe Illustrator',
+      logo: IllustratorLogo,
+      url: 'http://www.adobe.com/products/illustrator.html'
+    },
+    {
+      name: 'Adobe Photoshop',
+      logo: PhotoshopLogo,
+      url: 'http://www.adobe.com/products/photoshop.html'
+    }
+  ]
+
   return (
     <div className="home">
       <Header />
@@ -117,8 +165,11 @@ const Home = props => {
           </div>
         </Hero>
       </div>
+
       <div className="tagline">
-        <h2>THE MOST SUCCESSFUL BRANDS LAST FOR GENERATIONS. OUR MISSION IS TO CREATE MORE THAN JUST A STORY. WE ARE HERE TO CREATE YOUR LEGEND.</h2>
+        <h3>THE MOST SUCCESSFUL BRANDS LAST FOR GENERATIONS.</h3>
+        <h3>OUR MISSION IS TO CREATE MORE THAN JUST A STORY.</h3>
+        <h3>WE ARE HERE TO CREATE YOUR LEGEND.</h3>
       </div>
       <div className="services">
         <h1 className="services-header">SERVICES</h1>
@@ -133,6 +184,7 @@ const Home = props => {
         )}
         </div>
       </div>
+
       <div className="global-reach-hero-wrapper">
         <Hero backgroundImage={globalReach}>
           <div className="global-reach-hero-content hero-content">
@@ -142,6 +194,7 @@ const Home = props => {
           </div>
         </Hero>
       </div>
+
       <div className="projects">
         <h1 className="projects-header">PROJECTS</h1>
         <div className="projects-wrapper">
@@ -153,6 +206,7 @@ const Home = props => {
         )}
         </div>
       </div>
+
       <div className="testimonials">
         <h1 className="testimonials-header">WHAT OUR CLIENTS ARE SAYING...</h1>
         <div className="testimonials-wrapper">
@@ -166,6 +220,27 @@ const Home = props => {
         )}
         </div>
       </div>
+
+      <div className="about-us">
+        <div className="about-text">
+          <h1 className="about-header">Who Are We?</h1>
+          <p>Mythica Creative is a web and brand agency dedicated to creating legendary brands that last for generations. From logo design and copywriting to web and print design, we provide the full brand package for every business.</p>
+          <br />
+          <p>With over 10 years’ experience in the industry, we know the ins and outs of creating a website that converts and a brand that customers love.</p>
+        </div>
+        <div className="technologies-wrapper">
+          <h2 className="technologies-header">Technologies We Use</h2>
+          {technologies.map((technology, index) =>
+            <Technology
+              logo={technology.logo}
+              name={technology.name}
+              url={technology.url}
+              key={index}
+            />
+          )}
+        </div>
+      </div>
+
     </div>
   );
 }

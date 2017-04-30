@@ -57,6 +57,7 @@
   text-align: center;
   font-weight: 100;
   margin: 100px 0px 70px;
+  color: #3c3050;
 }
 
 .testimonials-header {
@@ -91,6 +92,7 @@
   padding: 0px 80px;
 }
 
+
 /* Global Reach Hero Image */
 
 .global-reach-hero-wrapper {
@@ -120,3 +122,28 @@
   margin: 10px 30px;
 }
 
+
+/* About Us Section */
+
+.about-us {
+  display: flex;
+  padding: 40px;
+  background-color: #EFEFF1;
+}
+
+.about-header {
+  margin: 40px 0;
+  color: #3c3050;
+}
+
+.technologies-wrapper {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+}
+
+.technologies-header {
+  width: 100%;
+  margin: 40px 0;
+  color: #3c3050;
+}
