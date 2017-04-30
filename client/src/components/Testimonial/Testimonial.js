@@ -2,7 +2,7 @@ import React from 'react';
 
 import css from './Testimonial.css';
 
-const Testimonial = (props) => {
+const Testimonial = props => {
   return (
     <div className="testimonial">
       <img src={props.headshot} />
