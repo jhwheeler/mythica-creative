@@ -2,6 +2,11 @@
   box-sizing: border-box;
 }
 
+html, body, nav, ul, li, a, h1, h2, h3, h4, p {
+  margin: 0;
+  padding: 0;
+}
+
 html, body {
   height: 100%;
   margin: 0 auto;
@@ -14,4 +19,8 @@ h1 {
 
 h2 {
   font-size: 25px;
+}
+
+h3 {
+  font-size: 22px;
 }
