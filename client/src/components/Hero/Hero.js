@@ -10,7 +10,7 @@ export default class Hero extends React.Component {
         }
     return (
       <div className="hero" style={_style}>
-      {this.props.children}
+        {this.props.children}
       </div>
     );
   }
