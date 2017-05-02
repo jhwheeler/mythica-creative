@@ -15,4 +15,5 @@ input[type=button]:hover {
   background-color: #3a2a4f;
   color: #fff;
   border: none;
+  transition: all .3s;
 }
