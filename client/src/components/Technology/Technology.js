@@ -8,9 +8,6 @@ const Technology = props => {
       <a href={props.url} target="_blank">
         <img src={props.logo} />
       </a>
-      <a href={props.url} target="_blank">
-        <h3>{props.name}</h3>
-      </a>
     </div>
   );
 }
