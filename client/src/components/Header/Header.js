@@ -4,20 +4,43 @@ import { Link } from 'react-router-dom';
 import css from './Header.css';
 import logo from '../../../public/images/mythica-full-logo.png'
 
-const Header = () => {
-  return (
-    <nav>
-      <Link to="/" className="logo" aria-label="Mythica Creative Homepage">
-        <img src={logo} alt="Mythica Creative" />
-      </Link>
-      <div className="links">
-        <Link to="/" className="nav-link">Home</Link>
-        <Link to="/work" className="nav-link">Work</Link>
-        <Link to="/about" className="nav-link">About</Link>
-        <Link to="/contact" className="nav-link">Contact</Link>
-      </div>
-    </nav>
-  );
-}
+export default class Header extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      scrollTop: true
+    }
+  }
 
-export default Header;
+  isScrollTop = () => {
+    const scrollY = window.scrollY;
+    return scrollY === 0;
+  }
+
+  componentDidMount() {
+    window.addEventListener('scroll', (e) => {
+      let scrollTop = this.isScrollTop();
+      if (scrollTop === this.state.scrollTop) {
+        return;
+      } else {
+      this.setState({scrollTop})
+      }
+    })
+  }
+
+  render() {
+    return (
+      <nav className={(this.state.scrollTop === true) ? 'transparent-menu' : 'solid-menu' }>
+        <Link to="/" className="logo" aria-label="Mythica Creative Homepage">
+          <img src={logo} alt="Mythica Creative" />
+        </Link>
+        <div className="links">
+          <Link to="/" className="nav-link">Home</Link>
+          <Link to="/work" className="nav-link">Work</Link>
+          <Link to="/about" className="nav-link">About</Link>
+          <Link to="/contact" className="nav-link">Contact</Link>
+        </div>
+      </nav>
+    );
+  }
+}

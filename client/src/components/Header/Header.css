@@ -1,5 +1,4 @@
 nav {
-  background-color: #20192B;
   padding: 10px;
   width: 100%;
   position: fixed;
@@ -29,4 +28,13 @@ nav {
 
 nav a {
   text-decoration: none;
+}
+
+.transparent-menu {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.solid-menu {
+  background-color: #20192B;
+  background-color: rgba(32, 25, 43, 0.7);
 }
