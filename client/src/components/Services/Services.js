@@ -2,7 +2,7 @@ import React from 'react';
 
 import css from './Services.css';
 import Button from '../Button/Button';
-import servicesData from './services.data';
+import servicesData from './Services.data';
 
 const Services = (props) => {
   return (
@@ -10,7 +10,7 @@ const Services = (props) => {
       <h1 className="services-header">SERVICES</h1>
       <div className="services-wrapper">
         {servicesData.map((service, index) =>
-          <div className="service">
+          <div key={index} className="service">
             <img src={service.icon} />
             <h3>{service.header}</h3>
             <p>{service.description}</p>

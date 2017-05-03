@@ -1,0 +1,43 @@
+.about-us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 40px 0;
+  background-color: #EFEFF1;
+}
+
+.about-content {
+  display: flex;
+  width: 80%;
+}
+
+.about-header {
+  margin: 40px 0;
+  color: #3c3050;
+}
+
+.about-image {
+  width: 80%;
+  height: 600px;
+  background-image: url("../../../public/images/who-we-are.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.founders-quote {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 260px;
+  background-color: #3C3050;
+  color: #fff;
+  font-style: italic;
+  text-align: center;
+}
+
+.founders-quote h3 {
+  width: 80%;
+}
+

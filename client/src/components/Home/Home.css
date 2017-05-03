@@ -50,50 +50,13 @@
   font-weight: 100;
 }
 
-
-/* Services, Projects, & Testimonials Sections */
-
-.projects-header {
-  text-align: center;
-  font-weight: 100;
-  margin: 100px 0px 70px;
-  color: #3c3050;
-}
-
-.testimonials-header {
-  text-align: center;
-  font-weight: 100;
-  color: #fff;
-  padding: 100px 0px 60px;
-}
-
-.projects-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  flex-grow: 1;
-  justify-content: center;
-}
-
-.testimonials {
-  background-color: #3C3050;
-}
-
-.testimonials-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: space-around;
-  padding: 0px 80px;
-}
-
-
 /* Global Reach Hero Image */
 
-.global-reach-hero-wrapper {
+.global-reach-hero {
  height: 420px;
 }
 
-.global-reach-hero-wrapper .hero {
+.global-reach-hero {
  background-attachment: fixed;
 }
 
@@ -116,78 +79,3 @@
   margin: 10px 30px;
 }
 
-
-/* About Us Section */
-
-.about-us {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 40px 40px 0;
-  background-color: #EFEFF1;
-}
-
-.about-content {
-  display: flex;
-  width: 80%;
-}
-
-.about-header {
-  margin: 40px 0;
-  color: #3c3050;
-}
-
-.technologies-wrapper {
-  display: flex;
-  flex-flow: wrap;
-  justify-content: center;
-}
-
-.technologies-header {
-  width: 100%;
-  margin: 40px 0;
-  color: #3c3050;
-}
-
-.about-image {
-  width: 80%;
-  height: 600px;
-  background-image: url("../../../public/images/who-we-are.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.founders-quote {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 260px;
-  background-color: #3C3050;
-  color: #fff;
-  font-style: italic;
-  text-align: center;
-}
-
-.founders-quote h3 {
-  width: 80%;
-}
-
-
-/* Contact Section */
-
-.home-contact {
-  height: 450px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-}
-
-.home-contact .button {
-  width: 200px;
-  background-color: #2ac3aa;
-  color: #3a2a4f;
-}

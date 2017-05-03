@@ -1,3 +1,22 @@
+.testimonials {
+  background-color: #3C3050;
+}
+
+.testimonials-header {
+  text-align: center;
+  font-weight: 100;
+  color: #fff;
+  padding: 100px 0px 60px;
+}
+
+.testimonials-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-around;
+  padding: 0px 80px;
+}
+
 .testimonial {
   height: 350px;
   width: 570px;

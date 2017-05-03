@@ -1,3 +1,17 @@
+.projects-header {
+  text-align: center;
+  font-weight: 100;
+  margin: 100px 0px 70px;
+  color: #3c3050;
+}
+
+.projects-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  justify-content: center;
+}
+
 .project {
   margin: 20px;
 }
