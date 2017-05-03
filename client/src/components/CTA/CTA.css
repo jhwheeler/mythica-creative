@@ -1,4 +1,4 @@
-.home-contact {
+.home-cta {
   height: 450px;
   display: flex;
   flex-direction: column;
@@ -7,7 +7,7 @@
   color: #fff;
 }
 
-.home-contact .button {
+.home-cta .button {
   width: 200px;
   background-color: #2ac3aa;
   color: #3a2a4f;

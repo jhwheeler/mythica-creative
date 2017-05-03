@@ -9,7 +9,7 @@ import homeCTA from '../../../public/images/home-cta.jpg';
 
 const CTA = () => {
   return(
-    <div className="home-contact">
+    <div className="home-cta">
       <Hero backgroundImage={homeCTA}>
         <h1>{copy.header}</h1>
         <br/>
