@@ -1,0 +1,31 @@
+.projects-header {
+  text-align: center;
+  font-weight: 100;
+  margin: 100px 0px 70px;
+  color: #3c3050;
+}
+
+.projects-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.project {
+  margin: 20px;
+}
+.project img {
+  height: 260px;
+  width: 360px;
+  cursor: pointer;
+  -moz-transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.project:hover img {
+  -moz-transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}

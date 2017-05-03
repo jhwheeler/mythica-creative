@@ -1,0 +1,25 @@
+.technologies-wrapper {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+}
+
+.technologies-header {
+  width: 100%;
+  margin: 40px 0;
+  color: #3c3050;
+}
+
+.technology {
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 20px 20px;
+}
+
+.technology img {
+  max-width: 100%;
+  height: 80px;
+}
