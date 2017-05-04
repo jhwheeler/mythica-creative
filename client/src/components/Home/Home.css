@@ -39,6 +39,9 @@
   text-align: center;
 }
 
+
+/* Tagline */
+
 .tagline {
   margin: 0px 100px;
   text-align: center;
@@ -49,6 +52,7 @@
 .tagline h2 {
   font-weight: 100;
 }
+
 
 /* Global Reach Hero Image */
 
@@ -78,4 +82,3 @@
 .global-reach-hero-content h2 {
   margin: 10px 30px;
 }
-
