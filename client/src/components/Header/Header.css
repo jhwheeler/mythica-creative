@@ -1,5 +1,4 @@
 nav {
-  padding: 10px;
   width: 100%;
   position: fixed;
   top: 0;
@@ -31,10 +30,14 @@ nav a {
 }
 
 .transparent-menu {
+  padding: 10px;
   background-color: rgba(255, 255, 255, 0);
 }
 
 .solid-menu {
+  padding: 7px;
   background-color: #20192B;
   background-color: rgba(32, 25, 43, 0.7);
+  transition: all .3s;
 }
+
