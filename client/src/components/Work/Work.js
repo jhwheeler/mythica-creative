@@ -8,7 +8,14 @@ import { copy,images } from './Work.data.js';
 
 const Work = props => {
   return (
-    <h1>Work</h1>
+    <div className="work">
+
+      <div className="work-hero-wrapper">
+        <Hero backgroundImage={images.workHero}>
+          <h1>{copy.bannerText}</h1>
+        </Hero>
+      </div>
+    </div>
   );
 }
 
