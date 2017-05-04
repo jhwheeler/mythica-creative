@@ -5,3 +5,15 @@
 .work-hero-wrapper .hero {
   font-weight: 100;
 }
+
+.tagline {
+  margin: 40px 100px;
+  text-align: center;
+  line-height: 40px;
+  color: #424447;
+}
+
+.tagline h2 {
+  font-weight: 100;
+}
+
