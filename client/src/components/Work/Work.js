@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Hero from '../Hero/Hero';
+import CaseStudies from '../CaseStudies/CaseStudies';
 import CTA from '../CTA/CTA';
 
 import css from './Work.css';
@@ -20,6 +21,10 @@ const Work = props => {
         <h3>{copy.tagline1}</h3>
         <h3>{copy.tagline2}</h3>
       </div>
+
+      <CaseStudies />
+
+      <CTA />
 
     </div>
   );
