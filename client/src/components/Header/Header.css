@@ -9,35 +9,48 @@ nav {
 }
 
 .links {
-  float: right
+  display: none;
 }
 
-.nav-link {
-  float: left;
-  color: #fff;
-  margin: 0px 15px;
-  font-size: 22px;
-  line-height: 50px;
-  height: 50px;
-}
-
-.nav-link:hover {
-  color: #2cc0d3;
-}
-
-nav a {
-  text-decoration: none;
-}
-
-.transparent-menu {
-  padding: 10px;
-  background-color: rgba(255, 255, 255, 0);
-}
-
-.solid-menu {
+.solid-menu, .transparent-menu {
   padding: 7px;
   background-color: #20192B;
   background-color: rgba(32, 25, 43, 0.7);
-  transition: all .3s;
+}
+
+@media only screen and (min-width:760px) {
+  .transparent-menu {
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0);
+  }
+
+  .solid-menu {
+    padding: 7px;
+    background-color: #20192B;
+    background-color: rgba(32, 25, 43, 0.7);
+    transition: all .3s;
+  }
+
+  .links {
+    display: block;
+    float: right
+  }
+
+  .nav-link {
+    float: left;
+    color: #fff;
+    margin: 0px 15px;
+    font-size: 22px;
+    line-height: 50px;
+    height: 50px;
+  }
+
+  .nav-link:hover {
+    color: #2cc0d3;
+  }
+
+  nav a {
+    text-decoration: none;
+  }
 }
 

@@ -4,8 +4,14 @@ footer {
     padding-top: 20px;
     padding-bottom: 20px;
     margin: 0 auto;
-    height: 60px;
+    height: 80px;
     width: 100%;
     color: #fff;
     background-color: #3c3050;
+}
+
+@media only screen and (min-width: 760px) {
+  footer {
+    height: 60px;
+  }
 }

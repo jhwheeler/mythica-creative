@@ -17,7 +17,7 @@ const Work = props => {
         </Hero>
       </div>
 
-      <div className="tagline">
+      <div className="work-tagline">
         <h3>{copy.tagline1}</h3>
         <h3>{copy.tagline2}</h3>
       </div>

@@ -5,7 +5,6 @@ import Technologies from '../Technologies/Technologies';
 import css from './Founders.css';
 import copy from './Founders.data.js';
 
-
 const Founders = () => {
   return(
     <div className="founders">
