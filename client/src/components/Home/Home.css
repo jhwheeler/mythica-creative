@@ -74,13 +74,19 @@
   color: #424447;
 }
 
-.tagline h2 {
+.tagline h3 {
   font-weight: 100;
+  font-size: 20px;
 }
 
 @media only screen and (min-width: 760px) {
   .tagline {
     padding: 0px 100px;
+  }
+
+  .tagline h3 {
+    font-weight: 100;
+    font-size: 24px;
   }
 }
 
