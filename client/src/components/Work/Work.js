@@ -2,10 +2,12 @@ import React from 'react';
 
 import Hero from '../Hero/Hero';
 import CaseStudies from '../CaseStudies/CaseStudies';
+import Portfolio from '../Portfolio/Portfolio';
 import CTA from '../CTA/CTA';
 
 import css from './Work.css';
 import { copy,images } from './Work.data.js';
+import categories from '../Portfolio/Portfolio.data';
 
 const Work = props => {
   return (
@@ -23,6 +25,10 @@ const Work = props => {
       </div>
 
       <CaseStudies />
+
+      <Portfolio
+        categories={categories}
+      />
 
       <CTA />
 
