@@ -1,3 +1,10 @@
+.case-study-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 60px;
+}
+
 .case-studies-header {
   text-align: center;
   padding: 50px 0 0;
@@ -9,4 +16,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+@media only screen and (min-width: 760px) {
+  .case-study-wrapper {
+    width: 80%;
+  }
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 
 import css from './CaseStudy.css';
+import Button from '../Button/Button';
 
 const CaseStudy = props => {
   return (
@@ -14,10 +15,8 @@ const CaseStudy = props => {
         <p><strong>{props.subHeader}</strong></p>
         <hr />
         <p>{props.summary}</p>
-        <p>Read More</p>
-        <div className="expanded-text">
-          {props.expandedText}
-        </div>
+        <Button label="READ MORE"></Button>
+        <div dangerouslySetInnerHTML={{__html: props.expandedText}} className="expanded-text" />
       </div>
     </div>
   );
