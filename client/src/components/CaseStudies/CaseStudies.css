@@ -1,4 +1,12 @@
 .case-studies-header {
   text-align: center;
-  padding: 50px 0;
+  padding: 50px 0 0;
+}
+
+.case-studies-wrapper {
+  padding: 0 30px 30px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }

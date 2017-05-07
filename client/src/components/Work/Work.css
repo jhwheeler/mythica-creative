@@ -2,18 +2,24 @@
   height: 420px;
 }
 
-.work-hero-wrapper .hero {
+.work-hero-wrapper .hero h1 {
   font-weight: 100;
+  line-height: 40px;
 }
 
 .work-tagline {
-  margin: 40px 100px;
+  margin: 40px 26px;
   text-align: center;
-  line-height: 40px;
+  line-height: 30px;
   color: #424447;
 }
 
-.work-tagline h2 {
+.work-tagline h3 {
   font-weight: 100;
 }
 
+@media only screen and (min-width: 760px) {
+  .work-tagline {
+    margin: 40px 100px;
+  }
+}
