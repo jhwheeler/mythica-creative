@@ -1,7 +1,7 @@
 /* First Screen Hero Image */
 
 .home-hero-wrapper {
-  height: 650px;
+  height: 80vh;
 }
 
 .hero-content {
@@ -12,52 +12,89 @@
 }
 
 .home-hero-logo {
-  height: 157px;
-  width: 169px;
+  height: 124px;
+  width: 124px;
 }
 
 .home-hero-header {
-  height: 72px;
-  width: 277px;
+  height: 43px;
+  width: 212px;
 }
 
 .home-hero-header-2 {
-  height: 55px;
-  width: 282px;
+  height: 40px;
+  width: 217px;
 }
 
 .home-hero-subheader {
-  height: 40px;
-  width: 280px;
+  height: 33px;
+  width: 219px;
   margin: 0 auto;
   padding: 10px 0px;
   font-weight: 100;
-  font-size: 22px;
-  letter-spacing: 2px;
+  font-size: 16px;
+  letter-spacing: 1px;
   background-color: #fff;
   color: #2b0056;
   text-align: center;
+}
+
+@media only screen and (min-width: 760px) {
+  .home-hero-logo {
+    height: 157px;
+    width: 169px;
+  }
+
+  .home-hero-header {
+    height: 72px;
+    width: 277px;
+  }
+
+  .home-hero-header-2 {
+    height: 55px;
+    width: 282px;
+  }
+
+  .home-hero-subheader {
+    height: 40px;
+    width: 280px;
+    font-size: 22px;
+    letter-spacing: 2px;
+  }
 }
 
 
 /* Tagline */
 
 .tagline {
-  margin: 0px 100px;
+  padding: 0px 30px;
   text-align: center;
   line-height: 40px;
+  text-align: center;
   color: #424447;
 }
 
-.tagline h2 {
+.tagline h3 {
   font-weight: 100;
+  font-size: 20px;
+}
+
+@media only screen and (min-width: 760px) {
+  .tagline {
+    padding: 0px 100px;
+  }
+
+  .tagline h3 {
+    font-weight: 100;
+    font-size: 24px;
+  }
 }
 
 
 /* Global Reach Hero Image */
 
 .global-reach-hero {
- height: 420px;
+ height: 100vh;
 }
 
 .global-reach-hero {
@@ -81,4 +118,15 @@
 
 .global-reach-hero-content h2 {
   margin: 10px 30px;
+}
+
+@media only screen and (min-width: 760px) {
+
+  .global-reach-hero {
+   height: 420px;
+  }
+
+  .global-reach-hero-content h2 {
+    margin: 10px 20px;
+  }
 }

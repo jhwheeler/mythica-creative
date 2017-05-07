@@ -1,13 +1,18 @@
-.home-cta {
+.cta {
   height: 450px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   color: #fff;
+  text-align: center;
 }
 
-.home-cta .button {
+.cta h1 {
+  line-height: 40px;
+}
+
+.cta .button {
   width: 200px;
   background-color: #2ac3aa;
   color: #3a2a4f;
