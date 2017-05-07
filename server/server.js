@@ -7,7 +7,7 @@ PORT = process.env.PORT || 7498;
 
 app.use(express.static(path.join(__dirname, '..', 'client', 'public')));
 
-app.get('/', (req, res) => {
+app.get(['/', '/work', '/about', '/contact'], (req, res) => {
   res.sendFile(path.resolve(__dirname, '..', 'client', 'public', 'index.html'))});
 
 app.listen(PORT, () => {
