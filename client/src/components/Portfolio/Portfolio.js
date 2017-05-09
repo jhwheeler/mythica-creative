@@ -15,7 +15,6 @@ export default class Portfolio extends React.Component {
   }
 
   onTabSelect = tab => {
-    debugger;
     this.setState({selectedCategory: tab});
   }
 
@@ -25,7 +24,7 @@ export default class Portfolio extends React.Component {
         className="category"
         onClick={this.onTabSelect.bind(null, tab)}
         key={index}>
-          <h1>{tab}</h1>
+          <h3>{tab.toUpperCase()}</h3>
       </div>
       )
     )}
@@ -36,18 +35,23 @@ export default class Portfolio extends React.Component {
 
     return (
       <div className="portfolio">
-        <div className="portfolio-nav">
-          {this.renderTabs(categoryKeys)}
+        <div className="portfolio-header">
+          <h2>Portfolio Gallery</h2>
         </div>
-        <div className="portfolio-images">
-          {portfolioImages.map((image, index) =>
-            <div className="portfolio-image">
-              <img
-                src={image.src}
-                alt={image.name}
-                key={index} />
-            </div>
-          )}
+        <div className="portfolio-wrapper">
+          <div className="portfolio-nav">
+            {this.renderTabs(categoryKeys)}
+          </div>
+          <div className="portfolio-images">
+            {portfolioImages.map((image, index) =>
+              <div className="portfolio-image">
+                <img
+                  src={image.src}
+                  title={image.name}
+                  key={index} />
+              </div>
+            )}
+          </div>
         </div>
       </div>
     );
