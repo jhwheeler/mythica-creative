@@ -1,0 +1,40 @@
+.portfolio-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  max-width: 100%;
+}
+
+
+.portfolio-header {
+  margin-top: 20px;
+}
+
+.portfolio-nav .category {
+  display: inline-block;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.portfolio-nav .category:hover {
+  color: #2ac3aa;
+}
+
+.portfolio-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  max-width: 100%;
+}
+
+.portfolio-image img {
+  max-width: 300px;
+}
+
+@media only screen and (min-width: 760px) {
+  .portfolio-wrapper {
+    margin: 0 100px;
+  }
+}
