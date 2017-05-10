@@ -6,9 +6,13 @@
   max-width: 100%;
 }
 
-
 .portfolio-header {
   margin-top: 20px;
+}
+
+.portfolio-nav {
+  text-align: center;
+  margin: 30px 0;
 }
 
 .portfolio-nav .category {
@@ -23,10 +27,15 @@
 
 .portfolio-images {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  align-content: center;
+  align-content: space-around;
   max-width: 100%;
+}
+
+.portfolio-image {
+  margin: 0 5px;
 }
 
 .portfolio-image img {
