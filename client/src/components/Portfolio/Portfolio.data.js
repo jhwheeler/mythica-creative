@@ -36,7 +36,7 @@ import LogoAlhoff2 from '../../../public/images/portfolio/Logo_Alhoff2.jpg';
 import LogoAlhoffConcept from '../../../public/images/portfolio/Logo_Alhoff-Concept.jpg';
 import LogoConnect from '../../../public/images/portfolio/Logo_Connect.jpg';
 import LogoFemanna from '../../../public/images/portfolio/Logo_Femanna.jpg';
-import LogoFemannaConcept from '../../../public/images/portfolio/Logo_Femanna.jpg';
+import LogoFemannaConcept from '../../../public/images/portfolio/Logo_Femanna-Concept.jpg';
 import LogoFemannaLogotype from '../../../public/images/portfolio/Logo_Femanna-Logotype.jpg';
 import LogoFemannaMeaning from '../../../public/images/portfolio/Logo_Femanna-Meaning.jpg';
 import LogoFemannaVariations from '../../../public/images/portfolio/Logo_Femanna-Variations.jpg';
@@ -53,7 +53,7 @@ import LogoLivingHarmony from '../../../public/images/portfolio/Logo_LivingHarmo
 import LogoLivingHarmony2 from '../../../public/images/portfolio/Logo_LivingHarmony2.jpg';
 import LogoLivingHarmonyColors from '../../../public/images/portfolio/Logo_LivingHarmony-Colors.jpg';
 import LogoLivingHarmonyConcept from '../../../public/images/portfolio/Logo_LivingHarmony-Concept.jpg';
-import LogoOnfire from '../../../public/images/portfolio/Logo_OnFire.jpg';
+import LogoOnFire from '../../../public/images/portfolio/Logo_OnFire.jpg';
 import LogoTaroLink from '../../../public/images/portfolio/Logo_TaroLink.jpg';
 import LogoWX from '../../../public/images/portfolio/Logo_WX.jpg';
 import LogoWX2 from '../../../public/images/portfolio/Logo_WX2.jpg';
@@ -62,7 +62,6 @@ import LogoWXConcept from '../../../public/images/portfolio/Logo_WX-Concept.jpg'
 
 /* Web */
 import WebAlhoff from '../../../public/images/portfolio/Web_Alhoff.jpg';
-import WebAlhoff2 from '../../../public/images/portfolio/Web_Alhoff2.jpg';
 import WebDaraHelp from '../../../public/images/portfolio/Web_DaraHelp.jpg';
 import WebDaraHelp2 from '../../../public/images/portfolio/Web_DaraHelp2.jpg';
 import WebFemanna from '../../../public/images/portfolio/Web_Femanna.jpg';
@@ -103,6 +102,10 @@ const categories = {
       src: LogoFemanna
     },
     {
+      name: 'Femanna Logo Variations',
+      src: LogoFemannaVariations
+    },
+    {
       name: 'Femanna Logo Concept',
       src: LogoFemannaConcept
     },
@@ -115,8 +118,16 @@ const categories = {
       src: LogoFemannaMeaning
     },
     {
-      name: 'Femanna Logo Variations',
-      src: LogoFemannaVariations
+      name: 'Future Art Logo',
+      src: LogoFutureArt
+    },
+    {
+      name: 'Future Art Logo Concept',
+      src: LogoFutureArtConcept
+    },
+    {
+      name: 'Future Art Pictograms',
+      src: LogoFutureArtPictograms
     },
     {
       name: 'Green Global Logo',
@@ -127,114 +138,88 @@ const categories = {
       src: LogoHTA
     },
     {
-      name: 'HTA',
-      src: LogoHTA
+      name: 'Infinite Love Healing Logo',
+      src: LogoInfiniteLoveHealing
     },
     {
-      name: 'HTA',
-      src: LogoHTA
+      name: 'Infinite Love Healing Logo Concept',
+      src: LogoInfiniteLoveHealingConcept
     },
     {
-      name: 'HTA',
-      src: LogoHTA
+      name: 'Infinite Love Healing Logotype',
+      src: LogoInfiniteLoveHealingLogotype
     },
     {
-      name: 'HTA',
-      src: LogoHTA
+      name: 'Living Harmony Logo',
+      src: LogoLivingHarmony
     },
     {
-      name: 'HTA',
-      src: LogoHTA
+      name: 'Living Harmony Logo B/W',
+      src: LogoLivingHarmony2
     },
     {
-      name: 'HTA',
-      src: LogoHTA
+      name: 'Living Harmony Colors',
+      src: LogoLivingHarmonyColors
     },
     {
-      name: 'HTA',
-      src: LogoHTA
+      name: 'Living Harmony Logo Concept',
+      src: LogoLivingHarmonyConcept
     },
     {
-      name: 'HTA',
-      src: LogoHTA
+      name: 'On Fire Logo',
+      src: LogoOnFire
     },
     {
-      name: 'HTA',
-      src: LogoHTA
+      name: 'Wheeler Expeditions Logo',
+      src: LogoWX
     },
     {
-      name: 'HTA',
-      src: LogoHTA
+      name: 'Wheeler Expeditions Logo Variations',
+      src: LogoWX2
     },
     {
-      name: 'HTA',
-      src: LogoHTA
+      name: 'Wheeler Expeditions Colors',
+      src: LogoWX3
     },
     {
-      name: 'HTA',
-      src: LogoHTA
-    },
-    {
-      name: 'HTA',
-      src: LogoHTA
-    },
-    {
-      name: 'HTA',
-      src: LogoHTA
-    },
-    {
-      name: 'HTA',
-      src: LogoHTA
-    },
-    {
-      name: 'HTA',
-      src: LogoHTA
-    },
-    {
-      name: 'HTA',
-      src: LogoHTA
-    },
-    {
-      name: 'HTA',
-      src: LogoHTA
-    },
-    {
-      name: 'HTA',
-      src: LogoHTA
-    },
-    {
-      name: 'HTA',
-      src: LogoHTA
-    },
-    {
-      name: 'HTA',
-      src: LogoHTA
-    },
-    {
-      name: 'HTA',
-      src: LogoHTA
-    },
-    {
-      name: 'HTA',
-      src: LogoHTA
-    },
-    {
-      name: 'HTA',
-      src: LogoHTA
-    },
-    {
-      name: 'HTA',
-      src: LogoHTA
+      name: 'Wheeler Expeditions Logo Concept',
+      src: LogoWXConcept
     },
   ],
   print: [
     {
-      name: 'Alhoff',
+      name: 'Alhoff Business Cards',
       src: BusinessCardsAlhoff
     },
     {
-      name: 'Femanna',
+      name: 'Femanna Business Cards',
       src: BusinessCardsFemanna
+    },
+  ],
+  web: [
+    {
+      name: 'Alhoff Home Page',
+      src: WebAlhoff
+    },
+    {
+      name: 'Dara Help Home Page',
+      src: WebDaraHelp2
+    },
+    {
+      name: 'Dara Help Website Inner Pages',
+      src: WebDaraHelp
+    },
+    {
+      name: 'Femanna Home Page',
+      src: WebFemanna
+    },
+    {
+      name: 'Femanna Landing Page',
+      src: WebFemanna2
+    },
+    {
+      name: 'Femanna Inner Pages',
+      src: WebFemanna3
     },
   ]
 }
