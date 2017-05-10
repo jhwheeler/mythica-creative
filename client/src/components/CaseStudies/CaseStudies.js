@@ -20,6 +20,7 @@ const CaseStudies = props => {
                 subHeader={caseStudy.subHeader}
                 summary={caseStudy.summary}
                 expandedText={caseStudy.expandedText}
+                link={caseStudy.link}
                 key={index}
               />
             {/*<Gallery /> */}
