@@ -1,4 +1,4 @@
-input[type=button] {
+button {
   width: 110px;
   height: 40px;
   background-color: #fff;
@@ -11,7 +11,7 @@ input[type=button] {
   display: block;
 }
 
-input[type=button]:hover {
+button:hover {
   background-color: #3a2a4f;
   color: #fff;
   border: none;
