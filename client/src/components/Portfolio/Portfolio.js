@@ -6,12 +6,21 @@ export default class Portfolio extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      selectedCategory: "logo"
+      selectedCategory: "all"
     }
   }
 
   getSelectedCategoryData = () => {
-    return this.props.categories[this.state.selectedCategory];
+    if (this.state.selectedCategory === "all") {
+      const categoryKeys = Object.keys(this.props.categories);
+      let categoryArray = [];
+      for (let i = 0; i < categoryKeys.length; i++) {
+        categoryArray = categoryArray.concat(this.props.categories[categoryKeys[i]]);
+      }
+      return categoryArray;
+    } else {
+      return this.props.categories[this.state.selectedCategory];
+    }
   }
 
   onTabSelect = tab => {
