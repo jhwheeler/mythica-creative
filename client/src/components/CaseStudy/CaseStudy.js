@@ -15,8 +15,13 @@ const CaseStudy = props => {
         <p><strong>{props.subHeader}</strong></p>
         <hr />
         <p>{props.summary}</p>
-        <Button label="READ MORE"></Button>
+        <Button label="READ MORE" />
         <div dangerouslySetInnerHTML={{__html: props.expandedText}} className="expanded-text" />
+        {props.link !== undefined ?
+          <a href={props.link} target="_blank">
+            <Button label="SEE IT LIVE" />
+          </a>
+          : null}
       </div>
     </div>
   );
