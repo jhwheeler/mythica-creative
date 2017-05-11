@@ -36,6 +36,11 @@ export default class Services extends React.Component {
               <h3>{service.header}</h3>
               <p>{service.description}</p>
               <Button label="EXPLORE" onClick={() => this.openModal()}/>
+              <Modal isOpen={this.state.isModalOpen} onClose={() => this.closeModal()}>
+                <h1>Modal title</h1>
+                <p>Hello</p>
+                <button onClick={() => this.closeModal()}>Close</button>
+              </Modal>
             </div>
           )}
         </div>
