@@ -37,8 +37,9 @@ export default class CaseStudy extends React.Component {
           <p><strong>{this.props.subHeader}</strong></p>
           <hr />
           <p>{this.props.summary}</p>
-          <Button label="READ MORE" onClick={this.expandText.bind(this)} />
+          <br />
           {expandedText}
+          <Button label="READ MORE" onClick={this.expandText.bind(this)} />
           {this.props.link !== undefined ?
             <a href={this.props.link} target="_blank">
               <Button label="SEE IT LIVE" />
