@@ -2,7 +2,15 @@ import React from 'react';
 
 import css from './Modal.css';
 
-class Modal extends React.Component {
+export default class Modal extends React.Component {
+  close(e) {
+    e.preventDefault();
+
+    if (this.props.onClose) {
+      this.props.onClose();
+    }
+  }
+
   render() {
     if(this.props.isOpen === false) {
       return null;
@@ -15,14 +23,4 @@ class Modal extends React.Component {
       </div>
     );
   }
-
-  close(e) {
-    e.preventDefault();
-
-    if (this.props.onClose) {
-      this.props.onClose();
-  }
 }
-}
-
-export default Modal;
