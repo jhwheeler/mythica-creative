@@ -5,25 +5,38 @@ import ProjectFreedom from '../../../public/images/Project-FreedomResearchFounda
 import ProjectFlow from '../../../public/images/Project-FlowAlchemy.jpg';
 import ProjectFemanna from '../../../public/images/Project-Femanna.jpg';
 
-const projectsData = [
+import PresentationWheeler from '../../../public/images/presentations/Presentation_WheelerExpeditions.jpg';
+import PresentationInfinite from '../../../public/images/presentations/Presentation_InfiniteLoveHealing.jpg';
+import PresentationAlhoff from '../../../public/images/presentations/Presentation_Alhoff.jpg';
+import PresentationFreedom from '../../../public/images/presentations/Presentation_FreedomResearchFoundation.jpg';
+import PresentationFlow from '../../../public/images/presentations/Presentation_FlowAlchemy.jpg';
+import PresentationFemanna from '../../../public/images/presentations/Presentation_Femanna.jpg';
+
+const images = [
   {
-    preview: ProjectWheeler
- },
-  {
-    preview: ProjectInfinite
+    preview: ProjectWheeler,
+    presentation: PresentationWheeler
   },
   {
-    preview: ProjectAlhoff
+    preview: ProjectInfinite,
+    presentation: PresentationInfinite
   },
   {
-    preview: ProjectFreedom
+    preview: ProjectAlhoff,
+    presentation: PresentationAlhoff
   },
   {
-    preview: ProjectFlow
+    preview: ProjectFreedom,
+    presentation: PresentationFreedom
   },
   {
-    preview: ProjectFemanna
+    preview: ProjectFlow,
+    presentation: PresentationFlow
+  },
+  {
+    preview: ProjectFemanna,
+    presentation: PresentationFemanna
   }
 ]
 
-export default projectsData;
+export default images;
