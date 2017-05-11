@@ -9,16 +9,14 @@ export default class CaseStudy extends React.Component {
     this.state = {
       readMore: false
     }
-    this.expandText = this.expandText.bind(this);
   }
 
-  expandText() {
+  expandText(event) {
     event.preventDefault();
     let readMore = this.state.readMore;
     this.setState({
       readMore: readMore === true ? false : true
     });
-    console.log("hi");
   }
 
   render() {
@@ -31,7 +29,7 @@ export default class CaseStudy extends React.Component {
     return (
       <div className="case-study">
         <div className="main-image">
-          <img src={this.props.mainImage} onClick={this.expandtext} alt={this.props.mainImageName} />
+          <img src={this.props.mainImage} alt={this.props.mainImageName} />
         </div>
         <div className="case-study-text">
           <h1>{this.props.header}</h1>
@@ -39,7 +37,7 @@ export default class CaseStudy extends React.Component {
           <p><strong>{this.props.subHeader}</strong></p>
           <hr />
           <p>{this.props.summary}</p>
-          <Button label="READ MORE" />
+          <Button label="READ MORE" onClick={this.expandText.bind(this)} />
           {expandedText}
           {this.props.link !== undefined ?
             <a href={this.props.link} target="_blank">
