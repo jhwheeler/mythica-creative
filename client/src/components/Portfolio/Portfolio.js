@@ -41,6 +41,7 @@ export default class Portfolio extends React.Component {
   render() {
     const portfolioImages = this.getSelectedCategoryData();
     const categoryKeys = Object.keys(this.props.categories);
+    categoryKeys.unshift("all");
 
     return (
       <div className="portfolio">

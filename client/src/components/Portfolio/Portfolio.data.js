@@ -80,7 +80,6 @@ import WebWX2 from '../../../public/images/portfolio/Web_WX2.jpg';
 import WebWX3 from '../../../public/images/portfolio/Web_WX3.jpg';
 
 const categories = {
-  all: [],
   logo: [
     {
       name: 'Alhoff Logo',
