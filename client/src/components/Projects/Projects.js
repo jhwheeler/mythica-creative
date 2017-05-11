@@ -13,16 +13,11 @@ export default class Projects extends React.Component {
     }
   }
 
-  openModal() {
+  toggleModal() {
     this.setState({
-      isModalOpen: true
+      isModalOpen: !this.state.isModalOpen
     });
-  }
-
-  closeModal() {
-    this.setState({
-      isModalOpen: false
-    });
+    return this.state.isModalOpen;
   }
 
   render() {
@@ -33,10 +28,10 @@ export default class Projects extends React.Component {
             {images.map((project, index) =>
               <div key={index} className="project">
                 <img src={project.preview} />
-                <Button label="EXPLORE" onClick={() => this.openModal()} />
-                <Modal isOpen={this.state.isModalOpen} onClose={() => this.closeModal()}>
+                <Button label="EXPLORE" onClick={() => this.toggleModal()} />
+                <Modal isOpen={this.state.isModalOpen} onClose={() => this.toggleModal()}>
                   <img src={project.presentation} />
-                  <button onClick={() => this.closeModal()}>Close</button>
+                  <button onClick={() => this.toggleModal()}>Close</button>
                 </Modal>
               </div>
             )}
