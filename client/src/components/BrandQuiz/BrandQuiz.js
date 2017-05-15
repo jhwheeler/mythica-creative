@@ -19,6 +19,8 @@ export default class BrandQuiz extends Component {
   }
 
   render() {
+    const { onSubmit } = this.props;
+    const { question } = this.state;
     return (
       <div className="brand-quiz">
         {
