@@ -1,47 +1,20 @@
 import React from 'react';
 
 import css from './Services.css';
-import Button from '../Button/Button';
-import Modal from '../Modal/Modal';
+import Service from '../Service/Service';
 import servicesData from './Services.data';
 
 export default class Services extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      isModalOpen: false
-    }
-  }
-
-  openModal() {
-    this.setState({
-      isModalOpen: true
-    });
-  }
-
-  closeModal() {
-    this.setState({
-      isModalOpen: false
-    });
-  }
-
   render() {
     return (
       <div className="services">
         <h1 className="services-header">SERVICES</h1>
         <div className="services-wrapper">
           {servicesData.map((service, index) =>
-            <div key={index} className="service">
-              <img src={service.icon} />
-              <h3>{service.header}</h3>
-              <p>{service.description}</p>
-              <Button label="EXPLORE" onClick={() => this.openModal()}/>
-              <Modal isOpen={this.state.isModalOpen} onClose={() => this.closeModal()}>
-                <h1>Modal title</h1>
-                <p>Hello</p>
-                <button onClick={() => this.closeModal()}>Close</button>
-              </Modal>
-            </div>
+            <Service
+              service={service}
+              key={index}
+            />
           )}
         </div>
       </div>

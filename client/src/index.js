@@ -1,8 +1,11 @@
 import React from 'react';
 import { render } from 'react-dom';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
+import { Provider } from 'react-redux';
+import { ConnectedRouter } from 'connected-react-router';
 
 import css from './index.css';
+import store, { history } from './store';
 
 import Header from './components/Header/Header';
 import Home from './components/Home/Home';
@@ -14,7 +17,8 @@ import Footer from './components/Footer/Footer';
 
 const Root = () => {
   return (
-      <Router>
+    <Provider store={store}>
+      <ConnectedRouter history={history}>
         <div>
           <Header />
           <Switch>
@@ -26,7 +30,8 @@ const Root = () => {
           </Switch>
           <Footer />
         </div>
-      </Router>
+      </ConnectedRouter>
+    </Provider>
   )
 }
 

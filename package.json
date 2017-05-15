@@ -16,13 +16,20 @@
   },
   "dependencies": {
     "babel-preset-stage-2": "^6.24.1",
+    "connected-react-router": "^4.2.1",
     "express": "^4.15.2",
+    "history": "^4.6.1",
     "path": "^0.12.7",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
+    "react-redux": "^5.0.4",
     "react-router": "^4.1.1",
     "react-router-dom": "^4.1.1",
     "react-slick": "^0.14.11",
+    "redux": "^3.6.0",
+    "redux-devtools-extension": "^2.13.2",
+    "redux-form": "^6.7.0",
+    "redux-logger": "^3.0.1",
     "webpack": "^2.4.1"
   },
   "devDependencies": {
