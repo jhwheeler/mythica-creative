@@ -8,4 +8,6 @@ The Mythica Creative website is being rebuilt as a lightweight SPA on:
 
 * Node.js
 * Express
+* MongoDB
 * React
+* Redux
