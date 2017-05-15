@@ -10,7 +10,7 @@ export const addAnswer = (question, text)=> {
   }
 }
 
-export const addAnswer = (question, answer) => {
+export const removeAnswer = (question, answer) => {
   return {
     type: REMOVE_ANSWER,
     question,
@@ -18,7 +18,7 @@ export const addAnswer = (question, answer) => {
   }
 }
 
-export const addAnswer = (question, answer) => {
+export const updateAnswer = (question, answer) => {
   return {
     type: UPDATE_ANSWER,
     question,
