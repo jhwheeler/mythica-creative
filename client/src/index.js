@@ -28,7 +28,7 @@ const Root = () => {
           </Switch>
           <Footer />
         </div>
-      </Router>
+      </ConnectedRouter>
     </Provider>
   )
 }
