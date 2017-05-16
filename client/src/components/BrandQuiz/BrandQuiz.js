@@ -1,10 +1,14 @@
 import React, { Component } from 'react';
 
+import welcomeHero from '../../../public/images/hero/welcome-hero.jpg';
+
 import Question from '../Question/Question';
 
 export default class BrandQuiz extends Component {
   constructor(props) {
     super(props);
+    this.nextQuestion = this.nextQuestion.bind(this);
+    this.lastQuestion = this.lastQuestion.bind(this);
     this.state = {
       question: 1
     }
@@ -26,7 +30,8 @@ export default class BrandQuiz extends Component {
         {
           question === 1 &&
             <Question
-              onSubmit={() => this.nextPage()}
+              onSubmit={this.nextQuestion}
+              backgroundImage={welcomeHero}
               label="What's your name?"
               name="name"
               component= {name =>
@@ -40,8 +45,9 @@ export default class BrandQuiz extends Component {
         {
           question === 2 &&
             <Question
-              lastQuestion={() => this.lastQuestion()}
-              onSubmit={() => this.nextPage()}
+              lastQuestion={this.lastQuestion}
+              onSubmit={this.nextQuestion}
+              backgroundImage={welcomeHero}
               label="What's your email?"
               name="email"
               component= {email =>
@@ -55,8 +61,9 @@ export default class BrandQuiz extends Component {
         {
           question === 3 &&
             <Question
-              lastQuestion={() => this.lastQuestion()}
-              onSubmit={() => this.nextPage()}
+              lastQuestion={this.lastQuestion}
+              onSubmit={this.nextQuestion}
+              backgroundImage={welcomeHero}
               label="Where do you live?"
               name="location"
               component= {location =>
