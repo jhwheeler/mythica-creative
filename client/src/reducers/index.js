@@ -1,11 +1,11 @@
 import { combineReducers } from 'redux';
 import { reducer as formReducer } from 'redux-form';
 
-import answers from './answers';
+import users from './users';
 import tips from './tips';
 
 const reducers = {
-  answers,
+  users,
   tips,
   form: formReducer,
 };
