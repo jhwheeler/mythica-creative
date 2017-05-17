@@ -1,8 +1,6 @@
-const initialState = {
-  answers: [],
-}
+import { ADD_USER, ADD_ANSWER, UPDATE_ANSWER } from '../actions/userActions';
 
-const users = (state = initialState, action) => {
+const users = (state = {}, action) => {
   switch (action.type) {
     case 'ADD_USER':
       return [
