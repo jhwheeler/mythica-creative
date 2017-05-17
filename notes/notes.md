@@ -42,10 +42,10 @@
 * Add user
 * Add answer
 * Update answer
-* Show tip area
-* Hide tip area
-* Show tip
-* Hide tip
+* Show advice area
+* Hide advice area
+* Show advice
+* Hide advice
 
 
 
