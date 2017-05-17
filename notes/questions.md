@@ -1,9 +1,12 @@
 1. Whose problem are you solving?
 
-* Age group: 3 images [radio]
+* Age group: 3 images [checkbox]
 * Sex: M/F [images]
 * Income [slider]
 * Describe more [textarea]
+
+tip1: whatever
+tip2: more stuff
 
 2. What solution do you offer to this challenge?
 
@@ -26,3 +29,52 @@
 * [input]
 * [input]
 * [input]
+
+{
+  users: [
+    {
+      name: john,
+      email: john@johnson.com
+      answers: [
+        {
+          questionId: 1,
+          answer: [
+            {
+              subQuestionId: 1,
+              answer: "elderly",
+            },
+            {
+              subQuestionId: 1,
+              answer: "elderly",
+            },
+          ]
+        },
+        {
+          questionId: 2,
+          answer: [
+            {
+              subQuestionId: 1,
+              answer: "elderly",
+            },
+            {
+              subQuestionId: 1,
+              answer: "elderly",
+            },
+          ]
+        }
+      ]
+    }
+  ]
+}
+
+
+
+
+
+
+# Tips
+
+* coming up and bouncing, can be dragged up
+* Need context? Need clarification?
+
+
