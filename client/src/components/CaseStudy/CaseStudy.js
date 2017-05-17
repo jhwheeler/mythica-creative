@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 import css from './CaseStudy.css';
 import Button from '../Button/Button';
 
-export default class CaseStudy extends React.Component {
+export default class CaseStudy extends Component {
   constructor() {
     super();
     this.state = {
@@ -49,4 +50,13 @@ export default class CaseStudy extends React.Component {
       </div>
     );
   }
+}
+
+CaseStudy.PropTypes = {
+  expandedText: PropTypes.string.isRequired,
+  mainImage: PropTypes.string.isRequired,
+  header: PropTypes.string.isRequired,
+  subHeader: PropTypes.string.isRequired,
+  summary: PropTypes.string.isRequired,
+  link: PropTypes.string,
 }

@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 import css from './Portfolio.css';
 
-export default class Portfolio extends React.Component {
+export default class Portfolio extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -66,4 +67,8 @@ export default class Portfolio extends React.Component {
       </div>
     );
   }
+}
+
+Portfolio.PropTypes = {
+  categories: PropTypes.object.isRequired,
 }

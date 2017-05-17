@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Field, reduxForm } from 'redux-form';
 import PropTypes from 'prop-types';
 
@@ -43,7 +43,9 @@ const Question = props => {
 Question.PropTypes = {
   name: PropTypes.string.isRequired,
   label: PropTypes.string,
-  buttonText: PropTypes.string
+  placeholder: PropTypes.string,
+  backButtonText: PropTypes.string,
+  buttonText: PropTypes.string,
 }
 
 export default reduxForm({

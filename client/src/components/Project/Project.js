@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 // import css from './Project.css';
 import Button from '../Button/Button';
@@ -32,4 +33,10 @@ export default class Project extends Component {
       </div>
     );
   }
+}
+
+Project.PropTypes = {
+  preview: PropTypes.string.isRequired,
+  presentation: PropTypes.string.isRequired,
+  index: PropTypes.number.isRequired,
 }

@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 import css from './Modal.css';
 
-export default class Modal extends React.Component {
+export default class Modal extends Component {
   close(e) {
     e.preventDefault();
 
@@ -23,4 +24,10 @@ export default class Modal extends React.Component {
       </div>
     );
   }
+}
+
+Modal.PropTypes = {
+  onClose: PropTypes.func,
+  isOpen: PropTypes.bool,
+  children: PropTypes.any,
 }
