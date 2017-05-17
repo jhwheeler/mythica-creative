@@ -4,7 +4,7 @@
       "id": 1,
       "type": "multiple",
       "text": "Whose problem are you solving?",
-      "tips": [],
+      "advice": [],
       "subQuestions": [
         {
           "id": 1,
@@ -15,7 +15,7 @@
             "Middle Aged",
             "Elderly"
           ],
-          "tips": [
+          "advice": [
             {
               "id": 1,
               "text": "Be specific"
@@ -35,7 +35,7 @@
             "Female",
             "Other"
           ],
-          "tips": [
+          "advice": [
             {
               "id": 1,
               "text": "Be specific"
@@ -50,7 +50,7 @@
             "0",
             "1000000"
           ],
-          "tips": [
+          "advice": [
             {
               "id": 1,
               "text": "Be specific"
@@ -62,7 +62,7 @@
           "type": "textarea",
           "text": "Tell us a little about this person.",
           "options": [],
-          "tips": [
+          "advice": [
             {
               "id": 1,
               "text": "Be specific"
@@ -80,7 +80,7 @@
       "type": "textarea",
       "text": "What solution do you offer to their challenge?",
       "options": [],
-      "tips": [
+      "advice": [
         {
           "id": 1,
           "text": "Be specific"
@@ -97,7 +97,7 @@
       "type": "textarea",
       "text": "What is your vision for the brand?",
       "options": [],
-      "tips": [
+      "advice": [
         {
           "id": 1,
           "text": "In an ideal world, if everything goes to plan, what will life be like for those whose problem you're solving?"
@@ -117,7 +117,7 @@
       "type": "textarea",
       "text": "What is your mission? What are the steps you're taking to make your vision a reality?",
       "options": [],
-      "tips": [
+      "advice": [
         {
           "id": 1,
           "text": "Your brand's mission entails the tangible means you're using to make your vision real. While your vision answers the question 'Why?', the mission answers the question 'How?'"
@@ -142,7 +142,7 @@
         "contemporary",
         "rustic"
       ],
-      "tips": [
+      "advice": [
         {
           "id": 1,
           "text": "Go with whatever style you feel fits you and your clients best. If there's nothing that goes exactly with what you have in mind, simply choose whatever's closest. You may choose more than one option."
@@ -155,7 +155,7 @@
       "type": "multiple",
       "text": "How do you envision your business in 3 years? In other words, what your top 3 long-term business goals?",
       "options": [],
-      "tips": [
+      "advice": [
         {
           "id": 1,
           "text": "Try and be as concrete as possible. Focus on goals that are quantifiable and measurable, like how many clients you'll have, desired revenue, breadth of reach, etc."
@@ -167,21 +167,21 @@
           "type": "input",
           "text": "1.",
           "options": [],
-          "tips": []
+          "advice": []
         },
         {
           "id": 2,
           "type": "input",
           "text": "2.",
           "options": [],
-          "tips": []
+          "advice": []
         },
         {
           "id": 3,
           "type": "input",
           "text": "3.",
           "options": [],
-          "tips": []
+          "advice": []
         }
       ]
     },
@@ -190,7 +190,7 @@
       "type": "multiple",
       "text": "What products do you need designed for your brand?",
       "options": [],
-      "tips": [
+      "advice": [
         {
           "id": 1,
           "text": "Typical requirements include: visual identity (logo, colors, style guide), brand positioning (target market, user profiles, etc.), website, web and/or mobile app, ebook(s), pdf report(s), email marketing templates, etc."
@@ -202,35 +202,35 @@
           "type": "input",
           "text": "1.",
           "options": [],
-          "tips": []
+          "advice": []
         },
         {
           "id": 2,
           "type": "input",
           "text": "2.",
           "options": [],
-          "tips": []
+          "advice": []
         },
         {
           "id": 3,
           "type": "input",
           "text": "3.",
           "options": [],
-          "tips": []
+          "advice": []
         },
         {
           "id": 4,
           "type": "input",
           "text": "4.",
           "options": [],
-          "tips": []
+          "advice": []
         },
         {
           "id": 5,
           "type": "input",
           "text": "5.",
           "options": [],
-          "tips": []
+          "advice": []
         }
       ]
     },
@@ -242,7 +242,7 @@
         "0",
         "100000"
       ],
-      "tips": [
+      "advice": [
         {
           "id": 1,
           "text": "While it may be difficult to specify an exact budget, use the slider to choose a rough range. This will help you create a more accurate action plan, and help us propose the best solution for you."
