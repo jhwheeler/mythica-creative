@@ -19,12 +19,20 @@ const Question = props => {
         />
         {props.backButtonText &&
           <div className="quiz-button">
-            <button type="button" className="question-back">{props.backButtonText}</button>
+            <button
+              type="button"
+              className="question-back">
+              {props.backButtonText}
+            </button>
           </div>
         }
         {props.buttonText &&
           <div className="quiz-button">
-            <button type="submit" className="question-submit">{props.buttonText}</button>
+            <button
+              type="submit"
+              className="question-submit">
+              {props.buttonText}
+            </button>
           </div>
         }
       </form>
