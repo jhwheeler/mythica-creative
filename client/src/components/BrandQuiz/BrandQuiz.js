@@ -7,8 +7,6 @@ import Question from '../Question/Question';
 export default class BrandQuiz extends Component {
   constructor(props) {
     super(props);
-    this.nextQuestion = this.nextQuestion.bind(this);
-    this.lastQuestion = this.lastQuestion.bind(this);
     this.state = {
       question: 1
     }
@@ -30,7 +28,7 @@ export default class BrandQuiz extends Component {
         {
           question === 1 &&
             <Question
-              onSubmit={this.nextQuestion}
+              onSubmit={this.nextQuestion.bind(this)}
               backgroundImage={welcomeHero}
               label="What's your name?"
               name="name"
@@ -45,8 +43,8 @@ export default class BrandQuiz extends Component {
         {
           question === 2 &&
             <Question
-              lastQuestion={this.lastQuestion}
-              onSubmit={this.nextQuestion}
+              lastQuestion={this.lastQuestion.bind(this)}
+              onSubmit={this.nextQuestion.bind(this)}
               backgroundImage={welcomeHero}
               label="What's your email?"
               name="email"
