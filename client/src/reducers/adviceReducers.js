@@ -1,6 +1,6 @@
 import { SHOW_ADVICE, HIDE_ADVICE } from '../actions/adviceActions';
 
-const tips = (state = [], action) => {
+const advice = (state = [], action) => {
   switch(action.type) {
     case 'SHOW_ADVICE':
       return [...state, {
@@ -18,4 +18,4 @@ const tips = (state = [], action) => {
   return state;
 }
 
-export default tips;
+export default advice;
