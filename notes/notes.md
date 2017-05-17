@@ -37,3 +37,19 @@
 * Need context? Need clarification?
 
 
+# Actions
+
+* Add user
+* Add answer
+* Update answer
+* Show tip area
+* Hide tip area
+* Show tip
+* Hide tip
+
+
+
+
+
+
+
