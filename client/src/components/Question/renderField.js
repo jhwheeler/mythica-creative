@@ -1,10 +1,10 @@
 import React from 'react';
 
-const renderField = ({input, label, type}) => (
+const renderField = ({input, label, type, placeholder}) => (
   <div>
     <label>{label}</label>
     <div>
-      <input {...input} placeholder={label} type={type} />
+      <input {...input} placeholder={placeholder} type={type} />
     </div>
   </div>
 )
