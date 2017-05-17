@@ -76,3 +76,4 @@ export default class BrandQuiz extends Component {
     )
   }
 }
+
