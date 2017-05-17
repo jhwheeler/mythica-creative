@@ -1,0 +1,53 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "type": "multiple",
+      "text": "Whose problem are you solving?",
+      "tips": [
+        {
+          "id": 1,
+          "text": "Be specific."
+        },
+        {
+          "id": 2,
+          "text": "Be really specific."
+        }
+      ],
+      "subs": [
+        {
+          "id": 1,
+          "type": "checkbox",
+          "text": "Age group",
+          "options": [
+            "Young",
+            "Middle Aged",
+            "Elderly"
+          ],
+          "tips": [
+            {
+              "id": 1,
+              "text": "Pick an age."
+            },
+            {
+              "id": 2,
+              "text": "Be really specific."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "type": "checkbox",
+          "text": "Sex",
+          "options": [
+            "Male",
+            "Female",
+            "Other"
+          ]
+        }
+      ]
+
+    }
+  ]
+}
+
