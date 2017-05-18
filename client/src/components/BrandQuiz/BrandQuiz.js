@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 
 import Hero from '../Hero/Hero';
 import Question from '../Question/Question';
 
+import { addUser } from '../../actions/userActions';
 import css from './BrandQuiz.css';
 import welcomeHero from '../../../public/images/hero/welcome-hero.jpg';
 
-export default class BrandQuiz extends Component {
+class BrandQuiz extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -35,7 +37,6 @@ export default class BrandQuiz extends Component {
             <div className="question-wrapper">
               <Hero backgroundImage={welcomeHero}>
                 <Question
-                  onSubmit={this.nextQuestion}
                   label="What's your name?"
                   placeholder="Captain Magnificent"
                   name="name"
@@ -57,7 +58,7 @@ export default class BrandQuiz extends Component {
               <Hero backgroundImage={welcomeHero}>
                 <Question
                   lastQuestion={this.lastQuestion}
-                  onSubmit={this.onSubmit}
+                  onSubmit={onSubmit}
                   backgroundImage={welcomeHero}
                   label="Where do you live?"
                   name="location"
@@ -77,3 +78,17 @@ export default class BrandQuiz extends Component {
   }
 }
 
+const mapStateToProps = ({ users, advice }) => {
+  return {
+    users,
+    advice
+  }
+};
+
+const mapDispatchToProps = dispatch => {
+  return {
+    addUser: (name, email) => { dispatch(addUser(name, email)) }
+  }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(BrandQuiz);
