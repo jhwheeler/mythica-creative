@@ -39,15 +39,11 @@
 
 # Actions
 
+* Get questions from db
 * Add user
-* Add answer
-* Update answer
-* Show advice area
-* Hide advice area
 * Show advice
 * Hide advice
-
-
+* Send store to db
 
 
 
