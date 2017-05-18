@@ -21,6 +21,7 @@ const Question = props => {
           <div className="quiz-button">
             <button
               type="button"
+              onClick={props.lastQuestion}
               className="question-back">
               {props.backButtonText}
             </button>
