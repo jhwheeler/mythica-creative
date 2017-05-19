@@ -3,7 +3,6 @@ import { Field, reduxForm } from 'redux-form';
 import PropTypes from 'prop-types';
 
 import css from './Question.css';
-import renderField from './renderField';
 
 const Question = props => {
   const { handleSubmit } = props;
@@ -12,7 +11,7 @@ const Question = props => {
       <form onSubmit={handleSubmit}>
         <Field
           name={props.name}
-          component={renderField}
+          component={props.component}
           label={props.label}
           placeholder={props.placeholder}
           type="text"
@@ -50,7 +49,7 @@ Question.PropTypes = {
 }
 
 export default reduxForm({
-  form: 'brandQuiz',
+  form: 'quiz',
   destroyOnUnmount: false,
   forceUnregisterOnUnmount: true,
 })(Question);
