@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { Component } from 'react';
 
 // import css from './Service.css';
 import Button from '../Button/Button';
 import Modal from '../Modal/Modal';
 
-export default class Service extends React.Component {
+export default class Service extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -12,18 +12,11 @@ export default class Service extends React.Component {
     }
   }
 
-  openModal() {
-    console.log("open");
+  toggleModal() {
     this.setState({
-      isModalOpen: true
+      isModalOpen: !this.state.isModalOpen
     });
-  }
-
-  closeModal() {
-    this.setState({
-      isModalOpen: false
-    });
-    console.log("close");
+    return this.state.isModalOpen;
   }
 
   render() {
@@ -33,11 +26,11 @@ export default class Service extends React.Component {
         <img src={icon} />
         <h3>{header}</h3>
         <p>{description}</p>
-        <Button label="EXPLORE" onClick={() => this.openModal()}/>
-        <Modal isOpen={this.state.isModalOpen} onClose={() => this.closeModal()}>
+        <Button label="EXPLORE" onClick={() => this.toggleModal()}/>
+        <Modal isOpen={this.state.isModalOpen} onClose={() => this.toggleModal()}>
           <h1>Modal title</h1>
           <p>Hello</p>
-          <button onClick={() => this.closeModal()}>Close</button>
+          <button onClick={() => this.toggleModal()}>Close</button>
         </Modal>
       </div>
     );

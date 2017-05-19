@@ -6,7 +6,7 @@ import Button from '../Button/Button';
 import css from './Contact.css';
 import contactHero from '../../../public/images/hero/ContactUs.jpg';
 
-const Contact = props => {
+const Contact = () => {
   return (
     <div className="contact">
       <Hero className="contact-hero" backgroundImage={contactHero}>

@@ -11,6 +11,7 @@ import Header from './components/Header/Header';
 import Home from './components/Home/Home';
 import Work from './components/Work/Work';
 import Contact from './components/Contact/Contact';
+import BrandQuiz from './components/BrandQuiz/BrandQuiz';
 import NotFound from './components/NotFound/NotFound';
 import Footer from './components/Footer/Footer';
 
@@ -24,6 +25,7 @@ const Root = () => {
             <Route exact path="/" component={Home} />
             <Route path="/work" component={Work} />
             <Route path="/contact" component={Contact} />
+            <Route path="/brand" component={BrandQuiz} />
             <Route path="*" component={NotFound} />
           </Switch>
           <Footer />

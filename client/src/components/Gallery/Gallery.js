@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Slider from 'react-slick';
 
 import css from './Gallery.css';
 
-class Gallery extends React.Component {
+class Gallery extends Component {
   render() {
     const settings = {
       dots: true,

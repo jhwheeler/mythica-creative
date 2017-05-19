@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
 import css from './Header.css';
 import logo from '../../../public/images/mythica-full-logo.png'
 
-export default class Header extends React.Component {
+export default class Header extends Component {
   constructor() {
     super();
     this.state = {

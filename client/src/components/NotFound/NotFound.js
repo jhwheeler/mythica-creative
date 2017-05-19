@@ -5,7 +5,7 @@ import CTA from '../CTA/CTA';
 
 import css from './NotFound.css';
 
-const NotFound = props => {
+const NotFound = () => {
   return (
     <h1>Not Found</h1>
   );
