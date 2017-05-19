@@ -3,6 +3,7 @@ const webpack = require('webpack'),
 
 module.exports = {
   entry: './client/src/index.js',
+  devtool: 'source-map',
   output: {
     path: path.resolve(__dirname, 'client', 'public'),
     filename: 'index.bundle.js'

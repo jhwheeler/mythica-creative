@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 import css from './Hero.css';
 
-export default class Hero extends React.Component {
+export default class Hero extends Component {
   render() {
     const _style = {};
     if (this.props.backgroundImage) {
@@ -15,4 +16,9 @@ export default class Hero extends React.Component {
       </div>
     );
   }
+}
+
+Hero.PropTypes = {
+  backgroundImage: PropTypes.string.isRequired,
+  children: PropTypes.any,
 }

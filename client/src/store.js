@@ -7,8 +7,8 @@ import logger from 'redux-logger';
 import rootReducer from './reducers/index';
 
 const initialState = {
-  answers: [],
-  tips: [],
+  users: [],
+  advice: [],
 };
 
 export const history = createBrowserHistory();
