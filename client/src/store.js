@@ -7,7 +7,6 @@ import logger from 'redux-logger';
 import rootReducer from './reducers/index';
 
 const initialState = {
-  users: [],
   advice: [],
 };
 

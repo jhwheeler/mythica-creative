@@ -4,7 +4,6 @@ import { connect } from 'react-redux';
 import Hero from '../Hero/Hero';
 import Question from '../Question/Question';
 
-import { addUser } from '../../actions/userActions';
 import css from './BrandQuiz.css';
 import welcomeHero from '../../../public/images/hero/welcome-hero.jpg';
 
@@ -78,17 +77,18 @@ class BrandQuiz extends Component {
   }
 }
 
-const mapStateToProps = ({ users, advice }) => {
+const mapStateToProps = ({ advice }) => {
   return {
-    users,
-    advice
+    advice,
   }
 };
 
+/*
 const mapDispatchToProps = dispatch => {
   return {
     addUser: (name, email) => { dispatch(addUser(name, email)) }
   }
 }
+*/
 
-export default connect(mapStateToProps, mapDispatchToProps)(BrandQuiz);
+export default connect(mapStateToProps)(BrandQuiz);
