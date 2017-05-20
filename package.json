@@ -47,7 +47,8 @@
     "mocha": "^3.3.0",
     "nodemon": "^1.11.0",
     "style-loader": "^0.16.1",
-    "url-loader": "^0.5.8"
+    "url-loader": "^0.5.8",
+    "webpack-dev-server": "^2.4.5"
   },
   "engines": {
     "node": "7.5.0"
