@@ -2,7 +2,8 @@
   "questions": [
     {
       "id": 1,
-      "type": "combined",
+      "component": "combined",
+      "type": "",
       "text": "",
       "backgroundImage": "",
       "options": [],
@@ -10,7 +11,8 @@
       "subQuestions": [
         {
           "id": 1,
-          "type": "input",
+          "component": "input",
+          "type": "text",
           "text": "What's your name?",
           "placeholder": "Name",
           "options": [],
@@ -18,7 +20,8 @@
         },
         {
           "id": 2,
-          "type": "input",
+          "component": "input",
+          "type": "email",
           "text": "What's your email?",
           "placeholder": "Email",
           "options": [],
@@ -28,13 +31,15 @@
     },
     {
       "id": 2,
-      "type": "multiple",
+      "component": "multiple",
+      "type": "",
       "text": "Whose problem are you solving?",
       "backgroundImage": "",
       "advice": [],
       "subQuestions": [
         {
           "id": 1,
+          "component": "input",
           "type": "checkbox",
           "text": "Age group",
           "options": [
@@ -55,6 +60,7 @@
         },
         {
           "id": 2,
+          "component": "input",
           "type": "checkbox",
           "text": "Sex",
           "options": [
@@ -71,7 +77,8 @@
         },
         {
           "id": 3,
-          "type": "input",
+          "component": "input",
+          "type": "text",
           "text": "Income",
           "options": [
             "0",
@@ -86,7 +93,8 @@
         },
         {
           "id": 4,
-          "type": "textarea",
+          "component": "textarea",
+          "type": "",
           "text": "Describe this person in some detail, focusing on the challenge they have that you're solving.",
           "options": [],
           "advice": [
@@ -100,7 +108,8 @@
     },
     {
       "id": 3,
-      "type": "textarea",
+      "component": "textarea",
+      "type": "",
       "text": "What solution do you offer to their challenge?",
       "backgroundImage": "",
       "options": [],
@@ -118,7 +127,8 @@
     },
     {
       "id": 4,
-      "type": "textarea",
+      "component": "textarea",
+      "type": "",
       "text": "What is your vision for the brand?",
       "backgroundImage": "",
       "options": [],
@@ -139,7 +149,8 @@
     },
     {
       "id": 5,
-      "type": "textarea",
+      "component": "textarea",
+      "type": "",
       "text": "What is your mission? What are the steps you're taking to make your vision a reality?",
       "backgroundImage": "",
       "options": [],
@@ -160,6 +171,7 @@
     },
     {
       "id": 6,
+      "component": "input",
       "type": "checkbox",
       "text": "What visual message do you want to express to your future clients?",
       "backgroundImage": "",
@@ -183,7 +195,8 @@
     },
     {
       "id": 7,
-      "type": "multiple",
+      "component": "multiple",
+      "type": "",
       "text": "How do you envision your business in 3 years? In other words, what your top 3 long-term business goals?",
       "backgroundImage": "",
       "options": [],
@@ -196,21 +209,24 @@
       "subQuestions": [
         {
           "id": 1,
-          "type": "input",
+          "component": "input",
+          "type": "text",
           "text": "1.",
           "options": [],
           "advice": []
         },
         {
           "id": 2,
-          "type": "input",
+          "component": "input",
+          "type": "text",
           "text": "2.",
           "options": [],
           "advice": []
         },
         {
           "id": 3,
-          "type": "input",
+          "component": "input",
+          "type": "text",
           "text": "3.",
           "options": [],
           "advice": []
@@ -232,35 +248,40 @@
       "subQuestions": [
         {
           "id": 1,
-          "type": "input",
+          "component": "input",
+          "type": "text",
           "text": "1.",
           "options": [],
           "advice": []
         },
         {
           "id": 2,
-          "type": "input",
+          "component": "input",
+          "type": "text",
           "text": "2.",
           "options": [],
           "advice": []
         },
         {
           "id": 3,
-          "type": "input",
+          "component": "input",
+          "type": "text",
           "text": "3.",
           "options": [],
           "advice": []
         },
         {
           "id": 4,
-          "type": "input",
+          "component": "input",
+          "type": "text",
           "text": "4.",
           "options": [],
           "advice": []
         },
         {
           "id": 5,
-          "type": "input",
+          "component": "input",
+          "type": "text",
           "text": "5.",
           "options": [],
           "advice": []
@@ -269,7 +290,8 @@
     },
     {
       "id": 9,
-      "type": "slider",
+      "component": "range",
+      "type": "",
       "text": "How much can you invest in your brand and online presence to jumpstart your business?",
       "backgroundImage": "",
       "options": [

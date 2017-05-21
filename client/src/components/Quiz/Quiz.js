@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import QuestionContainer from '../QuestionContainer/QuestionContainer';
 
 import css from './Quiz.css';
-import questions from '../../data/questions.json';
+import data from '../../data/questions.json';
 import welcomeHero from '../../../public/images/hero/welcome-hero.jpg';
 
 class Quiz extends Component {
@@ -29,6 +29,11 @@ class Quiz extends Component {
   render() {
     return (
       <div className="quiz">
+        {data.questions.map((question) =>
+          <QuestionContainer
+            question={question}
+          />
+        )}
       </div>
     )
   }

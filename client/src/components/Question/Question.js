@@ -6,21 +6,23 @@ import css from './Question.css';
 
 const Question = props => {
   const { handleSubmit } = props;
+  const { question } = props;
   return (
     <div className="question">
       <form onSubmit={handleSubmit}>
         <Field
-          name={props.name}
-          component={props.component}
-          label={props.label}
-          placeholder={props.placeholder}
-          type="text"
+          component={question.component}
+          type={question.type}
+          name={question.name}
+          label={question.label}
+          placeholder={question.placeholder}
+          onBlur={props.onBlur}
         />
         {props.backButtonText &&
           <div className="quiz-button">
             <button
               type="button"
-              onClick={props.lastQuestion}
+              onClick={question.lastQuestion}
               className="question-back">
               {props.backButtonText}
             </button>
@@ -41,11 +43,10 @@ const Question = props => {
 }
 
 Question.PropTypes = {
-  name: PropTypes.string.isRequired,
-  label: PropTypes.string,
-  placeholder: PropTypes.string,
+  question: PropTypes.object.isRequired,
+  onBlur: PropTypes.func,
   backButtonText: PropTypes.string,
-  buttonText: PropTypes.string,
+  buttonText: PropTypes.string.isRequired,
 }
 
 export default reduxForm({

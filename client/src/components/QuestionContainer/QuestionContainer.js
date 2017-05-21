@@ -8,8 +8,11 @@ import Question from '../Question/Question';
 import css from './QuestionContainer.css';
 
 export default class QuestionContainer extends Component {
-  constructor() {
+  constructor(props) {
     super(props);
+    this.state = {
+      currentSubQuestion: 0
+    }
   }
 
   setButtonText = props => {
@@ -26,20 +29,41 @@ export default class QuestionContainer extends Component {
     }
   }
 
+  updateSubQuestion = () => {
+    this.setState({currentSubQuestion: this.state.currentSubQuestion + 1})
+  }
+
+  renderQuestions = props => {
+    if (props.question.type === "combined") {
+     return props.question.subQuestions.map((subQuestion, index) =>
+        <Question
+          question={question}
+        />
+     )} else if (props.question.type === "multiple") {
+       return props.question.subQuestions.map((subQuestion, index) => {
+         if (index <= this.state.currentSubQuestion) {
+           <Question
+             question={props.question.subQuestions[index]}
+             onBlur={() => this.updateSubQuestion()}
+           />
+         }
+       })
+     } else {
+       <Question
+         question={props.question}
+       />
+     }
+  }
+
   render() {
     return (
       <div className="question-container">
         <Hero backgroundImage={props.backgroundImage}>
           <div className="question-wrapper">
-            { props.type === "input" &&
+            { props.type === "combined" &&
                 <Question
-                  component="input"
-                  id={props.id}
-                  label={props.label}
-                  placeholder={props.placeholder}
-                  name={props.name}
-                  buttonText={this.setButtonText(props)}
-                  backButtonText={this.setButtonText(props)}
+                  question={props.question}
+                  buttonText={() => setButtonText(props)}
                 />
             }
           </div>
