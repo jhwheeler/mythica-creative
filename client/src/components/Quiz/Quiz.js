@@ -29,9 +29,11 @@ class Quiz extends Component {
   render() {
     return (
       <div className="quiz">
-        {data.questions.map((question) =>
+        {data.questions.map((question, index) =>
           <QuestionContainer
             question={question}
+            backgroundImage={welcomeHero}
+            key={index}
           />
         )}
       </div>
