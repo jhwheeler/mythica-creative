@@ -9,11 +9,11 @@ const Question = props => {
   return (
     <div className="question">
       <form onSubmit={handleSubmit}>
+        <label>{question.text}</label>
         <Field
           component={question.component}
           type={question.type}
           name={question.name}
-          label={question.text}
           placeholder={question.placeholder}
           onBlur={props.onBlur}
         />
