@@ -3,7 +3,6 @@
     {
       "id": 1,
       "component": "combined",
-      "type": "",
       "text": "",
       "backgroundImage": "",
       "options": [],
@@ -34,7 +33,6 @@
     {
       "id": 2,
       "component": "multiple",
-      "type": "",
       "text": "Whose problem are you solving?",
       "backgroundImage": "",
       "advice": [],
@@ -99,7 +97,6 @@
         {
           "id": 4,
           "component": "textarea",
-          "type": "",
           "name": "description",
           "text": "Describe this person in some detail, focusing on the challenge they have that you're solving.",
           "options": [],
@@ -115,7 +112,6 @@
     {
       "id": 3,
       "component": "textarea",
-      "type": "",
       "name": "solution",
       "text": "What solution do you offer to their challenge?",
       "backgroundImage": "",
@@ -135,7 +131,6 @@
     {
       "id": 4,
       "component": "textarea",
-      "type": "",
       "name": "vision",
       "text": "What is your vision for the brand?",
       "backgroundImage": "",
@@ -158,7 +153,6 @@
     {
       "id": 5,
       "component": "textarea",
-      "type": "",
       "name": "mission",
       "text": "What is your mission? What are the steps you're taking to make your vision a reality?",
       "backgroundImage": "",
@@ -206,7 +200,6 @@
     {
       "id": 7,
       "component": "multiple",
-      "type": "",
       "text": "How do you envision your business in 3 years? In other words, what your top 3 long-term business goals?",
       "backgroundImage": "",
       "options": [],
@@ -248,7 +241,7 @@
     },
     {
       "id": 8,
-      "type": "multiple",
+      "component": "multiple",
       "text": "What products do you need designed for your brand?",
       "backgroundImage": "",
       "options": [],
@@ -309,7 +302,6 @@
     {
       "id": 9,
       "component": "range",
-      "type": "",
       "name": "budget",
       "text": "How much can you invest in your brand and online presence to jumpstart your business?",
       "backgroundImage": "",
