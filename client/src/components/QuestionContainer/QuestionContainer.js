@@ -17,22 +17,6 @@ export default class QuestionContainer extends Component {
     this.updateSubQuestion = this.updateSubQuestion.bind(this);
   }
 
-  /*
-  setButtonText(props) {
-    if (props.id === 1) {
-      props.buttonText = "Start";
-      props.backButtonText = null;
-    }
-    else if (props.id === 9) {
-      props.buttonText = "Done";
-      props.backButtonText = "Back";
-    } else {
-      props.buttonText = "Next";
-      props.backButtonText = "Back";
-    }
-  }
-  */
-
   updateSubQuestion() {
     this.setState({currentSubQuestion: this.state.currentSubQuestion + 1})
   }
@@ -59,35 +43,6 @@ export default class QuestionContainer extends Component {
        />
      }
   }
-
-  /*
-  renderButton(props) {
-    if (props.backButtonText) {
-      return (
-        <div className="quiz-button">
-          <button
-            type="button"
-            onClick={question.lastPage}
-            className="question-back">
-            {props.backButtonText}
-          </button>
-        </div>
-      )
-    }
-    else if (props.buttonText) {
-      return (
-        <div className="quiz-button">
-          <button
-            type="submit"
-            onClick={question.nextPage}
-            className="question-submit">
-            {props.buttonText}
-          </button>
-        </div>
-      )
-    } else return null;
-  }
-  */
 
   render() {
     return (

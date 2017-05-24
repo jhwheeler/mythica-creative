@@ -14,7 +14,7 @@ const Question = props => {
           component={question.component}
           type={question.type}
           name={question.name}
-          label={question.label}
+          label={question.text}
           placeholder={question.placeholder}
           onBlur={props.onBlur}
         />
@@ -24,7 +24,7 @@ const Question = props => {
 }
 
 Question.PropTypes = {
-  question: PropTypes.object.isRequired,
+  question: PropTypes.object,
   onBlur: PropTypes.func,
   backButtonText: PropTypes.string,
   buttonText: PropTypes.string.isRequired,

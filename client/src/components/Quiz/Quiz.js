@@ -11,19 +11,62 @@ class Quiz extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      question: 1
+      page: 1
     }
 
     this.nextPage = this.nextPage.bind(this);
     this.lastPage = this.lastPage.bind(this);
+    this.renderButton = this.renderButton.bind(this);
+    this.setButtonText = this.setButtonText.bind(this);
   }
 
   nextPage() {
-    this.setState({question: this.state.question + 1});
+    this.setState({page: this.state.page + 1});
   }
 
   lastPage() {
-    this.setState({question: this.state.question - 1});
+    this.setState({page: this.state.page - 1});
+  }
+
+  renderButton(props) {
+    if (props.backButtonText) {
+      return (
+        <div className="quiz-button">
+          <button
+            type="button"
+            onClick={question.lastPage}
+            className="question-back">
+            {props.backButtonText}
+          </button>
+        </div>
+      )
+    }
+    else if (props.buttonText) {
+      return (
+        <div className="quiz-button">
+          <button
+            type="submit"
+            onClick={question.nextPage}
+            className="question-submit">
+            {props.buttonText}
+          </button>
+        </div>
+      )
+    } else return null;
+  }
+
+  setButtonText(question) {
+    if (question.id === 1) {
+      props.buttonText = "Start";
+      props.backButtonText = null;
+    }
+    else if (question.id >= data.questions.length) {
+      props.buttonText = "Done";
+      props.backButtonText = "Back";
+    } else {
+      props.buttonText = "Next";
+      props.backButtonText = "Back";
+    }
   }
 
   render() {
@@ -36,6 +79,7 @@ class Quiz extends Component {
             key={index}
           />
         )}
+        {this.renderButton(this.props)}
       </div>
     )
   }
