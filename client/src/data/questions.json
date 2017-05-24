@@ -4,7 +4,6 @@
       "id": 1,
       "component": "combined",
       "text": "",
-      "backgroundImage": "",
       "options": [],
       "advice": [],
       "subQuestions": [
@@ -34,12 +33,11 @@
       "id": 2,
       "component": "multiple",
       "text": "Whose problem are you solving?",
-      "backgroundImage": "",
       "advice": [],
       "subQuestions": [
         {
           "id": 1,
-          "component": "input",
+          "component": "",
           "type": "checkbox",
           "name": "age",
           "text": "Age group",
@@ -114,7 +112,6 @@
       "component": "textarea",
       "name": "solution",
       "text": "What solution do you offer to their challenge?",
-      "backgroundImage": "",
       "options": [],
       "advice": [
         {
@@ -133,7 +130,6 @@
       "component": "textarea",
       "name": "vision",
       "text": "What is your vision for the brand?",
-      "backgroundImage": "",
       "options": [],
       "advice": [
         {
@@ -155,7 +151,6 @@
       "component": "textarea",
       "name": "mission",
       "text": "What is your mission? What are the steps you're taking to make your vision a reality?",
-      "backgroundImage": "",
       "options": [],
       "advice": [
         {
@@ -178,7 +173,6 @@
       "type": "checkbox",
       "name": "style",
       "text": "What visual message do you want to express to your future clients?",
-      "backgroundImage": "",
       "options": [
         "minimalist",
         "corporate",
@@ -201,7 +195,6 @@
       "id": 7,
       "component": "multiple",
       "text": "How do you envision your business in 3 years? In other words, what your top 3 long-term business goals?",
-      "backgroundImage": "",
       "options": [],
       "advice": [
         {
@@ -243,7 +236,6 @@
       "id": 8,
       "component": "multiple",
       "text": "What products do you need designed for your brand?",
-      "backgroundImage": "",
       "options": [],
       "advice": [
         {
@@ -301,10 +293,10 @@
     },
     {
       "id": 9,
-      "component": "range",
+      "component": "input",
+      "type": "range",
       "name": "budget",
       "text": "How much can you invest in your brand and online presence to jumpstart your business?",
-      "backgroundImage": "",
       "options": [
         "0",
         "100000"
