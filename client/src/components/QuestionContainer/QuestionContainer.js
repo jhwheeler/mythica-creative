@@ -21,37 +21,37 @@ export default class QuestionContainer extends Component {
     this.setState({currentSubQuestion: this.state.currentSubQuestion + 1})
   }
 
-  renderQuestions(props) {
-    if (props.question.component === "combined") {
-     return props.question.subQuestions.map((subQuestion, index) =>
+  renderQuestions(question) {
+    if (question.component === "combined") {
+     return question.subQuestions.map((subQuestion, index) =>
         <Question
           question={subQuestion}
         />
-     )} else if (props.question.component === "multiple") {
-       return props.question.subQuestions.map((subQuestion, index) => {
+     )} else if (question.component === "multiple") {
+       return question.subQuestions.map((subQuestion, index) => {
          if (index <= this.state.currentSubQuestion) {
-           <Question
-             question={props.question.subQuestions[index]}
-             key={index}
-             onBlur={this.updateSubQuestion}
-           />
+           return (
+             <Question
+               question={question.subQuestions[index]}
+               key={index}
+               onBlur={this.updateSubQuestion}
+             />
+           )
          }
        })
      } else {
-       <Question
-         question={props.question}
-       />
+       return (
+         <Question
+           question={question}
+         />
+       )
      }
   }
 
   render() {
     return (
       <div className="question-container">
-        <Hero backgroundImage={this.props.backgroundImage}>
-          <div className="question-wrapper">
-            {this.renderQuestions(this.props)}
-          </div>
-        </Hero>
+        {this.renderQuestions(this.props.question)}
       </div>
     )
   }
