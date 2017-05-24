@@ -1,8 +1,23 @@
-.question-wrapper {
+.quiz {
   height: 100vh;
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
+  background: -moz-linear-gradient(left, #2b0056 0%,#440880 32%,#3b0571 46%,#4c0890 64%,#7e00fd 100%);
+  background: -webkit-linear-gradient(left, #2b0056 0%,#440880 32%,#3b0571 46%,#4c0890 64%,#7e00fd 100%);
+  /*background: linear-gradient(to right, #2b0056 0%,#440880 32%,#3b0571 46%,#4c0890 64%,#7e00fd 100%);*/
+  background: linear-gradient(to right, #2b0056, #7e00f6);
+}
+
+.question form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.question label {
+  color: #fff;
 }
 
 input {
