@@ -5,8 +5,7 @@ import PropTypes from 'prop-types';
 import css from './Question.css';
 
 const Question = props => {
-  const { handleSubmit } = props;
-  const { question } = props;
+  const { handleSubmit, question } = props;
   return (
     <div className="question">
       <form onSubmit={handleSubmit}>
