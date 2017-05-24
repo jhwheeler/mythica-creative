@@ -12,15 +12,6 @@ export default class Modal extends Component {
     }
   }
 
-  /*
-  componentWillMount() {
-    document.body.classList.add('modal-open');
-  }
-  componentWillUnmount() {
-    document.body.classList.remove('modal-open');
-  }
-  */
-
   render() {
     if(this.props.isOpen === false) {
       return null;

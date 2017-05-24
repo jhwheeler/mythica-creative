@@ -23,10 +23,10 @@ export default class Service extends Component {
     const { icon, header, description } = this.props.service;
     return (
       <div className="service">
-        <img src={icon} />
+        <img src={icon} onClick={() => this.toggleModal()} />
         <h3>{header}</h3>
         <p>{description}</p>
-        <Button label="EXPLORE" onClick={() => this.toggleModal()}/>
+        <Button label="EXPLORE" onClick={() => this.toggleModal()} />
         <Modal isOpen={this.state.isModalOpen} onClose={() => this.toggleModal()}>
           <h1>Modal title</h1>
           <p>Hello</p>
