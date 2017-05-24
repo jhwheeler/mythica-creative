@@ -5,19 +5,18 @@ import QuestionContainer from '../QuestionContainer/QuestionContainer';
 
 import css from './Quiz.css';
 import data from '../../data/questions.json';
-import welcomeHero from '../../../public/images/hero/welcome-hero.jpg';
 
 class Quiz extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      page: 1
+      page: 0
     }
 
     this.nextPage = this.nextPage.bind(this);
     this.lastPage = this.lastPage.bind(this);
-    this.renderButton = this.renderButton.bind(this);
-    this.setButtonText = this.setButtonText.bind(this);
+    this.renderButtons = this.renderButtons.bind(this);
+    this.getButtonText = this.getButtonText.bind(this);
   }
 
   nextPage() {
@@ -28,58 +27,59 @@ class Quiz extends Component {
     this.setState({page: this.state.page - 1});
   }
 
-  renderButton(props) {
-    if (props.backButtonText) {
-      return (
-        <div className="quiz-button">
-          <button
-            type="button"
-            onClick={question.lastPage}
-            className="question-back">
-            {props.backButtonText}
-          </button>
-        </div>
-      )
-    }
-    else if (props.buttonText) {
-      return (
+  renderButtons() {
+    let { buttonText, backButtonText } = this.getButtonText();
+    return (
+      <div className="quiz-button-wrapper">
+        {backButtonText &&
+          <div className="quiz-button">
+            <button
+              type="button"
+              onClick={this.lastPage}
+              className="question-back">
+              {backButtonText}
+            </button>
+          </div>
+        }
         <div className="quiz-button">
           <button
             type="submit"
-            onClick={question.nextPage}
+            onClick={this.nextPage}
             className="question-submit">
-            {props.buttonText}
+            {buttonText}
           </button>
         </div>
-      )
-    } else return null;
+      </div>
+    )
   }
 
-  setButtonText(question) {
-    if (question.id === 1) {
-      props.buttonText = "Start";
-      props.backButtonText = null;
+  getButtonText() {
+    let buttonText, backButtonText;
+    if (this.state.page === 0) {
+      buttonText = "Start";
+      backButtonText = null;
     }
-    else if (question.id >= data.questions.length) {
-      props.buttonText = "Done";
-      props.backButtonText = "Back";
+    else if (this.state.page > data.questions.length - 1) {
+      buttonText = "Done";
+      backButtonText = "Back";
     } else {
-      props.buttonText = "Next";
-      props.backButtonText = "Back";
+      buttonText = "Next";
+      backButtonText = "Back";
+    }
+    return {
+      buttonText,
+      backButtonText
     }
   }
 
   render() {
+    const currentQuestion = data.questions[this.state.page];
     return (
       <div className="quiz">
-        {data.questions.map((question, index) =>
-          <QuestionContainer
-            question={question}
-            backgroundImage={welcomeHero}
-            key={index}
-          />
-        )}
-        {this.renderButton(this.props)}
+        <QuestionContainer
+          question={currentQuestion}
+        />
+        {this.renderButtons()}
       </div>
     )
   }
