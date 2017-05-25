@@ -59,7 +59,7 @@ class Quiz extends Component {
       buttonText = "Start";
       backButtonText = null;
     }
-    else if (this.state.page > data.questions.length - 1) {
+    else if (this.state.page === data.questions.length - 1) {
       buttonText = "Done";
       backButtonText = "Back";
     } else {
