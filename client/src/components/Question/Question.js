@@ -6,17 +6,31 @@ import css from './Question.css';
 
 const Question = props => {
   const { handleSubmit, question } = props;
+
+  const renderCheckboxes = () => {
+    console.log("rendering checkboxes");
+    return question.options.map((option, index) => (
+        <div className="checkbox" key={index}>
+        <label htmlFor={`checkbox-${index}`}>{option}</label>
+        <input type="checkbox" id={`checkbox-${index}`} />
+      </div>
+    ))
+  }
+
   return (
     <div className="question">
       <form onSubmit={handleSubmit}>
         <label>{question.text}</label>
-        <Field
-          component={question.component}
-          type={question.type}
-          name={question.name}
-          placeholder={question.placeholder}
-          onBlur={props.onBlur}
-        />
+        {question.type === "checkbox" && renderCheckboxes()}
+        {question.type !== "checkbox" &&
+          <Field
+            component={question.component}
+            type={question.type}
+            name={question.name}
+            placeholder={question.placeholder}
+            onBlur={props.onBlur}
+          />
+        }
       </form>
     </div>
   )
