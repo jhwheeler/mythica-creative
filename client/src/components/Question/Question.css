@@ -2,3 +2,32 @@
   display: inline-block;
   margin: 0 20px;
 }
+
+.question form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.question label {
+  color: #fff;
+  font-size: 24px;
+}
+
+input {
+  width: 200px;
+  height: 50px;
+  padding: 10px;
+  margin: 10px 0 25px;
+}
+
+label {
+  color: #222;
+  font-weight: 500;
+}
+
+@media only screen and (min-width: 780px) {
+  input {
+    width: 340px;
+  }
+}

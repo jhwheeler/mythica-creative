@@ -21,14 +21,16 @@ export default class QuestionContainer extends Component {
   renderQuestions(question) {
     if (question.component === "combined") {
       return (
-       <div className="multi-question-wrapper">
-         <label>{question.text}</label>
-         {question.subQuestions.map((subQuestion, index) => (
-           <Question
-             question={subQuestion}
-             key={index}
-           />
-         ))}
+       <div className="multi-question-container">
+         <label className="multi-question-label">{question.text}</label>
+         <div className="multi-question-wrapper">
+           {question.subQuestions.map((subQuestion, index) => (
+             <Question
+               question={subQuestion}
+               key={index}
+             />
+           ))}
+         </div>
        </div>
       )} else {
        return (

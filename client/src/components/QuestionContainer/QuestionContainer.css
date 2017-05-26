@@ -1,4 +1,29 @@
+.multi-question-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .multi-question-label {
   color: #fff;
-  margin-bottom: 40px;
+  font-size: 36px;
+  margin-bottom: 60px;
+  text-align: center;
 }
+
+.multi-question-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.multi-question-wrapper .question {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 50%;
+}
+
+

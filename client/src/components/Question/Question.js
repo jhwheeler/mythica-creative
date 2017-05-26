@@ -8,13 +8,17 @@ const Question = props => {
   const { handleSubmit, question } = props;
 
   const renderCheckboxes = () => {
-    console.log("rendering checkboxes");
-    return question.options.map((option, index) => (
-        <div className="checkbox" key={index}>
-        <label htmlFor={`checkbox-${index}`}>{option}</label>
-        <input type="checkbox" id={`checkbox-${index}`} />
+    return (
+      <div className="checkboxes">
+        {question.options.map((option, index) => (
+          <div className="checkbox" key={index}>
+            <label htmlFor={`checkbox-${index}`}>{option}</label>
+            <input type="checkbox" id={`checkbox-${index}`} />
+          </div>
+          )
+        )}
       </div>
-    ))
+    )
   }
 
   return (
