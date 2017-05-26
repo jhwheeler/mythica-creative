@@ -13,6 +13,7 @@ export default class Service extends Component {
   }
 
   toggleModal() {
+    document.body.classList.add('modal-open');
     this.setState({
       isModalOpen: !this.state.isModalOpen
     });
