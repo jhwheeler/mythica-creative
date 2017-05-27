@@ -11,11 +11,6 @@ export default class QuestionContainer extends Component {
   constructor(props) {
     super(props);
     this.renderQuestions = this.renderQuestions.bind(this);
-    this.updateSubQuestion = this.updateSubQuestion.bind(this);
-  }
-
-  updateSubQuestion() {
-    this.setState({currentSubQuestion: this.state.currentSubQuestion + 1})
   }
 
   renderQuestions(question) {
