@@ -46,6 +46,19 @@
 * Send store to db
 
 
+# onSubmit Flow
 
+1. onSubmit() triggered
+2. Dispatch action 'SAVE_FORM'
+3. Takes data from store and makes api call
+4. POST request to server
+5. If 200, show Thank You page
+6. Dispatch 'CLEAR_FORM'
+
+7. Dispatch 'RENDER_HTML'
+8. Makes a POST request to server
+9. html page creation
+10. html2pdf
+11. Email pdf to me
 
 

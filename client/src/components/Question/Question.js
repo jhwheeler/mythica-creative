@@ -3,38 +3,37 @@ import { Field, reduxForm } from 'redux-form';
 import PropTypes from 'prop-types';
 
 import css from './Question.css';
-import renderField from './renderField';
 
 const Question = props => {
-  const { handleSubmit } = props;
+  const { handleSubmit, question } = props;
+
+  const renderCheckboxes = () => {
+    return (
+      <div className="checkboxes">
+        {question.options.map((option, index) => (
+          <div className="checkbox" key={index}>
+            <label htmlFor={`checkbox-${index}`}>{option}</label>
+            <input type="checkbox" id={`checkbox-${index}`} />
+          </div>
+          )
+        )}
+      </div>
+    )
+  }
+
   return (
     <div className="question">
       <form onSubmit={handleSubmit}>
-        <Field
-          name={props.name}
-          component={renderField}
-          label={props.label}
-          placeholder={props.placeholder}
-          type="text"
-        />
-        {props.backButtonText &&
-          <div className="quiz-button">
-            <button
-              type="button"
-              onClick={props.lastQuestion}
-              className="question-back">
-              {props.backButtonText}
-            </button>
-          </div>
-        }
-        {props.buttonText &&
-          <div className="quiz-button">
-            <button
-              type="submit"
-              className="question-submit">
-              {props.buttonText}
-            </button>
-          </div>
+        <label>{question.text}</label>
+        {question.type === "checkbox" && renderCheckboxes()}
+        {question.type !== "checkbox" &&
+          <Field
+            component={question.component}
+            type={question.type}
+            name={question.name}
+            placeholder={question.placeholder}
+            onBlur={props.onBlur}
+          />
         }
       </form>
     </div>
@@ -42,15 +41,14 @@ const Question = props => {
 }
 
 Question.PropTypes = {
-  name: PropTypes.string.isRequired,
-  label: PropTypes.string,
-  placeholder: PropTypes.string,
+  question: PropTypes.object,
+  onBlur: PropTypes.func,
   backButtonText: PropTypes.string,
-  buttonText: PropTypes.string,
+  buttonText: PropTypes.string.isRequired,
 }
 
 export default reduxForm({
-  form: 'brandQuiz',
+  form: 'quiz',
   destroyOnUnmount: false,
   forceUnregisterOnUnmount: true,
 })(Question);

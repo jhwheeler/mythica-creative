@@ -11,7 +11,7 @@
     "dev": "nodemon server/server.js",
     "test": "mocha",
     "build": "NODE_ENV=production ./node_modules/webpack/bin/webpack.js -p",
-    "build-watch": "./node_modules/webpack/bin/webpack.js --watch",
+    "watch": "./node_modules/webpack/bin/webpack.js --watch",
     "build:production": "NODE_ENV=production webpack -p"
   },
   "dependencies": {
@@ -47,7 +47,8 @@
     "mocha": "^3.3.0",
     "nodemon": "^1.11.0",
     "style-loader": "^0.16.1",
-    "url-loader": "^0.5.8"
+    "url-loader": "^0.5.8",
+    "webpack-dev-server": "^2.4.5"
   },
   "engines": {
     "node": "7.5.0"

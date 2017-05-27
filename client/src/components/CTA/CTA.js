@@ -8,14 +8,15 @@ import copy from './CTA.data';
 import heroCTA from '../../../public/images/home-cta.jpg';
 
 const CTA = () => {
+  const { header, body, link, buttonLabel } = copy;
   return(
     <div className="cta">
       <Hero backgroundImage={heroCTA}>
-        <h1>{copy.header}</h1>
+        <h1>{header}</h1>
         <br/>
-        <h3>{copy.body}</h3>
+        <h3>{body}</h3>
         <br/>
-        <Button label={copy.buttonLabel} />
+        <Button label={buttonLabel} link={link} />
       </Hero>
     </div>
   );
