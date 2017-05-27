@@ -17,3 +17,7 @@ button:hover {
   border: none;
   transition: all .3s;
 }
+
+button a {
+  color: #fff;
+}

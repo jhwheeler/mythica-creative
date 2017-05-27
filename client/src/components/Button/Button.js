@@ -5,12 +5,19 @@ import css from './Button.css';
 
 const Button = props => {
   return (
-    <button className="button" onClick={props.onClick}>{props.label}</button>
+    <button className="button" onClick={props.onClick}>
+      {props.link ? (
+        <a href={props.link}>{props.label}</a>
+      ) : (
+        <div>{props.label}</div>
+      )}
+    </button>
   );
 }
 
 Button.PropTypes = {
   onClick: PropTypes.func.isRequired,
+  link: PropTypes.string,
 }
 
 
