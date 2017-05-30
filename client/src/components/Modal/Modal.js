@@ -19,7 +19,9 @@ export default class Modal extends Component {
 
     return (
       <div>
-        <div className="modal">{this.props.children}</div>
+        <div className="modal-wrapper">
+          <div className="modal">{this.props.children}</div>
+        </div>
         <div className="backdrop" onClick={e => this.close(e)} />
       </div>
     );
