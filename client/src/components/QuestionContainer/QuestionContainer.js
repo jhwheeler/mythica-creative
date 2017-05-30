@@ -19,12 +19,15 @@ export default class QuestionContainer extends Component {
        <div className="multi-question-container">
          <label className="multi-question-label">{question.text}</label>
          <div className="multi-question-wrapper">
-           {question.subQuestions.map((subQuestion, index) => (
-             <Question
-               question={subQuestion}
-               key={index}
-             />
-           ))}
+           {question.subQuestions.map((subQuestion, index) => {
+             subQuestion.name = `${question.name}-${subQuestion.name}`;
+             return (
+               <Question
+                 question={subQuestion}
+                 key={index}
+               />
+             )
+           })}
          </div>
        </div>
       )} else {
