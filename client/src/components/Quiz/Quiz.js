@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
 import QuestionContainer from '../QuestionContainer/QuestionContainer';
+import * as answerActions from '../../actions/answerActions';
 
 import css from './Quiz.css';
 import data from '../../data/questions.json';
@@ -41,14 +42,26 @@ class Quiz extends Component {
             </button>
           </div>
         }
-        <div className="quiz-button">
-          <button
-            type="submit"
-            onClick={this.nextPage}
-            className="question-submit">
-            {buttonText}
-          </button>
-        </div>
+        {buttonText === "Done" &&
+          <div className="quiz-button">
+            <button
+              type="submit"
+              onClick={this.props.sendAnswers(answers)}
+              className="question-submit">
+              {buttonText}
+            </button>
+          </div>
+        }
+        {buttonText === "Next" &&
+          <div className="quiz-button">
+            <button
+              type="submit"
+              onClick={this.nextPage}
+              className="question-submit">
+              {buttonText}
+            </button>
+          </div>
+        }
       </div>
     )
   }
@@ -85,18 +98,17 @@ class Quiz extends Component {
   }
 }
 
-const mapStateToProps = ({ advice }) => {
+const mapStateToProps = ({ advice, answers }) => {
   return {
     advice,
+    answers,
   }
 };
 
-/*
 const mapDispatchToProps = dispatch => {
   return {
-    addUser: (name, email) => { dispatch(addUser(name, email)) }
+    sendAnswers: answers => dispatch(answerActions.sendAnswers(answers))
   }
 }
-*/
 
-export default connect(mapStateToProps)(Quiz);
+export default connect(mapStateToProps, mapDispatchToProps)(Quiz);
