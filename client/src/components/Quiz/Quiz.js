@@ -28,6 +28,10 @@ class Quiz extends Component {
     this.setState({page: this.state.page - 1});
   }
 
+  submitClick() {
+    /* Logic for page state and click handler */
+  }
+
   renderButtons() {
     let { buttonText, backButtonText } = this.getButtonText();
     return (
@@ -42,26 +46,14 @@ class Quiz extends Component {
             </button>
           </div>
         }
-        {buttonText === "Done" &&
-          <div className="quiz-button">
-            <button
-              type="submit"
-              onClick={this.props.sendAnswers(answers)}
-              className="question-submit">
-              {buttonText}
-            </button>
-          </div>
-        }
-        {buttonText === "Next" &&
-          <div className="quiz-button">
-            <button
-              type="submit"
-              onClick={this.nextPage}
-              className="question-submit">
-              {buttonText}
-            </button>
-          </div>
-        }
+        <div className="quiz-button">
+          <button
+            type="submit"
+            onClick={this.nextPage}
+            className="question-submit">
+            {buttonText}
+          </button>
+        </div>
       </div>
     )
   }
