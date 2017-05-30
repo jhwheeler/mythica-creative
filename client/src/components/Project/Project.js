@@ -25,7 +25,7 @@ export default class Project extends Component {
     const { preview, presentation } = this.props;
     return (
       <div key={this.props.index} className="project">
-        <img src={preview} onClick={() => this.toggleModal()}/>
+        <img className="preview-image" src={preview} onClick={() => this.toggleModal()}/>
         <Button label="EXPLORE" onClick={() => this.toggleModal()} />
         <Modal isOpen={this.state.isModalOpen} onClose={() => this.toggleModal()}>
           <img src={presentation} />
