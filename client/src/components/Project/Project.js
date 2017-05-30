@@ -14,6 +14,7 @@ export default class Project extends Component {
   }
 
   toggleModal() {
+    document.body.classList.toggle('modal-open');
     this.setState({
       isModalOpen: !this.state.isModalOpen
     });
