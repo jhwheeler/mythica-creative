@@ -22,7 +22,7 @@
   margin: 0px 20px;
 }
 
-.service img {
+.service-icon {
   max-width: 100%;
   height: 100px;
   width: 100px;
@@ -34,7 +34,7 @@
   margin: 25px 0px 5px;
 }
 
-.service p {
+.service-description {
   margin: 0 auto;
 }
 
@@ -44,7 +44,7 @@
     width: 18%;
   }
 
-  .service img {
+  .service-icon {
     height: 150px;
     width: 150px;
   }
