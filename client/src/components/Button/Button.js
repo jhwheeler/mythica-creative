@@ -1,19 +1,25 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 import css from './Button.css';
 
 const Button = props => {
   return (
-    <button className="button" onClick={props.onClick}>
+    <div className="button-wrapper">
       {props.link ? (
-        <a href={props.link}>{props.label}</a>
+        <Link to={props.link}>
+          <button className="button" onClick={props.onClick}>
+            <div>{props.label}</div>
+          </button>
+        </Link>
       ) : (
-        <div>{props.label}</div>
+        <button className="button" onClick={props.onClick}>
+          <div>{props.label}</div>
+        </button>
       )}
-    </button>
-  );
-}
+    </div>
+  )}
 
 Button.PropTypes = {
   onClick: PropTypes.func.isRequired,
