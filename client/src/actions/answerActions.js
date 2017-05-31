@@ -1,7 +1,5 @@
 import axios from 'axios';
 
-const API_URL = 'https://mythica-creative.herokuapp.com/api';
-
 const SEND_ANSWERS_SUCCESS = 'SEND_ANSWERS_SUCCESS';
 
 export const sendAnswersSuccess = answers => {
@@ -13,7 +11,7 @@ export const sendAnswersSuccess = answers => {
 
 export const sendAnswers = answers => {
   return (dispatch) => {
-    return axios.post(`${API_URL}/answers`, {answers})
+    return axios.post(`/api/answers`, {answers})
       .then(response => {
         dispatch(sendAnswersSuccess(response.data))
       })
