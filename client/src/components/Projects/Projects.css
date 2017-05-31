@@ -33,13 +33,13 @@
   .projects-header {
     margin: 100px 0px 70px;
   }
-  .project img {
+  .preview-image {
     width: 360px;
     cursor: pointer;
     padding: 0;
   }
 
-  .project:hover img {
+  .preview-image:hover {
     -moz-transform: scale(1.05);
     -webkit-transform: scale(1.05);
     transform: scale(1.05);
