@@ -3,6 +3,7 @@
     {
       "id": 1,
       "component": "combined",
+      "name": "info",
       "text": "Welcome",
       "options": [],
       "advice": [],
@@ -32,6 +33,7 @@
     {
       "id": 2,
       "component": "combined",
+      "name": "target",
       "text": "Whose problem are you solving?",
       "advice": [],
       "subQuestions": [
@@ -194,6 +196,7 @@
     {
       "id": 7,
       "component": "combined",
+      "name": "business",
       "text": "How do you envision your business in 3 years? In other words, what your top 3 long-term business goals?",
       "options": [],
       "advice": [
@@ -235,6 +238,7 @@
     {
       "id": 8,
       "component": "combined",
+      "name": "products",
       "text": "What products do you need designed for your brand?",
       "options": [],
       "advice": [

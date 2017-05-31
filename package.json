@@ -15,10 +15,14 @@
     "build:production": "NODE_ENV=production webpack -p"
   },
   "dependencies": {
+    "axios": "^0.16.1",
     "babel-preset-stage-2": "^6.24.1",
+    "body-parser": "^1.17.2",
+    "connect-mongo": "^1.3.2",
     "connected-react-router": "^4.2.1",
     "express": "^4.15.2",
     "history": "^4.6.1",
+    "mongoose": "^4.10.2",
     "path": "^0.12.7",
     "prop-types": "^15.5.10",
     "react": "^15.5.4",
