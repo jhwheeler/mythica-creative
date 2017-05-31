@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:7498/api';
+const API_URL = 'https://mythica-creative.herokuapp.com/api';
 
 const SEND_ANSWERS_SUCCESS = 'SEND_ANSWERS_SUCCESS';
 
