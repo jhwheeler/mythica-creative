@@ -18,6 +18,8 @@ class Quiz extends Component {
     this.lastPage = this.lastPage.bind(this);
     this.renderButtons = this.renderButtons.bind(this);
     this.getButtonText = this.getButtonText.bind(this);
+    this.submitClick = this.submitClick.bind(this);
+    this.submitForm = this.submitForm.bind(this);
   }
 
   nextPage() {
@@ -28,8 +30,16 @@ class Quiz extends Component {
     this.setState({page: this.state.page - 1});
   }
 
+  submitForm(values) {
+    this.props.sendAnswers(values);
+  }
+
   submitClick() {
-    /* Logic for page state and click handler */
+    if (this.state.page === data.questions.length - 1) {
+      this.submitForm(this.props.form.quiz.values);
+    } else {
+      this.nextPage();
+    }
   }
 
   renderButtons() {
@@ -49,7 +59,7 @@ class Quiz extends Component {
         <div className="quiz-button">
           <button
             type="submit"
-            onClick={this.nextPage}
+            onClick={this.submitClick}
             className="question-submit">
             {buttonText}
           </button>
@@ -90,10 +100,10 @@ class Quiz extends Component {
   }
 }
 
-const mapStateToProps = ({ advice, answers }) => {
+const mapStateToProps = state => {
   return {
-    advice,
-    answers,
+    advice: state.advice,
+    form: state.form,
   }
 };
 
