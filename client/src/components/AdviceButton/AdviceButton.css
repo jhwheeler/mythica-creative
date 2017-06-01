@@ -1,8 +1,6 @@
 .advice-button {
-  width: 60px;
-  height: 60px;
-  background-color: #2ac3aa;
-  border-radius: 50%;
+  width: 80px;
+  height: 80px;
   cursor: pointer;
 }
 
