@@ -153,8 +153,6 @@ const mapStateToProps = state => {
 const mapDispatchToProps = dispatch => {
   return {
     sendAnswers: answers => dispatch(answerActions.sendAnswers(answers)),
-    showAdvice: advice  => dispatch(adviceActions.showAdvice(advice)),
-    hideAdvice: advice => dispatch(adviceActions.hideAdvice(advice)),
   }
 }
 
