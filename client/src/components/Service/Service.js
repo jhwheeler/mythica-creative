@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-// import css from './Service.css';
+import css from './Service.css';
 import Button from '../Button/Button';
 import Modal from '../Modal/Modal';
 
@@ -41,20 +41,25 @@ export default class Service extends Component {
         <h3>{header}</h3>
         <p className="service-description">{description}</p>
         <Button label="EXPLORE" onClick={() => this.toggleModal()} />
-        <Modal isOpen={this.state.isModalOpen} onClose={() => this.toggleModal()}>
+        <Modal  isOpen={this.state.isModalOpen} onClose={() => this.toggleModal()}>
           <h1 className="service-modal-title">{modalTitle}</h1>
           <div className="modal-section">
-            <img src={modalImage1} />
-            <h2>{modalHeading1}</h2>
-            <p>{modalText1}</p>
-            <p>{modalText2}</p>
+            <img className="modal-section-image-1" src={modalImage1} />
+            <div className="modal-section-text">
+              <h2 className="modal-heading">{modalHeading1}</h2>
+              <p>{modalText1}</p>
+              <p>{modalText2}</p>
+            </div>
           </div>
           <div className="modal-section">
-            <img src={modalImage2} />
-            <h2>{modalHeading2}</h2>
-            <p>{modalText3}</p>
-            <p>{modalText4}</p>
+            <img  className="modal-section-image-2" src={modalImage2} />
+            <div className="modal-section-text">
+              <h2 className="modal-heading">{modalHeading2}</h2>
+              <p>{modalText3}</p>
+              <p>{modalText4}</p>
+            </div>
           </div>
+          <Button label="CLOSE" onClick={() => this.toggleModal()} />
         </Modal>
       </div>
     );

@@ -8,8 +8,8 @@ import printDesignIcon from '../../../public/images/services/print_design_icon.p
 import printDesignImage1 from '../../../public/images/services/print_design_1.jpg';
 import printDesignImage2 from '../../../public/images/services/print_design_2.jpg';
 import copyIcon from '../../../public/images/services/copy_icon.png';
-import copyDesignImage1 from '../../../public/images/services/copy_1.jpg';
-import copyDesignImage2 from '../../../public/images/services/copy_2.jpg';
+import copyImage1 from '../../../public/images/services/copy_1.jpg';
+import copyImage2 from '../../../public/images/services/copy_2.jpg';
 
 const servicesData = [
   {
@@ -61,8 +61,8 @@ const servicesData = [
     modalTitle: 'Copy',
     modalHeading1: 'Engaging Copy',
     modalHeading2: 'Express Your Success',
-    modalImage1: printDesignImage1,
-    modalImage2: printDesignImage2,
+    modalImage1: copyImage1,
+    modalImage2: copyImage2,
     modalText1: 'At Mythica Creative, we believe in a holistic approach.',
     modalText2: 'To effectively convert visitors into clients, it is necessary to communicate with your audience both visually and verbally, using copy that pulls the reader in and stimulates their imagination.',
     modalText3: 'Connecting the visual design with the verbal message of your services, our linguistic experts craft the copy to express your success.',
