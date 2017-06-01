@@ -20,10 +20,7 @@ export default class AdviceSlider extends Component {
 
     return (
       <div className="advice-slider">
-        <div className="advice-header">
-          <h3>{this.props.adviceHeader}</h3>
-          <img onClick={this.props.onClose} src={closeButton}/>
-        </div>
+        <h3 className="advice-header">{this.props.adviceHeader}</h3>
         <div className="advice-text">
           <p>{this.props.advice}</p>
         </div>
