@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-import Button from '../Button/Button';
 import css from './AdviceSlider.css';
+import closeButton from '../../../public/images/quiz/close_icon.png';
 
 export default class AdviceSlider extends Component {
   close(e) {
@@ -22,7 +22,7 @@ export default class AdviceSlider extends Component {
       <div className="advice-slider">
         <div className="advice-header">
           <h3>{this.props.adviceHeader}</h3>
-          <Button onClick={this.props.onClose} label="Close" />
+          <img onClick={this.props.onClose} src={closeButton}/>
         </div>
         <div className="advice-text">
           <p>{this.props.advice}</p>
