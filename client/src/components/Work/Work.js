@@ -1,9 +1,11 @@
 import React from 'react';
 
+import Header from '../Header/Header';
 import Hero from '../Hero/Hero';
 import CaseStudies from '../CaseStudies/CaseStudies';
 import Portfolio from '../Portfolio/Portfolio';
 import CTA from '../CTA/CTA';
+import Footer from '../Footer/Footer';
 
 import css from './Work.css';
 import { copy,images } from './Work.data.js';
@@ -12,6 +14,8 @@ import categories from '../Portfolio/Portfolio.data';
 const Work = props => {
   return (
     <div className="work">
+
+      <Header />
 
       <div className="work-hero-wrapper">
         <Hero backgroundImage={images.workHero}>
@@ -31,6 +35,8 @@ const Work = props => {
       />
 
       <CTA />
+
+      <Footer />
 
     </div>
   );

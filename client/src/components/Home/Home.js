@@ -1,11 +1,13 @@
 import React from 'react';
 
+import Header from '../Header/Header';
 import Hero from '../Hero/Hero';
 import Services from '../Services/Services';
 import Projects from '../Projects/Projects';
 import Testimonials from '../Testimonials/Testimonials';
 import Founders from '../Founders/Founders';
 import CTA from '../CTA/CTA';
+import Footer from '../Footer/Footer';
 
 import css from './Home.css';
 import { copy,images } from './Home.data.js';
@@ -13,6 +15,8 @@ import { copy,images } from './Home.data.js';
 const Home = props => {
   return (
     <div className="home">
+
+      <Header />
 
       <div className="home-hero-wrapper">
         <Hero backgroundImage={images.welcomeHero}>
@@ -49,6 +53,8 @@ const Home = props => {
       <Founders />
 
       <CTA />
+
+      <Footer />
 
     </div>
   );

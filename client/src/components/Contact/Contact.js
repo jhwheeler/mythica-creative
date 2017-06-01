@@ -1,7 +1,9 @@
 import React from 'react';
 
+import Header from '../Header/Header';
 import Hero from '../Hero/Hero';
 import Button from '../Button/Button';
+import Footer from '../Footer/Footer';
 
 import css from './Contact.css';
 import contactHero from '../../../public/images/hero/ContactUs.jpg';
@@ -9,6 +11,9 @@ import contactHero from '../../../public/images/hero/ContactUs.jpg';
 const Contact = () => {
   return (
     <div className="contact">
+
+      <Header />
+
       <Hero className="contact-hero" backgroundImage={contactHero}>
         <div className="contact-form-wrapper">
           <form className="contact-form">
@@ -28,6 +33,9 @@ const Contact = () => {
           </form>
         </div>
       </Hero>
+
+      <Footer />
+
     </div>
   );
 }
