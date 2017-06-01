@@ -2,7 +2,10 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
 import QuestionContainer from '../QuestionContainer/QuestionContainer';
+import AdviceSlider from '../AdviceSlider/AdviceSlider';
+import AdviceButton from '../AdviceButton/AdviceButton';
 import * as answerActions from '../../actions/answerActions';
+import * as adviceActions from '../../actions/adviceActions';
 
 import css from './Quiz.css';
 import data from '../../data/questions.json';
@@ -11,7 +14,8 @@ class Quiz extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      page: 0
+      page: 0,
+      isAdviceShown: false,
     }
 
     this.nextPage = this.nextPage.bind(this);
@@ -20,6 +24,9 @@ class Quiz extends Component {
     this.getButtonText = this.getButtonText.bind(this);
     this.submitClick = this.submitClick.bind(this);
     this.submitForm = this.submitForm.bind(this);
+    this.getAdvice = this.getAdvice.bind(this);
+    this.getAdviceHeader = this.getAdviceHeader.bind(this);
+    this.toggleAdviceSlider = this.toggleAdviceSlider.bind(this);
   }
 
   nextPage() {
@@ -28,18 +35,6 @@ class Quiz extends Component {
 
   lastPage() {
     this.setState({page: this.state.page - 1});
-  }
-
-  submitForm(values) {
-    this.props.sendAnswers(values);
-  }
-
-  submitClick() {
-    if (this.state.page === data.questions.length - 1) {
-      this.submitForm(this.props.form.quiz.values);
-    } else {
-      this.nextPage();
-    }
   }
 
   renderButtons() {
@@ -87,14 +82,52 @@ class Quiz extends Component {
     }
   }
 
+  getAdvice(currentQuestion) {
+    let advice = currentQuestion.advice;
+    if (advice !== undefined) {
+      return advice;
+    } else return null;
+  }
+
+  getAdviceHeader(currentQuestion) {
+    let adviceHeader = currentQuestion.adviceHeader;
+    if (adviceHeader !== undefined) {
+      return adviceHeader;
+    } else return null;
+  }
+
+  toggleAdviceSlider() {
+    this.setState({
+      isAdviceShown: !this.state.isAdviceShown
+    });
+    return this.state.isAdviceShown;
+  }
+
+  submitForm(values) {
+    this.props.sendAnswers(values);
+  }
+
+  submitClick() {
+    if (this.state.page === data.questions.length - 1) {
+      this.submitForm(this.props.form.quiz.values);
+    } else {
+      this.nextPage();
+    }
+  }
+
   render() {
     const currentQuestion = data.questions[this.state.page];
     return (
       <div className="quiz">
-        <QuestionContainer
-          question={currentQuestion}
-        />
+        <QuestionContainer question={currentQuestion} />
         {this.renderButtons()}
+        <AdviceButton onClick={this.toggleAdviceSlider} />
+        <AdviceSlider
+          adviceHeader={this.getAdviceHeader(currentQuestion)}
+          advice={this.getAdvice(currentQuestion)}
+          isOpen={this.state.isAdviceShown}
+          onClose={this.toggleAdviceSlider}
+        />
       </div>
     )
   }
@@ -109,7 +142,9 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
   return {
-    sendAnswers: answers => dispatch(answerActions.sendAnswers(answers))
+    sendAnswers: answers => dispatch(answerActions.sendAnswers(answers)),
+    showAdvice: advice  => dispatch(adviceActions.showAdvice(advice)),
+    hideAdvice: advice => dispatch(adviceActions.hideAdvice(advice)),
   }
 }
 
