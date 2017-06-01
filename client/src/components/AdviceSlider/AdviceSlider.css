@@ -4,11 +4,19 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: 3px solid white;
-  border-radius: 3px;
   padding: 20px;
   margin: 20px 0 0 0;
-  background: -moz-linear-gradient(left, #2b0056, #7e00fd);
-  background: -webkit-linear-gradient(left, #2b0056, #7e00fd);
-  background: linear-gradient(to right, #2b0056, #7e00f6);
+  background: -moz-linear-gradient(left, #0087b3, #4cc0b8);
+  background: -webkit-linear-gradient(left, #0087b3, #4cc0b8);
+  background: linear-gradient(to right, #0087b3, #4cc0b8);
+  color: #fff;
+ }
+
+ .advice-header {
+   display: flex;
+   width: 100%;
+ }
+
+ .advice-header .button-wrapper {
+   margin-left: auto;
  }
