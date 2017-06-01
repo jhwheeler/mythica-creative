@@ -22,6 +22,7 @@ const Button = props => {
   )}
 
 Button.PropTypes = {
+  label: PropTypes.string,
   onClick: PropTypes.func.isRequired,
   link: PropTypes.string,
 }
