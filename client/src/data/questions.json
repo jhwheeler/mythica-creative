@@ -5,8 +5,6 @@
       "component": "combined",
       "name": "info",
       "text": "Welcome",
-      "options": [],
-      "advice": [],
       "subQuestions": [
         {
           "id": 1,
@@ -14,9 +12,7 @@
           "type": "text",
           "name": "name",
           "text": "What's your name?",
-          "placeholder": "Name",
-          "options": [],
-          "advice": []
+          "placeholder": "Name"
         },
         {
           "id": 2,
@@ -24,9 +20,7 @@
           "type": "email",
           "name": "email",
           "text": "What's your email?",
-          "placeholder": "Email",
-          "options": [],
-          "advice": []
+          "placeholder": "Email"
         }
       ]
     },
@@ -35,11 +29,12 @@
       "component": "combined",
       "name": "target",
       "text": "Whose problem are you solving?",
-      "advice": [],
+      "adviceHeader": "The most important aspect of your business is the people you serve.",
+      "advice": "Knowing their age, gender, and income will help you form an idea of what sort of lifestyle they tend to have. That way, you can speak to them and their needs directly -- a much more engaging way to interact!",
       "subQuestions": [
         {
           "id": 1,
-          "component": "",
+          "component": "input",
           "type": "checkbox",
           "name": "age",
           "text": "Age group",
@@ -47,16 +42,6 @@
             "Young",
             "Middle Aged",
             "Elderly"
-          ],
-          "advice": [
-            {
-              "id": 1,
-              "text": "The most important aspect of your business is the people you serve. First we'll start by choosing an age group or two."
-            },
-            {
-              "id": 2,
-              "text": "If you're not sure which age group you're going for, consider what sort of people tend to have the problem you're solving."
-            }
           ]
         },
         {
@@ -69,12 +54,6 @@
             "Male",
             "Female",
             "Other"
-          ],
-          "advice": [
-            {
-              "id": 1,
-              "text": "You can choose more than one; however, it's usually better to focus on as specific a group of people as possible."
-            }
           ]
         },
         {
@@ -86,88 +65,47 @@
           "options": [
             "0",
             "1000000"
-          ],
-          "advice": [
-            {
-              "id": 1,
-              "text": "Use the slider to choose a range of incomes. This helps determine what sort of lifestyle the people you're helping tend to have."
-            }
-          ]
-        },
-        {
-          "id": 4,
-          "component": "textarea",
-          "name": "description",
-          "text": "Describe this person in some detail, focusing on the challenge they have that you're solving.",
-          "options": [],
-          "advice": [
-            {
-              "id": 1,
-              "text": "Try to get into their head and see the life, and therefore the problem they have, from their angle. What is it like for them to face this issue? What do they want to overcome?"
-            }
           ]
         }
       ]
     },
     {
       "id": 3,
-      "component": "textarea",
-      "name": "solution",
-      "text": "What solution do you offer to their challenge?",
-      "options": [],
-      "advice": [
+      "component": "combined",
+      "name": "description",
+      "text": "",
+      "adviceHeader": "Get into their head and see their life -- and therefore the problem they face -- from their angle.",
+      "advice": "What is it like for them to face this issue? What do they want to overcome? Then when describing your solution, focus on how your product or service solves their problem. So rather than describing the process or characteristics of your solution, talk about the result for the user or client. What do they get out of your solution? Always focus on them, rather than yourself.",
+      "subQuestions": [
         {
           "id": 1,
-          "text": "Focus on how your product or service solves their problem. Try and describe the solution from their perspective."
+          "component": "textarea",
+          "name": "audience",
+          "text": "Describe this person in some detail, focusing on the challenge they have that you're solving."
         },
         {
           "id": 2,
-          "text": "Rather than describing the process or characteristics of your solution, talk about the result for the user or client. What do they get out of your solution? Always focus on them, rather than yourself."
+          "component": "textarea",
+          "name": "solution",
+          "text": "What solution do you offer to their problem?"
         }
-      ],
-      "subQuestions": []
+      ]
     },
     {
       "id": 4,
       "component": "textarea",
       "name": "vision",
       "text": "What is your vision for the brand?",
-      "options": [],
-      "advice": [
-        {
-          "id": 1,
-          "text": "In an ideal world, if everything goes to plan, what will life be like for those whose problem you're solving?"
-        },
-        {
-          "id": 2,
-          "text": "Your vision for your brand is essentially what you're working towards. This is the reason you're doing all of this: to make something happen. What is that something?",
-          "examples": {
-            "Google": "To provide access to the world's information in one click."
-          }
-        }
-      ],
-      "subQuestions": []
+      "adviceHeader": "Your vision for your brand is what you're working towards.",
+      "advice": "In an ideal world, if everything goes to plan, what will life be like for those whose problem you're solving? This is the reason you're doing all of this: to make something happen. What is that something?"
     },
     {
       "id": 5,
       "component": "textarea",
       "name": "mission",
-      "text": "What is your mission? What are the steps you're taking to make your vision a reality?",
-      "options": [],
-      "advice": [
-        {
-          "id": 1,
-          "text": "Your brand's mission entails the tangible means you're using to make your vision real. While your vision answers the question 'Why?', the mission answers the question 'How?'"
-        },
-        {
-          "id": 2,
-          "text": "Here are some great examples of mission statements (notice how they're more tangible and results-oriented than the vision statements above):",
-          "examples": {
-            "Google": "To organize the world's information and make it universally accessible and useful."
-          }
-        }
-      ],
-      "subQuestions": []
+      "text": "What is your mission?",
+      "adviceHeader": "What are the steps you're taking to make your vision a reality?",
+      "advice": "Your brand's mission entails the tangible means you're using to make your vision real. While your vision answers the question 'Why?', the mission answers the question 'How?'"
     },
     {
       "id": 6,
@@ -181,137 +119,46 @@
         "contemporary",
         "rustic"
       ],
-      "advice": [
-        {
-          "id": 1,
-          "text": "Go with whatever style you feel fits you and your clients best. If there's nothing that goes exactly with what you have in mind, simply choose whatever's closest. You may choose more than one option."
-        },
-        {
-          "id": 2,
-          "text": "Remember that the key here is to resonate with your clients, while still staying true and authentic to who you are. What aspect of your own style will connect with theirs? Also make sure you consider the actual product or service and the message that will make that the most appealing to them."
-        }
-      ],
-      "subQuestions": []
+      "adviceHeader": "The key here is: resonate with your clients while staying true and authentic to who you are.",
+      "advice": "In the end, go with whatever style you feel fits you and your clients best. If there's nothing that goes exactly with what you have in mind, simply choose whatever's closest (you may choose more than one option). If you're still stuck, ask yourself this: what aspect of your own style will connect with theirs? Consider your product or service and the message that'll make that the most appealing to them."
     },
     {
       "id": 7,
-      "component": "combined",
+      "component": "textarea",
       "name": "business",
       "text": "How do you envision your business in 3 years? In other words, what your top 3 long-term business goals?",
-      "options": [],
-      "advice": [
-        {
-          "id": 1,
-          "text": "Try and be as concrete as possible. Focus on goals that are quantifiable and measurable, like how many clients you'll have, desired revenue, breadth of reach, etc."
-        }
-      ],
-      "subQuestions": [
-        {
-          "id": 1,
-          "component": "input",
-          "type": "text",
-          "name": "goal-1",
-          "text": "1.",
-          "options": [],
-          "advice": []
-        },
-        {
-          "id": 2,
-          "component": "input",
-          "type": "text",
-          "name": "goal-2",
-          "text": "2.",
-          "options": [],
-          "advice": []
-        },
-        {
-          "id": 3,
-          "component": "input",
-          "type": "text",
-          "name": "goal-3",
-          "text": "3.",
-          "options": [],
-          "advice": []
-        }
-      ]
+      "adviceHeader": "Try and be as concrete as possible.",
+      "advice": "Focus on goals that are quantifiable and measurable, like how many clients you want to have, desired revenue, breadth of reach, etc."
     },
     {
       "id": 8,
-      "component": "combined",
+      "component": "input",
+      "type": "checkbox",
       "name": "products",
       "text": "What products do you need designed for your brand?",
-      "options": [],
-      "advice": [
-        {
-          "id": 1,
-          "text": "Typical requirements include: visual identity (logo, colors, style guide), brand positioning (target market, user profiles, etc.), website, web and/or mobile app, ebook(s), pdf report(s), email marketing templates, etc."
-        }
+      "options": [
+        "logo",
+        "brand",
+        "website",
+        "application",
+        "landing page",
+        "other"
       ],
-      "subQuestions": [
-        {
-          "id": 1,
-          "component": "input",
-          "type": "text",
-          "name": "product-1",
-          "text": "1.",
-          "options": [],
-          "advice": []
-        },
-        {
-          "id": 2,
-          "component": "input",
-          "type": "text",
-          "name": "product-2",
-          "text": "2.",
-          "options": [],
-          "advice": []
-        },
-        {
-          "id": 3,
-          "component": "input",
-          "type": "text",
-          "name": "product-3",
-          "text": "3.",
-          "options": [],
-          "advice": []
-        },
-        {
-          "id": 4,
-          "component": "input",
-          "type": "text",
-          "name": "product-4",
-          "text": "4.",
-          "options": [],
-          "advice": []
-        },
-        {
-          "id": 5,
-          "component": "input",
-          "type": "text",
-          "name": "product-5",
-          "text": "5.",
-          "options": [],
-          "advice": []
-        }
-      ]
+      "adviceHeader": "Think short-term.",
+      "advice": "While it's always good to have a big picture idea of what you want to build, focus on the here and now: what do you need to get to the next level?"
     },
     {
       "id": 9,
       "component": "input",
       "type": "range",
       "name": "budget",
-      "text": "How much can you invest in your brand and online presence to jumpstart your business?",
+      "text": "How much can you invest in your brand and online presence to jump start your business?",
       "options": [
         "0",
         "100000"
       ],
-      "advice": [
-        {
-          "id": 1,
-          "text": "While it may be difficult to specify an exact budget, use the slider to choose a rough range. This will help you create a more accurate action plan, and help us propose the best solution for you."
-        }
-      ],
-      "subQuestions": []
+      "adviceHeader": "A general idea.",
+      "advice": "While it may be difficult to specify an exact budget, use the slider to choose a rough range. This will help you create a more accurate action plan, and help us propose the best solution for you."
     }
   ]
 }
