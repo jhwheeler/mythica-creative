@@ -31,10 +31,16 @@ class Quiz extends Component {
 
   nextPage() {
     this.setState({page: this.state.page + 1});
+    if (this.state.isAdviceShown) {
+      this.toggleAdviceSlider();
+    }
   }
 
   lastPage() {
     this.setState({page: this.state.page - 1});
+    if (this.state.isAdviceShown) {
+      this.toggleAdviceSlider();
+    }
   }
 
   renderButtons() {
@@ -121,13 +127,17 @@ class Quiz extends Component {
       <div className="quiz">
         <QuestionContainer question={currentQuestion} />
         {this.renderButtons()}
-        <AdviceButton onClick={this.toggleAdviceSlider} />
-        <AdviceSlider
-          adviceHeader={this.getAdviceHeader(currentQuestion)}
-          advice={this.getAdvice(currentQuestion)}
-          isOpen={this.state.isAdviceShown}
-          onClose={this.toggleAdviceSlider}
-        />
+        {currentQuestion.advice &&
+          <div className="advice-wrapper">
+            <AdviceButton onClick={this.toggleAdviceSlider} />
+            <AdviceSlider
+              adviceHeader={this.getAdviceHeader(currentQuestion)}
+              advice={this.getAdvice(currentQuestion)}
+              isOpen={this.state.isAdviceShown}
+              onClose={this.toggleAdviceSlider}
+            />
+          </div>
+        }
       </div>
     )
   }
