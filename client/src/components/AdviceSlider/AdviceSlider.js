@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 import css from './AdviceSlider.css';
-import closeButton from '../../../public/images/quiz/close_icon.png';
 
 export default class AdviceSlider extends Component {
   close(e) {
