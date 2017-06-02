@@ -30,7 +30,7 @@ const Question = props => {
   }
 
   return (
-    <div className="question">
+    <div className={`question question-${question.name}`}>
       <form onSubmit={handleSubmit}>
         {question.image === "yes" && question.type !== "checkbox" &&
           <img className="question-image" src={`/images/quiz/${question.name}.png`} />
