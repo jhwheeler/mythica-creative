@@ -129,7 +129,9 @@ class Quiz extends Component {
         {this.renderButtons()}
         {currentQuestion.advice &&
           <div className="advice-wrapper">
-            <AdviceButton onClick={this.toggleAdviceSlider} />
+            <AdviceButton
+              onClick={this.toggleAdviceSlider}
+              isAdviceShown={this.state.isAdviceShown} />
             <AdviceSlider
               adviceHeader={this.getAdviceHeader(currentQuestion)}
               advice={this.getAdvice(currentQuestion)}
