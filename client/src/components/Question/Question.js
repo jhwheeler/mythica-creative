@@ -10,12 +10,20 @@ const Question = props => {
   const renderCheckboxes = () => {
     return (
       <div className="checkboxes">
+        <label>{question.text}</label>
         {question.options.map((option, index) => (
           <div className="checkbox" key={index}>
-            <label htmlFor={`checkbox-${index}`}>{option}</label>
-            <input type="checkbox" id={`checkbox-${index}`} />
+            <label htmlFor={option}>
+              <img className="question-image" src={`/images/quiz/${question.name}-${question.options[index]}.png`} />
+            </label>
+            <Field
+              component="input"
+              type="checkbox"
+              name={option}
+              id={option}
+            />
           </div>
-          )
+        )
         )}
       </div>
     )
@@ -24,16 +32,21 @@ const Question = props => {
   return (
     <div className="question">
       <form onSubmit={handleSubmit}>
-        <label>{question.text}</label>
+        {question.image === "yes" && question.type !== "checkbox" &&
+          <img className="question-image" src={`/images/quiz/${question.name}.png`} />
+        }
         {question.type === "checkbox" && renderCheckboxes()}
         {question.type !== "checkbox" &&
-          <Field
-            component={question.component}
-            type={question.type}
-            name={question.name}
-            placeholder={question.placeholder}
-            onBlur={props.onBlur}
-          />
+          <div className="question-wrapper">
+            <label>{question.text}</label>
+            <Field
+              component={question.component}
+              type={question.type}
+              name={question.name}
+              placeholder={question.placeholder}
+              onBlur={props.onBlur}
+            />
+          </div>
         }
       </form>
     </div>
