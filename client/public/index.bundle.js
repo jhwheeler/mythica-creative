@@ -22051,7 +22051,7 @@ var Question = function Question(props) {
       { className: 'checkboxes' },
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         'label',
-        null,
+        { className: 'question-label-' + question.name },
         question.text
       ),
       question.options.map(function (option, index) {
@@ -22061,7 +22061,7 @@ var Question = function Question(props) {
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'label',
             { htmlFor: option },
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { className: 'question-image', src: '/images/quiz/' + question.name + '-' + question.options[index] + '.png' })
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { className: 'question-image-' + question.name, src: '/images/quiz/' + question.name + '-' + question.options[index] + '.png' })
           ),
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_redux_form__["a" /* Field */], {
             component: 'input',
@@ -22087,7 +22087,7 @@ var Question = function Question(props) {
         { className: 'question-wrapper' },
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'label',
-          null,
+          { className: 'question-label-' + question.name },
           question.text
         ),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_redux_form__["a" /* Field */], {
@@ -27356,7 +27356,7 @@ exports = module.exports = __webpack_require__(8)(undefined);
 
 
 // module
-exports.push([module.i, ".quiz-button {\n  display: inline-block;\n  margin: 0 20px;\n}\n\n.question form {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n}\n\n.question-image {\n  width: 180px;\n}\n\n.question-wrapper {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n}\n\n.question label {\n  color: #fff;\n  font-size: 24px;\n  margin: 20px 10px 40px;\n}\n\n.question input, textarea {\n  background-color: rgba(255,255,255,0);\n  border: 2px solid white;\n  border-radius: 2px;\n  color: #fff;\n  font-size: 20px;\n  font-weight: 400;\n  font-family: Raleway, sans-serif;\n  padding: 10px;\n  width: 100%;\n}\n\n.question input {\n  width: 200px;\n  height: 50px;\n  margin: 10px 0 25px;\n}\n\n.question textarea {\n  height: 140px;\n  width: 40vw;\n  resize: none;\n  outline: none;\n}\n\n.question input::placeholder, textarea::placeholder {\n  color: #fff;\n  font-size: 20px;\n  font-weight: 400;\n  font-family: Raleway, sans-serif;\n}\n\n.question input[type=\"checkbox\"] {\n  border: 0 !important;\n  clip: rect(0 0 0 0) !important;\n  height: 1px !important;\n  margin: -1px !important;\n  overflow: hidden !important;\n  padding: 0 !important;\n  position: absolute !important;\n  width: 1px !important;\n}\n\n.checkboxes {\n  display: flex;\n}\n\n@media only screen and (min-width: 780px) {\n  .question input {\n    width: 340px;\n  }\n}\n", ""]);
+exports.push([module.i, ".quiz-button {\n  display: inline-block;\n  margin: 0 20px;\n}\n\n.question form {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n}\n\n.question-label-audience-age,\n.question-label-audience-sex,\n.question-label-audience-income {\n  padding: 10px;\n  border: 3px solid white;\n}\n\n.question-label-audience-age {\n  width: 150px;\n}\n\n.question-image {\n  width: 180px;\n}\n\n.question-image-audience-age,\n.question-image-style,\n.question-image-product {\n  width: 160px;\n}\n\n.question-image-audience-sex {\n  width: 80px;\n}\n\n.question-wrapper {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n}\n\n.question label {\n  color: #fff;\n  font-size: 24px;\n  margin: 20px 10px 40px;\n}\n\n.question input, textarea {\n  background-color: rgba(255,255,255,0);\n  border: 2px solid white;\n  border-radius: 2px;\n  color: #fff;\n  font-size: 20px;\n  font-weight: 400;\n  font-family: Raleway, sans-serif;\n  padding: 10px;\n  width: 100%;\n}\n\n.question input {\n  width: 200px;\n  height: 50px;\n  margin: 10px 0 25px;\n}\n\n.question textarea {\n  height: 140px;\n  width: 40vw;\n  resize: none;\n  outline: none;\n}\n\n.question input::placeholder, textarea::placeholder {\n  color: #fff;\n  font-size: 20px;\n  font-weight: 400;\n  font-family: Raleway, sans-serif;\n}\n\n.question input[type=\"checkbox\"] {\n  border: 0 !important;\n  clip: rect(0 0 0 0) !important;\n  height: 1px !important;\n  margin: -1px !important;\n  overflow: hidden !important;\n  padding: 0 !important;\n  position: absolute !important;\n  width: 1px !important;\n}\n\n.checkboxes {\n  display: flex;\n}\n\n@media only screen and (min-width: 780px) {\n  .question input {\n    width: 340px;\n  }\n}\n", ""]);
 
 // exports
 

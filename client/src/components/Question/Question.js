@@ -10,11 +10,11 @@ const Question = props => {
   const renderCheckboxes = () => {
     return (
       <div className="checkboxes">
-        <label>{question.text}</label>
+        <label className={`question-label-${question.name}`}>{question.text}</label>
         {question.options.map((option, index) => (
           <div className="checkbox" key={index}>
             <label htmlFor={option}>
-              <img className="question-image" src={`/images/quiz/${question.name}-${question.options[index]}.png`} />
+              <img className={`question-image-${question.name}`} src={`/images/quiz/${question.name}-${question.options[index]}.png`} />
             </label>
             <Field
               component="input"
@@ -38,7 +38,7 @@ const Question = props => {
         {question.type === "checkbox" && renderCheckboxes()}
         {question.type !== "checkbox" &&
           <div className="question-wrapper">
-            <label>{question.text}</label>
+            <label className={`question-label-${question.name}`}>{question.text}</label>
             <Field
               component={question.component}
               type={question.type}
