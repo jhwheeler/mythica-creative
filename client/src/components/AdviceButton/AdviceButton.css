@@ -1,6 +1,27 @@
+.advice-button-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .advice-button {
   width: 80px;
   height: 80px;
+  margin-bottom: -43px;
+  z-index: 10;
   cursor: pointer;
 }
 
+.advice-slider-preview {
+  width: 80vw;
+  height: 40px;
+  padding: 80px 80px 0;
+  background: -moz-linear-gradient(left, #0087b3 0%, #4cc0b8 50%, #0087b3 100%);
+  background: -webkit-linear-gradient(left, #0087b3 0%, #4cc0b8 50%, #0087b3 100%);
+  background: linear-gradient(to right, #0087b3 0%, #4cc0b8 50%, #0087b3 100%);
+  -webkit-clip-path: polygon(50% 28%, 0% 2%, 3% 100%, 97% 100%, 100% 0);
+  clip-path: polygon(50% 28%, 0% 2%, 3% 100%, 97% 100%, 100% 0);
+  transition: all .3s;
+  bottom: 0;
+  margin: 0 auto;
+ }
