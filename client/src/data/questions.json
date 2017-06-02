@@ -27,7 +27,7 @@
     {
       "id": 2,
       "component": "combined",
-      "name": "target",
+      "name": "audience",
       "text": "Whose problem are you solving?",
       "adviceHeader": "The most important aspect of your business is the people you serve.",
       "advice": "Knowing their age, gender, and income will help you form an idea of what sort of lifestyle they tend to have. That way, you can speak to them and their needs directly -- a much more engaging way to interact!",
@@ -37,11 +37,12 @@
           "component": "input",
           "type": "checkbox",
           "name": "age",
+          "image": "yes",
           "text": "Age group",
           "options": [
-            "Young",
-            "Middle Aged",
-            "Elderly"
+            "young",
+            "middle-aged",
+            "elderly"
           ]
         },
         {
@@ -49,11 +50,12 @@
           "component": "input",
           "type": "checkbox",
           "name": "sex",
+          "image": "yes",
           "text": "Sex",
           "options": [
-            "Male",
-            "Female",
-            "Other"
+            "male",
+            "female",
+            "other"
           ]
         },
         {
@@ -95,6 +97,7 @@
       "id": 4,
       "component": "textarea",
       "name": "vision",
+      "image": "yes",
       "text": "What is your vision for the brand?",
       "adviceHeader": "Your vision for your brand is what you're working towards.",
       "advice": "In an ideal world, if everything goes to plan, what will life be like for those whose problem you're solving? This is the reason you're doing all of this: to make something happen. What is that something?"
@@ -103,6 +106,7 @@
       "id": 5,
       "component": "textarea",
       "name": "mission",
+      "image": "yes",
       "text": "What is your mission?",
       "adviceHeader": "What are the steps you're taking to make your vision a reality?",
       "advice": "Your brand's mission entails the tangible means you're using to make your vision real. While your vision answers the question 'Why?', the mission answers the question 'How?'"
@@ -112,12 +116,14 @@
       "component": "input",
       "type": "checkbox",
       "name": "style",
+      "image": "yes",
       "text": "What visual message do you want to express to your future clients?",
       "options": [
         "minimalist",
         "corporate",
-        "contemporary",
-        "rustic"
+        "modern",
+        "rustic",
+        "luxury"
       ],
       "adviceHeader": "The key here is: resonate with your clients while staying true and authentic to who you are.",
       "advice": "In the end, go with whatever style you feel fits you and your clients best. If there's nothing that goes exactly with what you have in mind, simply choose whatever's closest (you may choose more than one option). If you're still stuck, ask yourself this: what aspect of your own style will connect with theirs? Consider your product or service and the message that'll make that the most appealing to them."
@@ -125,7 +131,8 @@
     {
       "id": 7,
       "component": "textarea",
-      "name": "business",
+      "name": "goals",
+      "image": "yes",
       "text": "How do you envision your business in 3 years? In other words, what your top 3 long-term business goals?",
       "adviceHeader": "Try and be as concrete as possible.",
       "advice": "Focus on goals that are quantifiable and measurable, like how many clients you want to have, desired revenue, breadth of reach, etc."
@@ -134,15 +141,15 @@
       "id": 8,
       "component": "input",
       "type": "checkbox",
-      "name": "products",
+      "name": "product",
+      "image": "yes",
       "text": "What products do you need designed for your brand?",
       "options": [
         "logo",
         "brand",
         "website",
-        "application",
-        "landing page",
-        "other"
+        "app",
+        "landing-page"
       ],
       "adviceHeader": "Think short-term.",
       "advice": "While it's always good to have a big picture idea of what you want to build, focus on the here and now: what do you need to get to the next level?"
