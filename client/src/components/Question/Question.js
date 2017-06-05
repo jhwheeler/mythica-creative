@@ -13,15 +13,15 @@ const Question = props => {
         <label className={`question-label-${question.name}`}>{question.text}</label>
         {question.options.map((option, index) => (
           <div className="checkbox" key={index}>
-            <label htmlFor={option}>
-              <img className={`question-image-${question.name}`} src={`/images/quiz/${question.name}-${question.options[index]}.png`} />
-            </label>
             <Field
               component="input"
               type="checkbox"
               name={option}
               id={option}
             />
+            <label htmlFor={option}>
+              <img className={`question-image question-image-${question.name}`} src={`/images/quiz/${question.name}-${question.options[index]}.png`} />
+            </label>
           </div>
         )
         )}
