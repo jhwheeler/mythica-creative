@@ -133,7 +133,7 @@
       "component": "textarea",
       "name": "goals",
       "image": "yes",
-      "text": "How do you envision your business in 3 years? In other words, what your top 3 long-term business goals?",
+      "text": "How do you envision your business in 3 years? In other words, what are your top 3 long-term business goals?",
       "adviceHeader": "Try and be as concrete as possible.",
       "advice": "Focus on goals that are quantifiable and measurable, like how many clients you want to have, desired revenue, breadth of reach, etc."
     },
