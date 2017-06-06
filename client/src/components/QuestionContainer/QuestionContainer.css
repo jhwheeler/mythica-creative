@@ -40,8 +40,4 @@
   .multi-question-wrapper {
     flex-direction: row;
   }
-
-  .multi-question-container {
-    padding: 30px 0 50px;
-  }
 }

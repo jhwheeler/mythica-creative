@@ -12,6 +12,7 @@
   background: linear-gradient(to right, #0087b3 0%, #4cc0b8 50%, #0087b3 100%);
   -webkit-clip-path: polygon(50% 9%, 0% 2%, 6% 100%, 94% 100%, 100% 0);
   clip-path: polygon(50% 9%, 0% 2%, 6% 100%, 94% 100%, 100% 0);
+  margin-top: auto;
  }
 
  .advice-header {

@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import QuestionContainer from '../QuestionContainer/QuestionContainer';
 import AdviceSlider from '../AdviceSlider/AdviceSlider';
 import AdviceButton from '../AdviceButton/AdviceButton';
+import { Link } from 'react-router-dom';
 import * as answerActions from '../../actions/answerActions';
 import * as adviceActions from '../../actions/adviceActions';
 
@@ -104,7 +105,7 @@ class Quiz extends Component {
 
   toggleAdviceSlider() {
     this.setState({
-      isAdviceShown: !this.state.isAdviceShown
+      isAdviceShown: !this.state.isAdviceShown,
     });
     return this.state.isAdviceShown;
   }

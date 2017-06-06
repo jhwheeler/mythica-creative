@@ -1,14 +1,20 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import classNames from 'classnames';
 
 import css from './AdviceButton.css';
 import adviceIcon from '../../../public/images/quiz/advice_icon.png';
 
 const AdviceButton = props => {
+  const adviceButtonClass = classNames({
+    'advice-button': true,
+    'advice-button-pulse': !props.isAdviceShown,
+  });
+
   return (
     <div className="advice-button-wrapper">
       <img
-        className="advice-button"
+        className={adviceButtonClass}
         onClick={props.onClick}
         src={adviceIcon}
       />

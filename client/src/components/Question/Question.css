@@ -3,13 +3,16 @@
   margin: 0 20px;
 }
 
-.input:checked+label > img {
-  display: none;
-  /* box-shadow: 0 0 5px #fff; */
+input:checked+label > img {
+  box-shadow: 0 0 5px #fff;
 }
 
 .question-audience-age {
   width: 100%;
+}
+
+.question-audience-age img {
+  border-radius: 50%;
 }
 
 .question form {
@@ -21,7 +24,7 @@
 .question-label-audience-age,
 .question-label-audience-sex,
 .question-label-audience-income {
-  padding: 7px;
+  padding: 10px;
   border: 2px solid white;
   margin: 0 15px;
 }
@@ -73,15 +76,10 @@
   flex-direction: row;
 }
 
-.multi-question-wrapper .question-audience-sex.question,
-.multi-question-wrapper .question-audience-income.question {
-  margin: 0;
-}
-
 .question label {
   color: #fff;
   font-size: 24px;
-  margin: 20px 10px 40px;
+  margin: 10px 10px 24px;
 }
 
 .question input, textarea {
@@ -92,7 +90,7 @@
   font-size: 20px;
   font-weight: 400;
   font-family: Raleway, sans-serif;
-  padding: 10px;
+  padding: 24px;
   width: 100%;
 }
 
@@ -146,5 +144,8 @@
     align-items: center;
   }
 
+  .multi-question-wrapper .question-audience-sex.question {
+    margin-right: auto;
+  }
 
 }

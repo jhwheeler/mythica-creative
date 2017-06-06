@@ -1,3 +1,9 @@
+@-webkit-keyframes colorPulse {
+      0% {box-shadow: none;}
+     50% {box-shadow: 0 0 5px #fff;}
+    100% {box-shadow: 0 0 10px #fff;}
+}
+
 .advice-button-wrapper {
   display: flex;
   flex-direction: column;
@@ -10,6 +16,11 @@
   margin-bottom: -43px;
   z-index: 10;
   cursor: pointer;
+  border-radius: 50%;
+}
+
+.advice-button-pulse {
+  -webkit-animation: colorPulse 1s infinite alternate;
 }
 
 .advice-slider-preview {
