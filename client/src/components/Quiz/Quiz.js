@@ -17,6 +17,7 @@ class Quiz extends Component {
     this.state = {
       page: 0,
       isAdviceShown: false,
+      showAdvicePulse: false,
     }
 
     this.nextPage = this.nextPage.bind(this);
@@ -122,6 +123,15 @@ class Quiz extends Component {
     }
   }
 
+  componentDidMount() {
+    setTimeout(() => {
+      this.setState({
+        showAdvicePulse: true,
+      }, 4000);
+    });
+    return this.state.showAdvicePulse;
+  }
+
   render() {
     const currentQuestion = data.questions[this.state.page];
     return (
@@ -132,7 +142,8 @@ class Quiz extends Component {
           <div className="advice-wrapper">
             <AdviceButton
               onClick={this.toggleAdviceSlider}
-              isAdviceShown={this.state.isAdviceShown} />
+              isAdviceShown={this.state.isAdviceShown}
+              showAdvicePulse={this.state.showAdvicePulse} />
             <AdviceSlider
               adviceHeader={this.getAdviceHeader(currentQuestion)}
               advice={this.getAdvice(currentQuestion)}

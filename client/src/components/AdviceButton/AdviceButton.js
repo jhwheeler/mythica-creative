@@ -8,7 +8,7 @@ import adviceIcon from '../../../public/images/quiz/advice_icon.png';
 const AdviceButton = props => {
   const adviceButtonClass = classNames({
     'advice-button': true,
-    'advice-button-pulse': !props.isAdviceShown,
+    'advice-button-pulse': !props.isAdviceShown && props.showAdvicePulse,
   });
 
   return (
