@@ -4,14 +4,21 @@
 }
 
 input:checked+label > img {
-  box-shadow: 0 0 5px #fff;
+  box-shadow: 0 0 25px #fff;
+  -moz-transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+  transition: all .3s;
 }
 
 .question-audience-age {
   width: 100%;
 }
 
-.question-audience-age img {
+.question-image-audience-age,
+.question-image-audience-sex,
+.question-image-style,
+.question-image-product {
   border-radius: 50%;
 }
 
