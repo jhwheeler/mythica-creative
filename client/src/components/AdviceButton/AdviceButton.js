@@ -17,6 +17,8 @@ const AdviceButton = props => {
         className={adviceButtonClass}
         onClick={props.onClick}
         src={adviceIcon}
+        alt="Click here for help answering this question"
+        title="Need some help?"
       />
       {!props.isAdviceShown &&
         <div className="advice-slider-preview">
