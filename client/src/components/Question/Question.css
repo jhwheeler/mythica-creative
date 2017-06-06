@@ -12,14 +12,6 @@
   width: 100%;
 }
 
-.question-audience-sex {
-  width: 40%;
-}
-
-.question-audience-income {
-  width: 40%;
-}
-
 .question form {
   display: flex;
   flex-direction: column;
@@ -69,8 +61,12 @@
 }
 
 .checkboxes {
+  display: flex;
+  flex-direction: column;
   text-align: center;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .question-audience-income .question-wrapper {
@@ -108,7 +104,7 @@
 
 .question textarea {
   height: 140px;
-  width: 40vw;
+  width: 80vw;
   resize: none;
   outline: none;
 }
@@ -131,12 +127,24 @@
   width: 1px !important;
 }
 
-.checkboxes {
-  display: flex;
-}
-
 @media only screen and (min-width: 780px) {
   .question input {
     width: 340px;
   }
+
+  .question-audience-sex, .question-audience-income {
+    width: 40%;
+  }
+
+  .question textarea {
+    width: 40vw;
+  }
+
+  .checkboxes {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+
 }
