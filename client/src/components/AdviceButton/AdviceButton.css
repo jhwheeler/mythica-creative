@@ -1,7 +1,10 @@
 @-webkit-keyframes colorPulse {
       0% {box-shadow: none;}
-     50% {box-shadow: 0 0 5px #fff;}
-    100% {box-shadow: 0 0 10px #fff;}
+     10% {box-shadow: 0 0 5px #fff;}
+     25% {box-shadow: 0 0 10px #fff;}
+     50% {box-shadow: 0 0 20px #fff;}
+     75% {box-shadow: 0 0 25px #fff;}
+    100% {box-shadow: 0 0 30px #fff;}
 }
 
 .advice-button-wrapper {
@@ -20,7 +23,7 @@
 }
 
 .advice-button-pulse {
-  -webkit-animation: colorPulse 1s infinite alternate;
+  -webkit-animation: colorPulse .9s infinite alternate;
 }
 
 .advice-slider-preview {
