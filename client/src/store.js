@@ -9,7 +9,6 @@ import rootReducer from './reducers/index';
 
 const initialState = {
   answers: [],
-  advice: [],
 };
 
 export const history = createBrowserHistory();
