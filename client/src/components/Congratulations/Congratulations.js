@@ -5,18 +5,18 @@ import Hero from '../Hero/Hero';
 import Button from '../Button/Button';
 import Footer from '../Footer/Footer';
 
-import thankYouHero from '../../../public/images/hero/thank-you-hero.jpg';
+import congratulationsHero from '../../../public/images/hero/congratulations-hero.jpg';
 import css from './Congratulations.css';
 
 const Congratulations = () => {
   return (
-    <div className="thank-you-container">
+    <div className="congratulations-container">
 
       <Header />
 
-      <div className="thank-you">
-        <Hero className="thank-you-hero" backgroundImage={thankYouHero}>
-          <div className="thank-you-text">
+      <div className="congratulations">
+        <Hero className="congratulations-hero" backgroundImage={congratulationsHero}>
+          <div className="congratulations-text">
             <h1>Congratulations!</h1>
             <p>Great job completing the quiz.</p>
             <p>What's next?</p>
