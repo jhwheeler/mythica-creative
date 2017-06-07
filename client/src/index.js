@@ -12,6 +12,7 @@ import Work from './components/Work/Work';
 import Contact from './components/Contact/Contact';
 import Quiz from './components/Quiz/Quiz';
 import Congratulations from './components/Congratulations/Congratulations';
+import Blueprint from './components/Blueprint/Blueprint';
 import NotFound from './components/NotFound/NotFound';
 
 const Root = () => {
@@ -24,6 +25,8 @@ const Root = () => {
           <Route path="/contact" component={Contact} />
           <Route path="/brand" component={Quiz} />
           <Route path="/congratulations" component={Congratulations} />
+          <Route path="/answers/:_id" component={Blueprint} />
+          <Route path="/blueprint" component={Blueprint} />
           <Route path="*" component={NotFound} />
         </Switch>
       </ConnectedRouter>
