@@ -5,8 +5,7 @@ import QuestionContainer from '../QuestionContainer/QuestionContainer';
 import AdviceSlider from '../AdviceSlider/AdviceSlider';
 import AdviceButton from '../AdviceButton/AdviceButton';
 import { Link } from 'react-router-dom';
-import * as answerActions from '../../actions/answerActions';
-import * as adviceActions from '../../actions/adviceActions';
+import { sendAnswers, fetchAnswers } from '../../actions/answerActions';
 
 import css from './Quiz.css';
 import data from '../../data/questions.json';
@@ -159,7 +158,6 @@ class Quiz extends Component {
 
 const mapStateToProps = state => {
   return {
-    advice: state.advice,
     form: state.form,
   }
 };
