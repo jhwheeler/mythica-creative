@@ -12,11 +12,11 @@ mongoose.Promise = global.Promise;
 
 app.use(bodyParser.json());
 
-app.use('/api', router);
+app.use('/answers', router);
 
 app.use(express.static(path.join(__dirname, '..', 'client', 'public')));
 
-app.get(['/', '/work', '/contact', '/brand'], (req, res) => {
+app.get(['/', '/work', '/contact', '/brand', 'congratulations'], (req, res) => {
   res.sendFile(path.resolve(__dirname, '..', 'client', 'public', 'index.html'))
 });
 

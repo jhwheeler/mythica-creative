@@ -10,7 +10,7 @@ const router = express.Router();
 
 router.use(jsonParser);
 
-router.get('/answers', (req, res) => {
+router.get('/', (req, res) => {
   Answer
     .find()
     .exec()
@@ -23,7 +23,7 @@ router.get('/answers', (req, res) => {
     );
 });
 
-router.get('/answers/:_id', (req, res) => {
+router.get('/:_id', (req, res) => {
   Answer
     .findOne({_id: req.params._id})
     .exec()
@@ -36,7 +36,7 @@ router.get('/answers/:_id', (req, res) => {
     );
 });
 
-router.post('/answers', (req, res) => {
+router.post('/', (req, res) => {
   const date = new Date();
 
   Answer
@@ -52,7 +52,7 @@ router.post('/answers', (req, res) => {
 });
 
 
-router.put('/answers/:_id', (req, res) => {
+router.put('/:_id', (req, res) => {
   if (!(req.params._id && req.body._id && (req.params._id === req.body._id))) {
     const message = (
       `Request path id (${req.params._id}) and request body id ` +
@@ -77,7 +77,7 @@ router.put('/answers/:_id', (req, res) => {
     .catch(err => res.status(500).json(err));
 });
 
-router.delete('/answers/:_id', (req, res) => {
+router.delete('/:_id', (req, res) => {
   Answer
     .findOneAndRemove({_id: req.params._id})
     .exec()
