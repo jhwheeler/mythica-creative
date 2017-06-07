@@ -11,6 +11,7 @@ import Home from './components/Home/Home';
 import Work from './components/Work/Work';
 import Contact from './components/Contact/Contact';
 import Quiz from './components/Quiz/Quiz';
+import Congratulations from './components/Congratulations/Congratulations';
 import NotFound from './components/NotFound/NotFound';
 
 const Root = () => {
@@ -22,6 +23,7 @@ const Root = () => {
           <Route path="/work" component={Work} />
           <Route path="/contact" component={Contact} />
           <Route path="/brand" component={Quiz} />
+          <Route path="/congratulations" component={Congratulations} />
           <Route path="*" component={NotFound} />
         </Switch>
       </ConnectedRouter>
