@@ -10,24 +10,18 @@ const router = express.Router();
 
 router.use(jsonParser);
 
-router.get('/', (req, res) => {
-  Answer
-    .find()
-    .exec()
-    .then(data => res.json(data))
-    .catch(
-      err => {
-        console.error(err);
-        res.status(500).json({message: 'Internal Server Error'})
-      }
-    );
-});
-
 router.get('/:_id', (req, res) => {
   Answer
     .findOne({_id: req.params._id})
     .exec()
-    .then(data => res.json(data))
+    .then(data => {
+      console.log(data);
+      if (data.answers.length < 1) {
+        res.status(404).json({message: 'No Such Record Exists'});
+      } else {
+        res.json(data.answers[0]);
+      }
+    })
     .catch(
       err => {
         console.error(err);
