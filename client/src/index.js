@@ -26,7 +26,6 @@ const Root = () => {
           <Route path="/brand" component={Quiz} />
           <Route path="/congratulations" component={Congratulations} />
           <Route path="/answers/:_id" component={Blueprint} />
-          <Route path="/blueprint" component={Blueprint} />
           <Route path="*" component={NotFound} />
         </Switch>
       </ConnectedRouter>
