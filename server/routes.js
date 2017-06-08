@@ -15,7 +15,6 @@ router.get('/:_id', (req, res) => {
     .findOne({_id: req.params._id})
     .exec()
     .then(data => {
-      console.log(data);
       if (data.answers.length < 1) {
         res.status(404).json({message: 'No Such Record Exists'});
       } else {
