@@ -12,12 +12,16 @@ mongoose.Promise = global.Promise;
 
 app.use(bodyParser.json());
 
-app.use('/answers', router);
+app.use('/api/answers', router);
 
 app.use(express.static(path.join(__dirname, '..', 'client', 'public')));
 
-app.get(['/', '/work', '/contact', '/brand', '/congratulations', '/blueprint'], (req, res) => {
+app.get(['/', '/work', '/contact', '/brand', '/congratulations', '/answers/:_id', '/404'], (req, res) => {
   res.sendFile(path.resolve(__dirname, '..', 'client', 'public', 'index.html'))
+});
+
+app.get('*', (req, res) => {
+  res.redirect('/404');
 });
 
 function runServer(databaseUrl=DATABASE_URL, port=PORT) {
@@ -28,7 +32,8 @@ function runServer(databaseUrl=DATABASE_URL, port=PORT) {
         return reject(err);
       }
       server = app.listen(port, () => {
-        console.log(`Mythica Creative server is listening on port ${port}`);
+        const timeNow = new Date();
+        console.log(`Mythica Creative server listening on port ${port} at ${timeNow}`);
         resolve();
       })
       .on('error', err => {
