@@ -18,33 +18,26 @@ class Quiz extends Component {
       isAdviceShown: false,
       showAdvicePulse: false,
     }
-
-    this.nextPage = this.nextPage.bind(this);
-    this.lastPage = this.lastPage.bind(this);
-    this.renderButtons = this.renderButtons.bind(this);
-    this.getButtonText = this.getButtonText.bind(this);
-    this.submitClick = this.submitClick.bind(this);
-    this.submitForm = this.submitForm.bind(this);
-    this.getAdvice = this.getAdvice.bind(this);
-    this.getAdviceHeader = this.getAdviceHeader.bind(this);
-    this.toggleAdviceSlider = this.toggleAdviceSlider.bind(this);
   }
 
-  nextPage() {
-    this.setState({page: this.state.page + 1});
+  nextPage = () => {
+    this.setState({
+      page: this.state.page + 1,
+      showAdvicePulse: false,
+    });
     if (this.state.isAdviceShown) {
       this.toggleAdviceSlider();
     }
   }
 
-  lastPage() {
+  lastPage = () => {
     this.setState({page: this.state.page - 1});
     if (this.state.isAdviceShown) {
       this.toggleAdviceSlider();
     }
   }
 
-  renderButtons() {
+  renderButtons = () => {
     let { buttonText, backButtonText } = this.getButtonText();
     return (
       <div className="quiz-button-wrapper">
@@ -70,7 +63,7 @@ class Quiz extends Component {
     )
   }
 
-  getButtonText() {
+  getButtonText = () => {
     let buttonText, backButtonText;
     if (this.state.page === 0) {
       buttonText = "Start";
@@ -89,32 +82,32 @@ class Quiz extends Component {
     }
   }
 
-  getAdvice(currentQuestion) {
+  getAdvice = currentQuestion => {
     let advice = currentQuestion.advice;
     if (advice !== undefined) {
       return advice;
     } else return null;
   }
 
-  getAdviceHeader(currentQuestion) {
+  getAdviceHeader = currentQuestion => {
     let adviceHeader = currentQuestion.adviceHeader;
     if (adviceHeader !== undefined) {
       return adviceHeader;
     } else return null;
   }
 
-  toggleAdviceSlider() {
+  toggleAdviceSlider = () => {
     this.setState({
       isAdviceShown: !this.state.isAdviceShown,
     });
     return this.state.isAdviceShown;
   }
 
-  submitForm(values) {
+  submitForm = values => {
     this.props.sendAnswers(values);
   }
 
-  submitClick() {
+  submitClick = () => {
     if (this.state.page === data.questions.length - 1) {
       this.submitForm(this.props.form.quiz.values);
     } else {
@@ -122,13 +115,21 @@ class Quiz extends Component {
     }
   }
 
-  componentDidMount() {
+  pulseAdviceButton = () => {
     setTimeout(() => {
       this.setState({
         showAdvicePulse: true,
-      }, 4000);
-    });
+      });
+    }, 4000);
     return this.state.showAdvicePulse;
+  }
+
+  componentDidMount() {
+    this.pulseAdviceButton();
+  }
+
+  componentDidUpdate() {
+    this.pulseAdviceButton();
   }
 
   render() {
@@ -164,7 +165,7 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
   return {
-    sendAnswers: answers => dispatch(answerActions.sendAnswers(answers)),
+    sendAnswers: answers => dispatch(sendAnswers(answers)),
   }
 }
 
