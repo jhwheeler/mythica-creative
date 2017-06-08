@@ -4,7 +4,7 @@ import { Route, Switch } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { ConnectedRouter } from 'connected-react-router';
 
-import css from './index.css';
+import css from './index.scss';
 import store, { history } from './store';
 
 import Home from './components/Home/Home';

@@ -2,15 +2,13 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-}
-
-.case-study .main-image {
-  width: 100%;
-  margin-bottom: 20px;
-}
-
-.case-study .main-image img {
-  max-width: 100%;
+  .main-image {
+    width: 100%;
+    margin-bottom: 20px;
+    img {
+      max-width: 100%;
+    }
+  }
 }
 
 .case-study-text hr {
@@ -27,8 +25,6 @@
     margin: 0;
     padding-right: 40px;
   }
-
-
   .case-study-text {
     width: 50%;
   }

@@ -5,7 +5,7 @@ import Hero from '../Hero/Hero';
 import Button from '../Button/Button';
 import Footer from '../Footer/Footer';
 
-import css from './Contact.css';
+import css from './Contact.scss';
 import contactHero from '../../../public/images/hero/ContactUs.jpg';
 
 const Contact = () => {

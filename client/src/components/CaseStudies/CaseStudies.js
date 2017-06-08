@@ -1,9 +1,10 @@
 import React from 'react';
 
-import css from './CaseStudies.css';
 import CaseStudy from '../CaseStudy/CaseStudy';
 import Gallery from '../Gallery/Gallery';
 import Button from '../Button/Button';
+
+import css from './CaseStudies.scss';
 import caseStudiesData from './CaseStudies.data';
 
 const CaseStudies = props => {

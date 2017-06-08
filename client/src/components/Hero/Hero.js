@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-import css from './Hero.css';
+import css from './Hero.scss';
 
 export default class Hero extends Component {
   render() {

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-import css from './AdviceSlider.css';
+import css from './AdviceSlider.scss';
 
 export default class AdviceSlider extends Component {
   close(e) {

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Slider from 'react-slick';
 
-import css from './Gallery.css';
+import css from './Gallery.scss';
 
 class Gallery extends Component {
   render() {

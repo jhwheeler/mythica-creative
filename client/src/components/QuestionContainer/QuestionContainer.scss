@@ -27,13 +27,12 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-}
-
-.multi-question-wrapper .question {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 20px;
+  .question {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+  }
 }
 
 @media only screen and (min-width: 780px) {

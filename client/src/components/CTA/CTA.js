@@ -3,7 +3,7 @@ import React from 'react';
 import Hero from '../Hero/Hero';
 import Button from '../Button/Button';
 
-import css from './CTA.css';
+import css from './CTA.scss';
 import copy from './CTA.data';
 import heroCTA from '../../../public/images/home-cta.jpg';
 

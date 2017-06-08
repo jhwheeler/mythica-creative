@@ -2,7 +2,7 @@ import React from 'react';
 
 import Technologies from '../Technologies/Technologies';
 
-import css from './Founders.css';
+import css from './Founders.scss';
 import copy from './Founders.data.js';
 
 const Founders = () => {

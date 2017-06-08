@@ -1,8 +1,9 @@
 import React from 'react';
 
-import css from './Services.css';
 import Service from '../Service/Service';
 import servicesData from './Services.data';
+
+import css from './Services.scss';
 
 const Services = props => {
   return (

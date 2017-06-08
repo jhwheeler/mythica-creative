@@ -1,7 +1,8 @@
 import React from 'react';
 
-import css from './Projects.css';
 import Project from '../Project/Project';
+
+import css from './Projects.scss';
 import images from './Projects.data';
 
 const Projects = props => {

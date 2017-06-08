@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 
-import css from './Service.css';
 import Button from '../Button/Button';
 import Modal from '../Modal/Modal';
+
+import css from './Service.scss';
 
 export default class Service extends Component {
   constructor(props) {

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
-import css from './Header.css';
+import css from './Header.scss';
 import logo from '../../../public/images/mythica-full-logo.png'
 
 export default class Header extends Component {

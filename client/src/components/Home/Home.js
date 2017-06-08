@@ -9,7 +9,7 @@ import Founders from '../Founders/Founders';
 import CTA from '../CTA/CTA';
 import Footer from '../Footer/Footer';
 
-import css from './Home.css';
+import css from './Home.scss';
 import { copy,images } from './Home.data.js';
 
 const Home = props => {

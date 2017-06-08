@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
-import css from './AdviceButton.css';
+import css from './AdviceButton.scss';
 import adviceIcon from '../../../public/images/quiz/advice_icon.png';
 
 const AdviceButton = props => {

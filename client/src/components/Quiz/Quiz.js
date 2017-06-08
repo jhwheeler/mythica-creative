@@ -7,7 +7,7 @@ import AdviceButton from '../AdviceButton/AdviceButton';
 import { Link } from 'react-router-dom';
 import { sendAnswers, fetchAnswers } from '../../actions/answerActions';
 
-import css from './Quiz.css';
+import css from './Quiz.scss';
 import data from '../../data/questions.json';
 
 class Quiz extends Component {

@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import Hero from '../Hero/Hero';
 import { fetchAnswers } from '../../actions/answerActions';
 
-import css from './Blueprint.css';
+import css from './Blueprint.scss';
 import { copy, images } from './Blueprint.data.js';
 
 class Blueprint extends Component {

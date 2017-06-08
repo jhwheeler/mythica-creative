@@ -1,6 +1,6 @@
 import React from 'react';
 
-import css from './Technologies.css';
+import css from './Technologies.scss';
 import technologiesData from './Technologies.data';
 
 const Technology = props => {

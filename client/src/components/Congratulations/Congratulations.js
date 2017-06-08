@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import Hero from '../Hero/Hero';
 
 import congratulationsHero from '../../../public/images/hero/congratulations-hero.jpg';
-import css from './Congratulations.css';
+import css from './Congratulations.scss';
 
 const Congratulations = () => {
   return (

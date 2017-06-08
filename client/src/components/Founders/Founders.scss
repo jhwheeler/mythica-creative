@@ -40,27 +40,23 @@
   color: #fff;
   font-style: italic;
   text-align: center;
-}
-
-.founders-quote h3 {
-  width: 90%;
+  h3 {
+    width: 90%;
+  }
 }
 
 @media only screen and (min-width: 760px) {
   .about-content {
     width: 80%;
   }
-
   .about-image {
     width: 80%;
     height: 600px;
   }
-
   .founders-quote {
     height: 260px;
-  }
-
-  .founders-quote h3 {
-    width: 80%;
+    h3 {
+      width: 80%;
+    }
   }
 }

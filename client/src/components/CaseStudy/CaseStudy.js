@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-import css from './CaseStudy.css';
+import css from './CaseStudy.scss';
 import Button from '../Button/Button';
 
 export default class CaseStudy extends Component {
