@@ -7,6 +7,7 @@ import audienceAgeElderly from '../../../public/images/quiz/audience-age-elderly
 import audienceSexMale from '../../../public/images/quiz/audience-sex-male.png';
 import audienceSexFemale from '../../../public/images/quiz/audience-sex-female.png';
 import audienceSexOther from '../../../public/images/quiz/audience-sex-other.png';
+import exercise from '../../../public/images/blueprint/exercise.png';
 
 export const copy = {
   heroTitle: "Your Brand Blueprint",
@@ -16,6 +17,10 @@ export const copy = {
   audienceText2: "As brand experts, we work with buyer personas. Buyer personas are fictional, generalized representations of your ideal clients. They help you understand your clients (current and potential!) much better, and make it easier for you to tailor content to the specific needs, behaviors, and concerns of those different groups.",
   buyerDemographicsTitle: "Your Buyer Persona",
   buyerDescriptionTitle: "Who Are They?",
+  buyerDescriptionText: "This is sample text to simulate lorem ipsum lorem lorem ipse si adveniunt, quod vis facere? Non sunt multi qui volunt hoc facere, non est? Sic, ita est, sed quod vis? Sic est.",
+  buyerExerciseTitle: "Buyer Persona Exercise",
+  buyerExerciseText1: "Create at least two buyer personas using the ready-to-go, fill-in-the-blank worksheets we sent you. They don't have to include all the details from the get go; you can flesh them out over time. In the beginning, fill out at least the name, age, main interests, pain points, and desires. As for the name, pick a typical name for the demographic, just to make them more real, personal, and relatable.",
+  buyerExerciseText2: "This will help you when you write your blog posts, shoot videos, or create any other kind of content. Knowing who you're speaking to will give you a clear direction and focus that will exponentially improve your results in all your marketing efforts. Remember: the client is the most important aspect of your entire enterprise!",
 
 }
 
@@ -29,5 +34,6 @@ export const images = {
   audienceSexMale,
   audienceSexFemale,
   audienceSexOther,
+  exercise,
 
 }

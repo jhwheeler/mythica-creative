@@ -1,14 +1,31 @@
+$text-color: #3c3c3b;
+$light-color: #fff;
+$muted-color: #f5f5f5;
+$contrast-color: rgb(44, 0, 87);
+$contrast-gradient-full: linear-gradient(to top right, rgba(44,0,87,1) 0%, rgba(59,0,122,1) 32%, rgba(73,0,150,1) 53%, rgba(96,0,191,1) 78%, rgba(96,0,191,1) 79%, rgba(124,0,248,1) 100%);
+$left-angle-polygon: polygon(0 8%, 100% 0, 100% 92%, 0 100%);
+$right-angle-polygon: polygon(0 0, 100% 8%, 100% 100%, 0 92%);
+
 .blueprint {
   h1, h2, h3, p {
-    color: #3c3c3b;
+    color: $text-color;
   }
   h2 {
     margin: 20px 0;
   }
   p {
-    margin: 10px 0;
+    margin: 15px 0;
   }
 }
+
+.blueprint-contrast-section {
+  background: $contrast-color;
+  background-image: $contrast-gradient-full;
+  h1, h2, h3, p {
+    color: $light-color;
+  }
+}
+
 
 .blueprint-hero {
   height: 100vh;
@@ -23,7 +40,7 @@
     font-size: 60px;
     font-weight: 100;
     line-height: 64px;
-    color: #fff;
+    color: $light-color;
   }
 }
 
@@ -40,8 +57,8 @@
 .blueprint-audience {
   display: flex;
   flex-wrap: wrap;
-  clip-path: polygon(0 8%, 100% 0, 100% 92%, 0 100%);
-  background-color: #f5f5f5;
+  clip-path: $left-angle-polygon;
+  background-color: $muted-color;
   height: 1150px;
   padding: 70px 10px;
   img {
@@ -80,24 +97,47 @@
   width: 90%;
 }
 
+.buyer-description {
+  margin: 50px 0;
+}
+
+.buyer-exercise {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  clip-path: $right-angle-polygon;
+  height: 1150px;
+  padding: 100px 10px 30px;
+  text-align: center;
+}
+
 @media only screen and (min-width: 780px) {
   .blueprint-hero {
     height: 80vh;
   }
+
   .blueprint-hero-title h1 {
     font-size: 90px;
     line-height: 95px;
   }
+
   .blueprint-audience {
     height: 1000px;
     padding: 50px 20px;
   }
+
   .blueprint-audience-text {
     width: 50%;
   }
+
   .blueprint-audience img {
     height: auto;
     align-self: flex-end;
     width: 40%;
+  }
+
+  .blueprint-exercise {
+
   }
 }

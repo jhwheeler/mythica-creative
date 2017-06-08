@@ -16,7 +16,7 @@ class Blueprint extends Component {
       userId = this.props.match.params._id;
     }
 
-    this.props.fetchAnswers(userId);
+    /*this.props.fetchAnswers(userId);*/
   }
 
   render() {
@@ -66,8 +66,20 @@ class Blueprint extends Component {
               <p>$500,000</p>
               <h3>Income</h3>
             </div>
-            <div className="buyer-persona-description">
-            </div>
+          </div>
+        </div>
+
+        <div className="buyer-description">
+          <h2>{copy.buyerDescriptionTitle}</h2>
+          <p>{copy.buyerDescriptionText}</p>
+        </div>
+
+        <div className="blueprint-contrast-section buyer-exercise">
+          <img src={images.exercise} />
+          <div className="blueprint-audience-text">
+            <h2>{copy.buyerExerciseTitle}</h2>
+            <p>{copy.buyerExerciseText1}</p>
+            <p>{copy.buyerExerciseText2}</p>
           </div>
         </div>
 
