@@ -1,27 +1,17 @@
 import axios from 'axios';
 
-const SEND_ANSWERS_SUCCESS = 'SEND_ANSWERS_SUCCESS';
-const FETCH_ANSWERS_SUCCESS = 'FETCH_ANSWERS_SUCCESS';
-
-export const sendAnswersSuccess = answers => {
+export const saveAnswersSuccess = answers => {
   return {
-    type: 'SEND_ANSWERS_SUCCESS',
-    answers,
-  }
-}
-
-export const fetchAnswersSuccess = answers => {
-  return {
-    type: 'FETCH_ANSWERS_SUCCESS',
+    type: 'SAVE_ANSWERS_SUCCESS',
     answers,
   }
 }
 
 export const sendAnswers = answers => {
-  return (dispatch) => {
-    return axios.post(`/answers`, {answers})
+  return dispatch => {
+    return axios.post(`/api/answers`, {answers})
       .then(response => {
-        dispatch(sendAnswersSuccess(response.data))
+        dispatch(saveAnswersSuccess(response.data))
       })
       .catch(error => {
         throw(error);
@@ -29,11 +19,11 @@ export const sendAnswers = answers => {
   };
 };
 
-export const fetchAnswers = (id) => {
-  return (dispatch) => {
-    return axios.get(`/answers/${id}`)
+export const fetchAnswers = id => {
+  return dispatch => {
+    return axios.get(`/api/answers/${id}`)
       .then(response => {
-        dispatch(fetchAnswersSuccess(response.data))
+        dispatch(saveAnswersSuccess(response.data))
       })
       .catch(error => {
         throw(error);
