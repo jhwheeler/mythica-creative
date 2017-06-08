@@ -99,6 +99,7 @@ $right-angle-polygon: polygon(0 0, 100% 8%, 100% 100%, 0 92%);
 
 .buyer-description {
   margin: 50px 0;
+  text-align: center;
 }
 
 .buyer-exercise {
@@ -110,6 +111,10 @@ $right-angle-polygon: polygon(0 0, 100% 8%, 100% 100%, 0 92%);
   height: 1150px;
   padding: 100px 10px 30px;
   text-align: center;
+}
+
+.mission-vision {
+  text-align: left;
 }
 
 @media only screen and (min-width: 780px) {
