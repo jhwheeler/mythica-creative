@@ -3,7 +3,7 @@
   margin: 0 20px;
 }
 
-input:checked+label > img {
+input:checked + label > img {
   box-shadow: 0 0 25px #fff;
   -moz-transform: scale(1.05);
   -webkit-transform: scale(1.05);
@@ -83,14 +83,27 @@ input:checked+label > img {
   flex-direction: row;
 }
 
-.question label {
-  color: #fff;
-  font-size: 24px;
-  margin: 10px 10px 24px;
+.question {
+  label {
+    color: #fff;
+    font-size: 24px;
+    margin: 10px 10px 24px;
+  }
+  input {
+    background-color: rgba(255, 255, 255, 0);
+    border: 2px solid white;
+    border-radius: 2px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: Raleway, sans-serif;
+    padding: 24px;
+    width: 100%;
+  }
 }
 
-.question input, textarea {
-  background-color: rgba(255,255,255,0);
+textarea {
+  background-color: rgba(255, 255, 255, 0);
   border: 2px solid white;
   border-radius: 2px;
   color: #fff;
@@ -101,20 +114,27 @@ input:checked+label > img {
   width: 100%;
 }
 
-.question input {
-  width: 200px;
-  height: 50px;
-  margin: 10px 0 25px;
+.question {
+  input {
+    width: 200px;
+    height: 50px;
+    margin: 10px 0 25px;
+  }
+  textarea {
+    height: 140px;
+    width: 80vw;
+    resize: none;
+    outline: none;
+  }
+  input::placeholder {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: Raleway, sans-serif;
+  }
 }
 
-.question textarea {
-  height: 140px;
-  width: 80vw;
-  resize: none;
-  outline: none;
-}
-
-.question input::placeholder, textarea::placeholder {
+textarea::placeholder {
   color: #fff;
   font-size: 20px;
   font-weight: 400;
@@ -136,23 +156,19 @@ input:checked+label > img {
   .question input {
     width: 340px;
   }
-
-  .question-audience-sex, .question-audience-income {
+  .question-audience-sex,
+  .question-audience-income {
     width: 40%;
   }
-
   .question textarea {
     width: 40vw;
   }
-
   .checkboxes {
     flex-direction: row;
     justify-content: center;
     align-items: center;
   }
-
   .multi-question-wrapper .question-audience-sex.question {
     margin-right: auto;
   }
-
 }

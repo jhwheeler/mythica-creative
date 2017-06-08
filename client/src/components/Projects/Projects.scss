@@ -37,12 +37,11 @@
     width: 360px;
     cursor: pointer;
     padding: 0;
-  }
-
-  .preview-image:hover {
-    -moz-transform: scale(1.05);
-    -webkit-transform: scale(1.05);
-    transform: scale(1.05);
-    z-index: 0;
+    &:hover {
+      -moz-transform: scale(1.05);
+      -webkit-transform: scale(1.05);
+      transform: scale(1.05);
+      z-index: 0;
+    }
   }
 }

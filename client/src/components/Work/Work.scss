@@ -1,10 +1,9 @@
 .work-hero-wrapper {
   height: 420px;
-}
-
-.work-hero-wrapper .hero h1 {
-  font-weight: 100;
-  line-height: 40px;
+  .hero h1 {
+    font-weight: 100;
+    line-height: 40px;
+  }
 }
 
 .work-tagline {
@@ -12,10 +11,9 @@
   text-align: center;
   line-height: 30px;
   color: #424447;
-}
-
-.work-tagline h3 {
-  font-weight: 100;
+  h3 {
+    font-weight: 100;
+  }
 }
 
 @media only screen and (min-width: 760px) {

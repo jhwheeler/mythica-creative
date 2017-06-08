@@ -19,24 +19,21 @@ nav {
   background-color: rgba(32, 25, 43, 0.7);
 }
 
-@media only screen and (min-width:760px) {
+@media only screen and (min-width: 760px) {
   .transparent-menu {
     padding: 10px;
     background-color: rgba(255, 255, 255, 0);
   }
-
   .solid-menu {
     padding: 7px;
     background-color: #20192B;
     background-color: rgba(32, 25, 43, 0.7);
     transition: all .3s;
   }
-
   .links {
     display: block;
-    float: right
+    float: right;
   }
-
   .nav-link {
     float: left;
     color: #fff;
@@ -44,14 +41,11 @@ nav {
     font-size: 22px;
     line-height: 50px;
     height: 50px;
+    &:hover {
+      color: #2cc0d3;
+    }
   }
-
-  .nav-link:hover {
-    color: #2cc0d3;
-  }
-
   nav a {
     text-decoration: none;
   }
 }
-

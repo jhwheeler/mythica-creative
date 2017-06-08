@@ -44,17 +44,14 @@
     height: 157px;
     width: 169px;
   }
-
   .home-hero-header {
     height: 72px;
     width: 277px;
   }
-
   .home-hero-header-2 {
     height: 55px;
     width: 282px;
   }
-
   .home-hero-subheader {
     height: 40px;
     width: 280px;
@@ -62,7 +59,6 @@
     letter-spacing: 2px;
   }
 }
-
 
 /* Tagline */
 
@@ -72,60 +68,57 @@
   line-height: 40px;
   text-align: center;
   color: #424447;
-}
-
-.tagline h3 {
-  font-weight: 100;
-  font-size: 20px;
+  h3 {
+    font-weight: 100;
+    font-size: 20px;
+  }
 }
 
 @media only screen and (min-width: 760px) {
   .tagline {
     padding: 0px 100px;
-  }
-
-  .tagline h3 {
-    font-weight: 100;
-    font-size: 24px;
+    h3 {
+      font-weight: 100;
+      font-size: 24px;
+    }
   }
 }
-
 
 /* Global Reach Hero Image */
 
 .global-reach-hero {
- height: 100vh;
-}
-
-.global-reach-hero {
- background-attachment: fixed;
+  height: 100vh;
+  background-attachment: fixed;
 }
 
 .global-reach-hero-content {
   display: flex;
   justify-content: center;
   align-items: center;
+  h1 {
+    font-weight: 100;
+    text-align: center;
+  }
 }
 
-.global-reach-hero-content h1, h2 {
+h2 {
   font-weight: 100;
   text-align: center;
 }
 
-.global-reach-hero-content h1 {
-  margin: 30px 0px;
-}
-
-.global-reach-hero-content h2 {
-  margin: 10px 30px;
+.global-reach-hero-content {
+  h1 {
+    margin: 30px 0px;
+  }
+  h2 {
+    margin: 10px 30px;
+  }
 }
 
 @media only screen and (min-width: 760px) {
-
   .global-reach-hero {
-   height: 420px;
+    height: 420px;
   }
-
   .global-reach-hero-content h2 {
     margin: 10px 20px;
   }

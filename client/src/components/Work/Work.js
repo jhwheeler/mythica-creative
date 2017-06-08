@@ -7,7 +7,7 @@ import Portfolio from '../Portfolio/Portfolio';
 import CTA from '../CTA/CTA';
 import Footer from '../Footer/Footer';
 
-import css from './Work.css';
+import css from './Work.scss';
 import { copy,images } from './Work.data.js';
 import categories from '../Portfolio/Portfolio.data';
 

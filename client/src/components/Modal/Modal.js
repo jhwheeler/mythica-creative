@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-import css from './Modal.css';
+import css from './Modal.scss';
 
 export default class Modal extends Component {
   close(e) {

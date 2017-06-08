@@ -1,16 +1,13 @@
-.blueprint h1,
-.blueprint h2,
-.blueprint h3,
-.blueprint p {
-  color: #3c3c3b;
-}
-
-.blueprint h2 {
-  margin: 20px 0;
-}
-
-.blueprint p {
-  margin: 10px 0;
+.blueprint {
+  h1, h2, h3, p {
+    color: #3c3c3b;
+  }
+  h2 {
+    margin: 20px 0;
+  }
+  p {
+    margin: 10px 0;
+  }
 }
 
 .blueprint-hero {
@@ -22,24 +19,22 @@
   padding: 50px 0;
   width: 100%;
   background-color: rgba(43, 0, 87, 0.7);
-}
-
-.blueprint-hero-title h1 {
-  font-size: 60px;
-  font-weight: 100;
-  line-height: 64px;
-  color: #fff;
+  h1 {
+    font-size: 60px;
+    font-weight: 100;
+    line-height: 64px;
+    color: #fff;
+  }
 }
 
 .blueprint-intro {
   text-align: center;
   padding: 50px;
-}
-
-.blueprint-intro h2 {
-  margin: 20px;
-  font-size: 48px;
-  line-height: 50px;
+  h2 {
+    margin: 20px;
+    font-size: 48px;
+    line-height: 50px;
+  }
 }
 
 .blueprint-audience {
@@ -49,11 +44,10 @@
   background-color: #f5f5f5;
   height: 1150px;
   padding: 70px 10px;
-}
-
-.blueprint-audience img {
-  height: 300px;
-  margin-left: auto;
+  img {
+    height: 300px;
+    margin-left: auto;
+  }
 }
 
 .buyer-persona {
@@ -87,29 +81,23 @@
 }
 
 @media only screen and (min-width: 780px) {
-
   .blueprint-hero {
     height: 80vh;
   }
-
   .blueprint-hero-title h1 {
     font-size: 90px;
     line-height: 95px;
   }
-
   .blueprint-audience {
     height: 1000px;
     padding: 50px 20px;
   }
-
   .blueprint-audience-text {
     width: 50%;
   }
-
   .blueprint-audience img {
     height: auto;
     align-self: flex-end;
     width: 40%;
   }
-
 }

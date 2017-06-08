@@ -13,26 +13,21 @@
   flex-wrap: wrap;
   color: #fff;
   padding: 50px 45px;
-}
-
-.congratulations-text p {
-  margin: 5px 0;
-}
-
-.congratulations-text h1 {
-  margin: 15px 0 30px;
-}
-
-.congratulations-text a {
-  color: #18dbcb;
-}
-
-.congratulations-text a:hover {
-  color: #1dc4b6;
-}
-
-.congratulations-text a:active {
-  color: #2ac3aa;
+  p {
+    margin: 5px 0;
+  }
+  h1 {
+    margin: 15px 0 30px;
+  }
+  a {
+    color: #18dbcb;
+    &:hover {
+      color: #1dc4b6;
+    }
+    &:active {
+      color: #2ac3aa;
+    }
+  }
 }
 
 @media only screen and (min-width: 760px) {

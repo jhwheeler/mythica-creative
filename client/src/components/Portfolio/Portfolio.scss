@@ -13,16 +13,14 @@
 .portfolio-nav {
   text-align: center;
   margin: 30px 0;
-}
-
-.portfolio-nav .category {
-  display: inline-block;
-  padding: 10px;
-  cursor: pointer;
-}
-
-.portfolio-nav .category:hover {
-  color: #2ac3aa;
+  .category {
+    display: inline-block;
+    padding: 10px;
+    cursor: pointer;
+    &:hover {
+      color: #2ac3aa;
+    }
+  }
 }
 
 .portfolio-images {
@@ -36,10 +34,9 @@
 
 .portfolio-image {
   margin: 0 5px;
-}
-
-.portfolio-image img {
-  max-width: 300px;
+  img {
+    max-width: 300px;
+  }
 }
 
 @media only screen and (min-width: 760px) {

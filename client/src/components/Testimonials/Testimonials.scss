@@ -32,29 +32,25 @@
   margin: 10px;
   color: #424447;
   border-radius: 4px;
-}
-
-.testimonial img {
-  width: 200px;
-}
-
-.testimonial h2 {
-  margin: 20px;
-  line-height: 30px;
+  img {
+    width: 200px;
+  }
+  h2 {
+    margin: 20px;
+    line-height: 30px;
+  }
 }
 
 @media only screen and (min-width: 760px) {
   .testimonials-wrapper {
     padding: 40px 80px;
   }
-
   .testimonial {
     height: 350px;
     width: 570px;
     padding: 0;
-  }
-
-  .testimonial h2 {
-    margin: 20px;
+    h2 {
+      margin: 20px;
+    }
   }
 }

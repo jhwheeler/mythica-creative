@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import Hero from '../Hero/Hero';
 import Question from '../Question/Question';
 
-import css from './QuestionContainer.css';
+import css from './QuestionContainer.scss';
 
 export default class QuestionContainer extends Component {
   constructor(props) {

@@ -6,18 +6,15 @@
   align-items: center;
   color: #fff;
   text-align: center;
-}
-
-.cta h1 {
-  line-height: 40px;
-}
-
-.cta .button {
-  width: 200px;
-  background-color: #2ac3aa;
-  color: #3a2a4f;
-}
-
-.cta .button a {
-  color: #3a2a4f;
+  h1 {
+    line-height: 40px;
+  }
+  .button {
+    width: 200px;
+    background-color: #2ac3aa;
+    color: #3a2a4f;
+    a {
+      color: #3a2a4f;
+    }
+  }
 }

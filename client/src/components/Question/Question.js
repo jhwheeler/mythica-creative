@@ -2,7 +2,7 @@ import React from 'react';
 import { Field, reduxForm } from 'redux-form';
 import PropTypes from 'prop-types';
 
-import css from './Question.css';
+import css from './Question.scss';
 
 const Question = props => {
   const { handleSubmit, question } = props;
