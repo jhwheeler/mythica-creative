@@ -19,7 +19,7 @@ export const fetchAnswersSuccess = answers => {
 
 export const sendAnswers = answers => {
   return (dispatch) => {
-    return axios.post(`/api/answers`, {answers})
+    return axios.post(`/answers`, {answers})
       .then(response => {
         dispatch(sendAnswersSuccess(response.data))
       })
@@ -31,7 +31,7 @@ export const sendAnswers = answers => {
 
 export const fetchAnswers = (id) => {
   return (dispatch) => {
-    return axios.get(`/api/answers/${id}`)
+    return axios.get(`/answers/${id}`)
       .then(response => {
         dispatch(fetchAnswersSuccess(response.data))
       })
