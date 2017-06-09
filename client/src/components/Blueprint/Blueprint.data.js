@@ -22,7 +22,7 @@ export const copy = {
   visionExerciseText3: "Now write down how your business plays a role in creating this world. Be brave and dream big -- there are no limits to your vision.",
   visionExerciseText4: "If you're up for it, make a visionboard: gather images that illustrate your vision and paste them into a file. Then print it out and post it up somewhere in your office or home as a constant reminder of the why behind your work.",
   visualStyleTitle: "Your Visual Message",
-  visualStyleText: "Humans are in large part visual creatures. Communicating with your audience in an authentic way begins with that first impression; this is why the visual message you express is key to a strong connection.",
+  visualStyleText: "Humans are in large part visual creatures. Communicating with your audience in an authentic way begins with that first impression; this is why the visual message you express is key to a strong connection. The styles you chose are:",
   businessGoalsTitle: "Your Business Goals",
   businessGoalsText: "These are the most important milestones you've set out to reach within the next 3 years. Keep these in mind and remind yourself of them every day!",
 
