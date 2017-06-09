@@ -18,7 +18,7 @@ export const copy = {
   missionTitle: "Your Mission",
   visionExerciseTitle: "Vision Exercise",
   visionExerciseText1: "Now we're going to dive deeper into your vision. Prepare your favorite drink and take a minute to relax. Get comfortable in your seat and settle down. This is a time just for you.",
-  visionExerciseText2: "Take a deep breath, close your eyes, and ask yourself: 'What do I truly want? What world do I want to live in?' Let your mind's eye w ander and explore the terrain: what do you see around you? Where are you? Who is around you? What are they doing and how do they feel? How do you feel? Imagine your ideal world and just exlplore it...",
+  visionExerciseText2: "Take a deep breath, close your eyes, and ask yourself: 'What do I truly want? What world do I want to live in?' Let your mind's eye wander and explore the terrain: what do you see around you? Where are you? Who is around you? What are they doing and how do they feel? How do you feel? Imagine your ideal world and just exlplore it...",
   visionExerciseText3: "Now write down how your business plays a role in creating this world. Be brave and dream big -- there are no limits to your vision.",
   visionExerciseText4: "If you're up for it, make a visionboard: gather images that illustrate your vision and paste them into a file. Then print it out and post it up somewhere in your office or home as a constant reminder of the why behind your work.",
   visualStyleTitle: "Your Visual Message",
