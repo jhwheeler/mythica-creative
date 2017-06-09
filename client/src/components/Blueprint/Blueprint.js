@@ -89,47 +89,52 @@ class Blueprint extends Component {
           <div className="buyer-persona-wrapper">
             <div className="buyer-persona-section buyer-persona-age">
               <div className="buyer-persona-ages">
-                {age.map(value => {
-                    <div className="buyer-persona-age-image">
+                {age.map((value, index) => {
+                  return (
+                    <div className="buyer-persona-age-image" key={index}>
                       <img src={`/images/quiz/audience-age-${value}.png`} />
-                      {console.log(value)};
-                      {console.log(age)};
                     </div>
-                  })
+                  )})
               }
               </div>
-              <h3>Age group</h3>
+              <h3 className="buyer-persona-subtitle">Age group</h3>
             </div>
+
             <div className="buyer-persona-section buyer-persona-sex">
               <div className="buyer-persona-sex">
-                {sex.map(value => {
-                    <div className="buyer-persona-sex-image">
+                {sex.map((value, index) => {
+                  return (
+                    <div className="buyer-persona-sex-image" key={index}>
                       <img src={`/images/quiz/audience-sex-${value}.png`} />
-                      {console.log(value)};
-                      {console.log(sex)};
                     </div>
-                  })
+                  )})
               }
               </div>
-              <h3>Sex</h3>
+              <h3 className="buyer-persona-subtitle">Sex</h3>
             </div>
+
             <div className="buyer-persona-section buyer-persona-income">
-              <p>{answers['audience-income']}</p>
-              <h3>Income</h3>
+              <h3>{answers['audience-income']}</h3>
+              <h3 className="buyer-persona-subtitle">Income</h3>
             </div>
+
           </div>
         </div>
 
         <div className="buyer-description">
-          <h2>{copy.buyerDescriptionTitle}</h2>
-          <p>"{answers['description-audience']}"</p>
-          <h2>{copy.solutionTitle}</h2>
-          <p>"{answers['description-solution']}"</p>
+          <div className="buyer-description-section">
+            <h2>{copy.buyerDescriptionTitle}</h2>
+            <p>"{answers['description-audience']}"</p>
+          </div>
+          <div className="buyer-description-section">
+            <h2>{copy.solutionTitle}</h2>
+            <p>"{answers['description-solution']}"</p>
+          </div>
         </div>
 
         <div className="blueprint-contrast-section buyer-exercise">
           <img src={`/images/blueprint/exercise.png`} />
-          <div className="blueprint-audience-text">
+          <div className="buyer-exercise-text">
             <h2>{copy.buyerExerciseTitle}</h2>
             <p>{copy.buyerExerciseText1}</p>
             <p>{copy.buyerExerciseText2}</p>
@@ -169,14 +174,13 @@ class Blueprint extends Component {
             <h2>{copy.visualStyleTitle}</h2>
             <p>{copy.visualStyleText}</p>
             <div className="visual-message-images">
-              {style.map(value => {
-                  <div className="visual-message-image">
+              {style.map((value, index) => {
+                return (
+                  <div className="visual-message-image" key={index}>
                     <img src={`/images/quiz/style-${value}.png`} />
-                    {console.log(value)};
-                    {console.log(style)};
                   </div>
-                })
-              }
+                )})
+              };
             </div>
           </div>
         </div>
