@@ -29,9 +29,11 @@ $right-angle-polygon: polygon(0 0, 100% 8%, 100% 100%, 0 92%);
   p {
     font-size: 20px;
     font-weight: 100;
-    line-height: 22px;
-    margin: 15px 0;
+    line-height: 28px;
+    margin: 28px 0;
   }
+  overflow: hidden;
+  background-color: $muted-color;
 }
 
 .blueprint-contrast-section {
@@ -41,7 +43,6 @@ $right-angle-polygon: polygon(0 0, 100% 8%, 100% 100%, 0 92%);
     color: $light-color;
   }
 }
-
 
 .blueprint-hero {
   height: 100vh;
@@ -69,13 +70,13 @@ $right-angle-polygon: polygon(0 0, 100% 8%, 100% 100%, 0 92%);
   display: flex;
   flex-wrap: wrap;
   clip-path: $left-angle-polygon;
-  background-color: $muted-color;
-  height: 1150px;
+  height: 1350px;
   padding: 70px 10px;
   img {
     height: 300px;
     margin-left: auto;
   }
+  background-color: $light-color;
 }
 
 .buyer-persona {
@@ -123,19 +124,34 @@ $right-angle-polygon: polygon(0 0, 100% 8%, 100% 100%, 0 92%);
   }
 }
 
-.buyer-exercise {
+.blueprint-exercise {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   clip-path: $right-angle-polygon;
-  height: 1350px;
-  padding: 120px 30px 160px;
-  text-align: center;
+  padding: 120px 30px 180px;
+  text-align: left;
 }
 
 .mission-vision {
+  display: flex;
   text-align: left;
+  padding: 80px 30px;
+  img {
+    display: none;
+  }
+}
+
+.your-mission-vision {
+  clip-path: $right-angle-polygon;
+  padding: 60px 30px;
+  h2, p {
+    text-align: left;
+  }
+  h2 {
+    margin-top: 60px;
+  }
 }
 
 .visual-message {
@@ -143,6 +159,7 @@ $right-angle-polygon: polygon(0 0, 100% 8%, 100% 100%, 0 92%);
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 30px;
 }
 
 .visual-message-images {
@@ -199,15 +216,39 @@ $right-angle-polygon: polygon(0 0, 100% 8%, 100% 100%, 0 92%);
     padding: 0 60px 50px;
   }
 
-  .buyer-exercise {
-    height: 80vh;
+  .blueprint-exercise {
     flex-direction: row-reverse;
     padding: 150px;
   }
 
-  .buyer-exercise-text {
+  .blueprint-exercise-text {
     margin-right: auto;
     width: 50%;
+  }
+
+  .mission-vision {
+    padding: 80px 0 0;
+    img {
+      display: initial;
+      margin: -100px -50px 0 auto;
+    }
+  }
+
+  .mission-vision-text {
+    width: 40%;
+    margin-left: auto;
+  }
+
+  .your-mission-vision {
+    padding: 0 100px 60px;
+  }
+
+  .vision-exercise {
+    padding: 170px;
+  }
+
+  .visual-message {
+    padding: 20px 100px;
   }
 
   .visual-message-image {
