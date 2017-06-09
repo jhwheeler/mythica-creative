@@ -71,7 +71,7 @@ $right-angle-polygon: polygon(0 0, 100% 8%, 100% 100%, 0 92%);
   flex-wrap: wrap;
   clip-path: $left-angle-polygon;
   height: 1350px;
-  padding: 70px 10px;
+  padding: 70px 30px;
   img {
     height: 300px;
     margin-left: auto;
@@ -132,20 +132,22 @@ $right-angle-polygon: polygon(0 0, 100% 8%, 100% 100%, 0 92%);
   clip-path: $right-angle-polygon;
   padding: 120px 30px 180px;
   text-align: left;
+  h2 {
+    text-align: left;
+  }
 }
 
 .mission-vision {
   display: flex;
   text-align: left;
-  padding: 80px 30px;
+  padding: 80px 30px 0;
   img {
     display: none;
   }
 }
 
 .your-mission-vision {
-  clip-path: $right-angle-polygon;
-  padding: 60px 30px;
+  padding: 0 30px;
   h2, p {
     text-align: left;
   }
@@ -178,6 +180,19 @@ $right-angle-polygon: polygon(0 0, 100% 8%, 100% 100%, 0 92%);
   }
 }
 
+.business-goals {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  clip-path: $left-angle-polygon;
+  padding: 70px 30px;
+  background-color: $light-color;
+  img {
+    height: 300px;
+    margin: auto;
+  }
+}
+
 @media only screen and (min-width: 780px) {
   .blueprint-hero {
     height: 80vh;
@@ -192,19 +207,18 @@ $right-angle-polygon: polygon(0 0, 100% 8%, 100% 100%, 0 92%);
     height: 600px;
     padding: 50px 0 40px 50px;
     flex-direction: row-reverse;
+    img {
+      height: 100%;
+      align-self: flex-start;
+      width: auto;
+      margin-top: -100px;
+    }
   }
 
   .blueprint-audience-text {
     padding-top: 40px;
     width: 50%;
     margin-left: auto;
-  }
-
-  .blueprint-audience img {
-    height: 100%;
-    align-self: flex-start;
-    width: auto;
-    margin-top: -100px;
   }
 
   .buyer-persona-section {
@@ -254,5 +268,22 @@ $right-angle-polygon: polygon(0 0, 100% 8%, 100% 100%, 0 92%);
   .visual-message-image {
     height: 350px;
     width: 350px;
+  }
+
+  .business-goals {
+    padding: 50px 0 40px 20px;
+    flex-direction: row-reverse;
+    img {
+      height: 100%;
+      align-self: flex-start;
+      width: auto;
+      margin-top: -100px;
+    }
+  }
+
+  .business-goals-text {
+    padding-top: 40px;
+    width: 50%;
+    margin-left: auto;
   }
 }
