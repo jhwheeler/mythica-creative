@@ -60,9 +60,9 @@ class Blueprint extends Component {
       <div className="blueprint">
 
         <div className="blueprint-hero">
-          <Hero backgroundImage={'/images/hero/blueprint-hero.jpg'}>
+          <Hero backgroundImage="/images/hero/blueprint-hero.jpg">
             <div className="blueprint-hero-logo">
-              <img src={`/images/hero/logo_hero.png`} />
+              <img src="/images/hero/logo_hero.png" alt="Mythica Creative" />
             </div>
             <div className="blueprint-hero-title">
               <h1>{copy.heroTitle}</h1>
@@ -76,7 +76,7 @@ class Blueprint extends Component {
         </div>
 
         <div className="blueprint-audience">
-          <img src={`/images/blueprint/audience.png`} />
+          <img src="/images/blueprint/audience.png" />
           <div className="blueprint-audience-text">
             <h2>{copy.audienceTitle}</h2>
             <p>{copy.audienceText1}</p>
@@ -92,7 +92,7 @@ class Blueprint extends Component {
                 {age.map((value, index) => {
                   return (
                     <div className="buyer-persona-age-image" key={index}>
-                      <img src={`/images/quiz/audience-age-${value}.png`} />
+                      <img src={`/images/quiz/audience-age-${value}.png`} alt={`${value}`} />
                     </div>
                   )})
               }
@@ -105,7 +105,7 @@ class Blueprint extends Component {
                 {sex.map((value, index) => {
                   return (
                     <div className="buyer-persona-sex-image" key={index}>
-                      <img src={`/images/quiz/audience-sex-${value}.png`} />
+                      <img src={`/images/quiz/audience-sex-${value}.png`} alt={`${value}`} />
                     </div>
                   )})
               }
@@ -133,7 +133,7 @@ class Blueprint extends Component {
         </div>
 
         <div className="blueprint-contrast-section blueprint-exercise buyer-exercise">
-          <img src={`/images/blueprint/exercise.png`} />
+          <img src="/images/blueprint/exercise.png" alt="buyer persona exercise" title="Try it out!"/>
           <div className="blueprint-exercise-text">
             <h2>{copy.buyerExerciseTitle}</h2>
             <p>{copy.buyerExerciseText1}</p>
@@ -148,7 +148,7 @@ class Blueprint extends Component {
             <p>{copy.missionVisionText2}</p>
             <p>{copy.missionVisionText3}</p>
           </div>
-          <img src='/images/blueprint/mission-vision.png' alt="mission-vision" title="Follow your vision" />
+          <img src="/images/blueprint/mission-vision.png" alt="mission and vision" title="Follow your vision" />
         </div>
 
         <div className="your-mission-vision">
@@ -159,7 +159,7 @@ class Blueprint extends Component {
         </div>
 
         <div className="blueprint-contrast-section blueprint-exercise vision-exercise">
-          <img src={`/images/blueprint/exercise.png`} />
+          <img src="/images/blueprint/exercise.png" alt="vision exercise" title="Try it out!"/>
           <div className="blueprint-exercise-text">
             <h2>{copy.visionExerciseTitle}</h2>
             <p>{copy.visionExerciseText1}</p>
@@ -177,7 +177,7 @@ class Blueprint extends Component {
               {style.map((value, index) => {
                 return (
                   <div className="visual-message-image" key={index}>
-                    <img src={`/images/quiz/style-${value}.png`} />
+                    <img src={`/images/quiz/style-${value}.png`} alt={`${value} style`}/>
                   </div>
                 )})
               };
@@ -186,6 +186,7 @@ class Blueprint extends Component {
         </div>
 
         <div className="business-goals">
+          <img src="/images/blueprint/goals.png" alt="business goals" title="Do you have clear goals?" />
           <div className="business-goals-text">
             <h2>{copy.businessGoalsTitle}</h2>
             <p>{copy.businessGoalsText}</p>
