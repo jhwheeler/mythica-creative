@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
 import Hero from '../Hero/Hero';
+import Footer from '../Footer/Footer';
+
 import { fetchAnswers } from '../../actions/answerActions';
 
 import css from './Blueprint.scss';
@@ -193,6 +195,17 @@ class Blueprint extends Component {
             <p>"{answers.goals}"</p>
           </div>
         </div>
+
+        <div className="blueprint-cta">
+          <Hero backgroundImage="/images/hero/blueprint-call-to-action.jpg">
+            <div className="blueprint-cta-wrapper">
+              <h2>{copy.callToActionTitle}</h2>
+              <p>{copy.callToActionText}</p>
+            </div>
+          </Hero>
+        </div>
+
+        <Footer />
 
       </div>
     );

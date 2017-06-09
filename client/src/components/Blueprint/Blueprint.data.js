@@ -25,6 +25,7 @@ export const copy = {
   visualStyleText: "Humans are in large part visual creatures. Communicating with your audience in an authentic way begins with that first impression; this is why the visual message you express is key to a strong connection. The styles you chose are:",
   businessGoalsTitle: "Your Business Goals",
   businessGoalsText: "These are the most important milestones you've set out to reach within the next 3 years. Keep these in mind and remind yourself of them every day:",
-
+  callToActionTitle: "Keep On Shining!",
+  callToActionText: "Now's your time. Take what you've learned here and start making your vision a reality. Everything you need lies within you. You've got this."
 
 }
