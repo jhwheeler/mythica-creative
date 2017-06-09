@@ -171,13 +171,21 @@ class Blueprint extends Component {
             <div className="visual-message-images">
               {style.map(value => {
                   <div className="visual-message-image">
-                    <img src={`/images/quiz/style-minimalist.png`} />
+                    <img src={`/images/quiz/style-${value}.png`} />
                     {console.log(value)};
                     {console.log(style)};
                   </div>
                 })
               }
             </div>
+          </div>
+        </div>
+
+        <div className="business-goals">
+          <div className="business-goals-text">
+            <h2>{copy.businessGoalsTitle}</h2>
+            <p>{copy.businessGoalsText}</p>
+            <p>"{answers.goals}"</p>
           </div>
         </div>
 
