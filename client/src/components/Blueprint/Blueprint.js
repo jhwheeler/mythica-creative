@@ -132,9 +132,9 @@ class Blueprint extends Component {
           </div>
         </div>
 
-        <div className="blueprint-contrast-section buyer-exercise">
+        <div className="blueprint-contrast-section blueprint-exercise buyer-exercise">
           <img src={`/images/blueprint/exercise.png`} />
-          <div className="buyer-exercise-text">
+          <div className="blueprint-exercise-text">
             <h2>{copy.buyerExerciseTitle}</h2>
             <p>{copy.buyerExerciseText1}</p>
             <p>{copy.buyerExerciseText2}</p>
@@ -148,19 +148,19 @@ class Blueprint extends Component {
             <p>{copy.missionVisionText2}</p>
             <p>{copy.missionVisionText3}</p>
           </div>
+          <img src='/images/blueprint/mission-vision.png' alt="mission-vision" title="Follow your vision" />
         </div>
 
         <div className="your-mission-vision">
-          <div className="your-mission-vision-text">
-            <h2>{copy.visionTitle}</h2>
-            <p>"{answers.vision}"</p>
-            <h2>{copy.missionTitle}</h2>
-            <p>"{answers.mission}"</p>
-          </div>
+          <h2>{copy.visionTitle}</h2>
+          <p>"{answers.vision}"</p>
+          <h2>{copy.missionTitle}</h2>
+          <p>"{answers.mission}"</p>
         </div>
 
-        <div className="vision-exercise">
-          <div className="vision-exercise-text">
+        <div className="blueprint-contrast-section blueprint-exercise vision-exercise">
+          <img src={`/images/blueprint/exercise.png`} />
+          <div className="blueprint-exercise-text">
             <h2>{copy.visionExerciseTitle}</h2>
             <p>{copy.visionExerciseText1}</p>
             <p>{copy.visionExerciseText2}</p>
