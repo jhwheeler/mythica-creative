@@ -43,24 +43,30 @@ export default class Service extends Component {
         <p className="service-description">{description}</p>
         <Button label="EXPLORE" onClick={() => this.toggleModal()} />
         <Modal  isOpen={this.state.isModalOpen} onClose={() => this.toggleModal()}>
-          <h1 className="service-modal-title">{modalTitle}</h1>
-          <div className="modal-section">
-            <img className="modal-section-image-1" src={modalImage1} />
-            <div className="modal-section-text">
-              <h2 className="modal-heading">{modalHeading1}</h2>
-              <p>{modalText1}</p>
-              <p>{modalText2}</p>
+          <div className="service-modal-wrapper">
+            <h1 className="service-modal-title">{modalTitle}</h1>
+            <div className="modal-section">
+              <div className="modal-section-image modal-section-image-1">
+                <img src={modalImage1} />
+              </div>
+              <div className="modal-section-text">
+                <h2 className="modal-heading">{modalHeading1}</h2>
+                <p>{modalText1}</p>
+                <p>{modalText2}</p>
+              </div>
             </div>
-          </div>
-          <div className="modal-section">
-            <img  className="modal-section-image-2" src={modalImage2} />
-            <div className="modal-section-text">
-              <h2 className="modal-heading">{modalHeading2}</h2>
-              <p>{modalText3}</p>
-              <p>{modalText4}</p>
+            <div className="modal-section">
+              <div className="modal-section-image modal-section-image-2">
+                <img src={modalImage2} />
+              </div>
+              <div className="modal-section-text">
+                <h2 className="modal-heading">{modalHeading2}</h2>
+                <p>{modalText3}</p>
+                <p>{modalText4}</p>
+              </div>
             </div>
+            <Button label="CLOSE" onClick={() => this.toggleModal()} />
           </div>
-          <Button label="CLOSE" onClick={() => this.toggleModal()} />
         </Modal>
       </div>
     );

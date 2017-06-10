@@ -24,6 +24,13 @@
   margin: 0 auto;
 }
 
+.service-modal-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
 .service-modal-title {
   color: #666;
   padding-bottom: 10px;
@@ -34,8 +41,13 @@
 
 .modal-section {
   display: flex;
+  flex-wrap: wrap;
   margin-bottom: 40px;
   max-width: 100%;
+}
+
+.modal-section-image img {
+  width: 100%;
 }
 
 .modal-section-text {
@@ -68,5 +80,10 @@
   .service-icon {
     height: 150px;
     width: 150px;
+  }
+
+  .modal-section-image,
+  .modal-section-text {
+    width: 50%;
   }
 }
