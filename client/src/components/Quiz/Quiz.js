@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
 
 import QuestionContainer from '../QuestionContainer/QuestionContainer';
 import AdviceSlider from '../AdviceSlider/AdviceSlider';
 import AdviceButton from '../AdviceButton/AdviceButton';
-import { Link } from 'react-router-dom';
+
 import { sendAnswers, fetchAnswers } from '../../actions/answerActions';
 
 import css from './Quiz.scss';
