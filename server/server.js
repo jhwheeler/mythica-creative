@@ -33,7 +33,7 @@ function runServer(databaseUrl=DATABASE_URL, port=PORT) {
       }
       server = app.listen(port, () => {
         const timeNow = new Date();
-        console.log(`Mythica Creative server listening on port ${port} at ${timeNow}`);
+        console.log(`Mythica Creative server listening on port ${port}: ${timeNow}`);
         resolve();
       })
       .on('error', err => {
