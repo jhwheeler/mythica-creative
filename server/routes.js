@@ -2,7 +2,8 @@ const express = require('express'),
       jsonParser = require('body-parser').json(),
       mongoose = require('mongoose');
 
-const {Answer} = require('./models');
+const { Answer } = require('./models'),
+      { sendBlueprint } = require('./mail');
 
 mongoose.Promise = global.Promise;
 
@@ -36,6 +37,10 @@ router.post('/', (req, res) => {
     .create({
       answers: req.body.answers,
       date: date,
+    })
+    .then(data => {
+      console.log(data.answers[0]['info-email']);
+      sendBlueprint(data.answers[0]['info-email'], data['_id'], data.answers[0]['info-name']);
     })
     .then(data => res.status(200).json(data))
     .catch(err => {
