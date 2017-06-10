@@ -19,6 +19,6 @@ export default class Hero extends Component {
 }
 
 Hero.PropTypes = {
-  backgroundImage: PropTypes.string.isRequired,
+  backgroundImage: PropTypes.string,
   children: PropTypes.any,
 }
