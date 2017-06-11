@@ -1,10 +1,10 @@
 .advice-slider {
-  width: 80vw;
-  height: 250px;
+  width: 90vw;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 80px 80px 0;
+  padding: 70px 20px 0;
   text-align: center;
   color: #fff;
   background: -moz-linear-gradient(left, #0087b3 0%, #4cc0b8 50%, #0087b3 100%);
@@ -23,4 +23,11 @@
 
  .advice-text {
    text-align: center;
+ }
+
+ @media only screen and (min-width: 760px) {
+   .advice-slider {
+     width: 80vw;
+     padding: 80px 80px 0;
+   }
  }
