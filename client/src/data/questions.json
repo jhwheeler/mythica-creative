@@ -30,7 +30,7 @@
       "name": "audience",
       "text": "Whose problem are you solving?",
       "adviceHeader": "The most important aspect of your business is the people you serve.",
-      "advice": "Knowing their age, gender, and income will help you form an idea of what sort of lifestyle they tend to have. That way, you can speak to them and their needs directly -- a much more engaging way to interact!",
+      "advice": "Knowing their age, gender, and income will help you form an idea of what sort of lifestyle they tend to have. That way, you can speak to them and their needs directly -- a much more engaging way to interact! So remember: be as specific as possible.",
       "subQuestions": [
         {
           "id": 1,
@@ -51,7 +51,7 @@
           "type": "checkbox",
           "name": "sex",
           "image": "yes",
-          "text": "Sex",
+          "text": "Gender",
           "options": [
             "male",
             "female",
