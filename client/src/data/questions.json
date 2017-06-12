@@ -30,7 +30,7 @@
       "name": "audience",
       "text": "Whose problem are you solving?",
       "adviceHeader": "The most important aspect of your business is the people you serve.",
-      "advice": "Knowing their age, gender, and income will help you form an idea of what sort of lifestyle they tend to have. That way, you can speak to them and their needs directly -- a much more engaging way to interact! So remember: be as specific as possible.",
+      "advice": "Knowing their age, gender, and income will help you form an idea of what sort of lifestyle they tend to have. That way, you can speak to them and their needs directly — a much more engaging way to interact! So remember: be as specific as possible.",
       "subQuestions": [
         {
           "id": 1,
@@ -76,7 +76,7 @@
       "component": "combined",
       "name": "description",
       "text": "",
-      "adviceHeader": "Get into their head and see their life -- and therefore the problem they face -- from their angle.",
+      "adviceHeader": "Get into their head and see their life — and therefore the problem they face — from their angle.",
       "advice": "What is it like for them to face this issue? What do they want to overcome? Then when describing your solution, focus on how your product or service solves their problem. So rather than describing the process or characteristics of your solution, talk about the result for the user or client. What do they get out of your solution? Always focus on them, rather than yourself.",
       "subQuestions": [
         {
