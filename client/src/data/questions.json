@@ -4,7 +4,7 @@
       "id": 1,
       "component": "combined",
       "name": "info",
-      "text": "Welcome",
+      "text": "Welcome to the Brand Launch Quiz!",
       "subQuestions": [
         {
           "id": 1,
@@ -157,15 +157,11 @@
     {
       "id": 9,
       "component": "input",
-      "type": "range",
+      "type": "text",
       "name": "budget",
       "text": "How much can you invest in your brand and online presence to jump start your business?",
-      "options": [
-        "0",
-        "100000"
-      ],
       "adviceHeader": "A general idea.",
-      "advice": "While it may be difficult to specify an exact budget, use the slider to choose a rough range. This will help you create a more accurate action plan, and help us propose the best solution for you."
+      "advice": "While it may be difficult to specify an exact budget, simply give a rough estimate. This will help you create a more accurate action plan, and help us propose the best solution for you."
     }
   ]
 }
