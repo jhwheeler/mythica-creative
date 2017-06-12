@@ -90,6 +90,7 @@ class Blueprint extends Component {
           <h2>{copy.buyerDemographicsTitle}</h2>
           <div className="buyer-persona-wrapper">
             <div className="buyer-persona-section buyer-persona-age">
+              <h3 className="buyer-persona-subtitle">Age group:</h3>
               <div className="buyer-persona-ages">
                 {age.map((value, index) => {
                   return (
@@ -99,25 +100,24 @@ class Blueprint extends Component {
                   )})
               }
               </div>
-              <h3 className="buyer-persona-subtitle">Age group</h3>
             </div>
 
             <div className="buyer-persona-section buyer-persona-sex">
-              <div className="buyer-persona-sex">
+              <h3 className="buyer-persona-subtitle">Gender:</h3>
+              <div className="buyer-persona-sexes">
                 {sex.map((value, index) => {
                   return (
                     <div className="buyer-persona-sex-image" key={index}>
-                      <img src={`/images/quiz/audience-sex-${value}.png`} alt={`${value}`} />
+                      <img src={`/images/blueprint/audience-sex-${value}.png`} alt={`${value}`} />
                     </div>
                   )})
               }
               </div>
-              <h3 className="buyer-persona-subtitle">Sex</h3>
             </div>
 
             <div className="buyer-persona-section buyer-persona-income">
+              <h3 className="buyer-persona-subtitle">Income:</h3>
               <h3>{answers['audience-income']}</h3>
-              <h3 className="buyer-persona-subtitle">Income</h3>
             </div>
 
           </div>
@@ -200,7 +200,7 @@ class Blueprint extends Component {
           <Hero backgroundImage="/images/hero/blueprint-call-to-action.jpg">
             <div className="blueprint-cta-wrapper">
               <h2>{copy.callToActionTitle}</h2>
-              <p>{copy.callToActionText}</p>
+              <h4>{copy.callToActionText}</h4>
             </div>
           </Hero>
         </div>
