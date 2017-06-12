@@ -117,7 +117,7 @@ class Quiz extends Component {
   }
 
   pulseAdviceButton = () => {
-    if (this.state.showAdvicePulse === false) {
+    if (!this.state.showAdvicePulse) {
       setTimeout(() => {
         this.setState({
           showAdvicePulse: true,
@@ -127,10 +127,6 @@ class Quiz extends Component {
   }
 
   componentDidMount() {
-    this.pulseAdviceButton();
-  }
-
-  componentDidUpdate() {
     this.pulseAdviceButton();
   }
 
