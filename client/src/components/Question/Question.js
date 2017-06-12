@@ -11,22 +11,32 @@ const Question = props => {
     return (
       <div className="checkboxes">
         <label className={`question-label-${question.name}`}>{question.text}</label>
-        {question.options.map((option, index) => (
-          <div className="checkbox" key={index}>
-            <Field
-              component="input"
-              type="checkbox"
-              name={option}
-              id={option}
-            />
-            <label htmlFor={option}>
-              <img className={`question-image question-image-${question.name}`} src={`/images/quiz/${question.name}-${question.options[index]}.png`} />
-            </label>
-          </div>
-        )
-        )}
+        <div className="checkbox-wrapper">
+          {question.options.map((option, index) => (
+            <div className="checkbox" key={index}>
+              <Field
+                component="input"
+                type="checkbox"
+                name={option}
+                id={option}
+              />
+              <label htmlFor={option}>
+                <img className={`question-image question-image-${question.name}`} src={`/images/quiz/${question.name}-${question.options[index]}.png`} />
+              </label>
+            </div>
+          )
+          )}
+        </div>
       </div>
     )
+  }
+
+  const required = value => (value == null ? 'Required' : undefined);
+
+  const email = value => {
+    (value && !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(value)
+      ? 'Invalid email'
+      : undefined);
   }
 
   return (
@@ -45,6 +55,7 @@ const Question = props => {
               name={question.name}
               placeholder={question.placeholder}
               onBlur={props.onBlur}
+              validate={required}
             />
           </div>
         }
