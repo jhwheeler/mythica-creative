@@ -39,7 +39,6 @@ router.post('/', (req, res) => {
       date: date,
     })
     .then(data => {
-      console.log(data.answers[0]['info-email']);
       sendBlueprint(data.answers[0]['info-email'], data['_id'], data.answers[0]['info-name']);
     })
     .then(data => res.status(200).json(data))
