@@ -10,9 +10,9 @@
     "start": "node server/server.js",
     "dev": "nodemon server/server.js",
     "test": "mocha",
-    "build": "NODE_ENV=production ./node_modules/webpack/bin/webpack.js -p",
     "watch": "./node_modules/webpack/bin/webpack.js --watch",
-    "build:production": "NODE_ENV=production webpack -p"
+    "build": "NODE_ENV=production webpack -p",
+    "deploy": "now --public -e DATABASE_URL=@databaseurl -e EMAIL=@email -e EMAIL_PW=@emailpw"
   },
   "dependencies": {
     "axios": "^0.16.1",
@@ -32,7 +32,6 @@
     "react-redux": "^5.0.4",
     "react-router": "^4.1.1",
     "react-router-dom": "^4.1.1",
-    "react-slick": "^0.14.11",
     "redux": "^3.6.0",
     "redux-devtools-extension": "^2.13.2",
     "redux-form": "^6.7.0",
@@ -55,8 +54,7 @@
     "nodemon": "^1.11.0",
     "sass-loader": "^6.0.5",
     "style-loader": "^0.16.1",
-    "url-loader": "^0.5.8",
-    "webpack-dev-server": "^2.4.5"
+    "url-loader": "^0.5.8"
   },
   "engines": {
     "node": "7.5.0"
