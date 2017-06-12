@@ -26,6 +26,5 @@ export const copy = {
   businessGoalsTitle: "Your Business Goals",
   businessGoalsText: "These are the most important milestones you've set out to reach within the next 3 years. Keep these in mind and remind yourself of them every day:",
   callToActionTitle: "Keep On Shining!",
-  callToActionText: "Now's your time. Take what you've learned here and start making your vision a reality. Everything you need lies within you. You've got this."
-
+  callToActionText: "Now's your time. Take what you've learned here and start making your vision a reality. Everything you need lies within you. You've got this!"
 }
