@@ -81,6 +81,7 @@ input:checked + label > img {
 
 .question-audience-income .question-wrapper {
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .question {
