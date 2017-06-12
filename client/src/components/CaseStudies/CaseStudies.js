@@ -1,7 +1,6 @@
 import React from 'react';
 
 import CaseStudy from '../CaseStudy/CaseStudy';
-import Gallery from '../Gallery/Gallery';
 import Button from '../Button/Button';
 
 import css from './CaseStudies.scss';
@@ -24,7 +23,6 @@ const CaseStudies = props => {
                 link={caseStudy.link}
                 key={index}
               />
-            {/*<Gallery /> */}
             </div>
           )}
         </div>
