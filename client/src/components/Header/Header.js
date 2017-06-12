@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import classNames from 'classnames';
 
 import css from './Header.scss';
 import logo from '../../../public/images/mythica-full-logo.png'
@@ -17,20 +18,31 @@ export default class Header extends Component {
     return scrollY === 0;
   }
 
-  componentDidMount() {
-    window.addEventListener('scroll', (e) => {
-      let scrollTop = this.isScrollTop();
-      if (scrollTop === this.state.scrollTop) {
-        return;
-      } else {
+  handleScroll = e => {
+    let scrollTop = this.isScrollTop();
+    if (scrollTop === this.state.scrollTop) {
+      return;
+    } else {
       this.setState({scrollTop})
-      }
-    })
+    }
+  }
+
+  componentDidMount() {
+    window.addEventListener('scroll', this.handleScroll);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.handleScroll);
   }
 
   render() {
+    const headerClass = classNames({
+      'solid-menu': this.state.scrollTop,
+      'transparent-menu': !this.state.scrollTop,
+    });
+
     return (
-      <nav className={(this.state.scrollTop === true) ? 'transparent-menu' : 'solid-menu' }>
+      <nav className={headerClass}>
         <Link to="/" className="logo" aria-label="Mythica Creative Homepage">
           <img src={logo} alt="Mythica Creative" />
         </Link>
