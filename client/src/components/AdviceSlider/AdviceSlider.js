@@ -13,7 +13,9 @@ export default class AdviceSlider extends Component {
   }
 
   componentDidUpdate() {
-    window.scrollTo(0, document.body.scrollHeight);
+    if (this.props.isOpen === true) {
+      window.scrollTo(0, document.body.scrollHeight);
+    }
   }
 
   render() {
