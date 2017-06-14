@@ -3,8 +3,8 @@ const nodemailer = require('nodemailer');
 const transporter = nodemailer.createTransport({
   service: 'Gmail',
   auth: {
-    user: process.env.email,
-    pass: process.env.emailpw
+    user: process.env.EMAIL,
+    pass: process.env.EMAIL_PW
   }
 });
 
@@ -26,8 +26,10 @@ const sendEmail = (options, cb) => {
   });
 };
 
+const domainName = (process.env.DOMAIN ||
+                    'localhost:7498');
+
 const sendBlueprint = (email, userId, name) => {
-  const link = `http://localhost:7498/answers/${userId}`;
 
   const subject = "Here's your Brand Blueprint!";
 
@@ -35,7 +37,7 @@ const sendBlueprint = (email, userId, name) => {
     Dear ${name},
     Congratulations on completing our Brand Launch Quiz!
     Now we've integrated the info you gave us with some handy tips and tricks to grow your brand and connect with your audience in the best way possible.
-    You can find your Brand Blueprint here: localhost:7498/answers/${userId}. Inside, you'll find some exercises to refine and develop your mission and vision statements, your buyer personas, and more.
+    You can find your Brand Blueprint here: ${domainName}/answers/${userId}. Inside, you'll find some exercises to refine and develop your mission and vision statements, your buyer personas, and more.
     Once you've had a chance to take a look, send us a message with your feedback! We'd love to know how we can help you more.
     Best Regards,
     Jackson Holiday Wheeler
@@ -47,7 +49,7 @@ const sendBlueprint = (email, userId, name) => {
     <p>Dear ${name},</p>
     <p>Congratulations on completing our Brand Launch Quiz!</p>
     <p>Now we've integrated the info you gave us with some handy tips and tricks to grow your brand and connect with your audience in the best way possible.</p>
-    <p>You can find your Brand Blueprint here: <a href="http://localhost:7498/answers/${userId}">Your Brand Blueprint</a>. Inside, you'll find some exercises to refine and develop your mission and vision statements, your buyer personas, and more.</p>
+    <p>You can find your Brand Blueprint here: <a href="${domainName}/answers/${userId}">Your Brand Blueprint</a>. Inside, you'll find some exercises to refine and develop your mission and vision statements, your buyer personas, and more.</p>
     <p>Once you've had a chance to take a look, send us a message with your feedback! We'd love to know how we can help you more.</p>
     <p>Best Regards,</p>
     <p>Jackson Holiday Wheeler</p>
