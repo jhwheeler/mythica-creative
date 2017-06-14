@@ -12,7 +12,7 @@
     "test": "mocha",
     "watch": "./node_modules/webpack/bin/webpack.js --watch",
     "build": "NODE_ENV=production webpack -p",
-    "deploy": "now --public -e DATABASE_URL=@databaseurl -e EMAIL=@email -e EMAIL_PW=@emailpw"
+    "deploy": "now --public -e DATABASE_URL=@databaseurl -e EMAIL=@email -e EMAIL_PW=@emailpw -e DOMAIN=@domain"
   },
   "dependencies": {
     "axios": "^0.16.1",
